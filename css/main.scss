@@ -63,7 +63,6 @@ header {
             height: 32px;
             left: 422px;
             top: 15px;
-            // background: lightblue;
             .repw {
                 position: relative;
                 float: left;
@@ -89,34 +88,189 @@ header {
                 margin: 0 8px 0 0;
                 border-radius: 3px;
                 background: #000000;
-                
-            }
-            .ac {
                 .acicon {
-                    position: absolute;
                     float: left;
                     width: 32px;
                     height: 32px;
+                    margin: 0 8px 0 0;
                     background: url(../images/acicon.png) no-repeat top center;
                     background-position: 0 0;
                     background-size: 200%;
+                }
+                p {
+                    float: left;
+                    font-size: 14px;
+                    width: 28px;
+                    height: 32px;
+                    margin: 0 8px 0 0;
+                    line-height: 32px;
+                    color: #d0d0d0;
+                }
+                input {
+                    float: left;
+                    width: 102px;
+                    height: 32px;
+                    padding: 0 0 0 5px;
+                    color: #fff;
+                    border-radius: 0 3px 3px 0;
+                    background: #000000;
+                    outline: none;
+                }
+            }
+            .pw {
+                .acicon {
+                    background-position: -32px 0;
                 }
             }
             .signin,
             .signup {
                 position: relative;
                 float: left;
-                width: 87px;
-                height: 32px;
+                width: 85px;
+                height: 30px;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
                 margin: 0 8px 0 0;
-                background: red;
+                border-radius: 3px;
+                color: #fff;
+                border: 1px solid #950000;
+                background: #c71e1e;
+                background: linear-gradient(to top, #c62828 0%, #790000 25%, #c71e1e 47%, #d76b6b 72%, #a40000 90%);
+                &:hover,
+                &:active,
+                &.active {
+                    border: 1px solid #950000;
+                    background: #a40000;
+                    background: linear-gradient(to bottom, #790000 25%, #a40000 71%, #c71e1e 100%);
+                }
+            }
+            .signup {
+                color: #000000;
+                border: 1px solid #935800;
+                background: #c29540;
+                background: linear-gradient(to top, #c29540 0%, #8d5d1c 29%, #c29540 49%, #f9e19e 66%, #c29540 92%);
+                &:hover,
+                &:active,
+                &.active {
+                    color: #fff;
+                    border: 1px solid #935800;
+                    background: #c29540;
+                    background: linear-gradient(to bottom, #8d5d1c 25%, #c29540 49%, #f9e19e 100%);
+                }
             }
             .lang {
                 position: relative;
                 float: left;
                 width: 122px;
                 height: 32px;
-                background: red;
+                border-radius: 3px;
+                background: #131313;
+                z-index: 20;
+                .select {
+                    position: absolute;
+                    width: 122px;
+                    height: 32px;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    p {
+                        width: 112px;
+                        height: 32px;
+                        line-height: 32px;
+                        padding: 0 0 0 10px;
+                        border-radius: 3px;
+                        color: #d0d0d0;
+                        background: url("../images/langArrow.png") no-repeat right transparent;
+                        background-size: 32px;
+                        cursor: pointer;
+                    }
+                    ul {
+                        // display: none;
+                        position: absolute;
+                        width: 122px;
+                        top: 32px;
+                        border-radius: 0 0 3px 3px;
+                        &.none {
+                            display: none;
+                        }
+                        li {
+                            width: 122px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-indent: 10px;
+                            margin: -2px 0 0 0;
+                            border-radius: 0 0 3px 3px;
+                            background: #131313;
+                            a {
+                                position: static;
+                                text-decoration: none;
+                                display: block;
+                                height: 32px;
+                                color: #fff;
+                                &:hover {
+                                    background: #fde6a2;
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .area{
+                position: relative;
+                float: left;
+                width: 122px;
+                height: 32px;
+                border-radius: 3px;
+                background: #131313;
+                z-index: 20;
+                .select {
+                    position: absolute;
+                    width: 122px;
+                    height: 32px;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    p {
+                        width: 112px;
+                        height: 32px;
+                        line-height: 32px;
+                        padding: 0 0 0 10px;
+                        border-radius: 3px;
+                        color: #d0d0d0;
+                        background: url("../images/langArrow.png") no-repeat right transparent;
+                        background-size: 32px;
+                        cursor: pointer;
+                    }
+                    ul {
+                        position: absolute;
+                        width: 122px;
+                        top: 32px;
+                        border-radius: 0 0 3px 3px;
+                        &.none {
+                            display: none;
+                        }
+                        li {
+                            width: 122px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-indent: 10px;
+                            margin: -2px 0 0 0;
+                            border-radius: 0 0 3px 3px;
+                            background: #131313;
+                            a {
+                                position: static;
+                                text-decoration: none;
+                                display: block;
+                                height: 32px;
+                                color: #fff;
+                                &:hover {
+                                    background: #fde6a2;
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

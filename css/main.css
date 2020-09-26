@@ -155,28 +155,185 @@ header article .hinfo .ac:after,
 header article .hinfo .pw:after {
   clear: both;
 }
-header article .hinfo .ac .acicon {
-  position: absolute;
+header article .hinfo .ac .acicon,
+header article .hinfo .pw .acicon {
   float: left;
   width: 32px;
   height: 32px;
+  margin: 0 8px 0 0;
   background: url(../images/acicon.png) no-repeat top center;
   background-position: 0 0;
   background-size: 200%;
+}
+header article .hinfo .ac p,
+header article .hinfo .pw p {
+  float: left;
+  font-size: 14px;
+  width: 28px;
+  height: 32px;
+  margin: 0 8px 0 0;
+  line-height: 32px;
+  color: #d0d0d0;
+}
+header article .hinfo .ac input,
+header article .hinfo .pw input {
+  float: left;
+  width: 102px;
+  height: 32px;
+  padding: 0 0 0 5px;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  background: #000000;
+  outline: none;
+}
+header article .hinfo .pw .acicon {
+  background-position: -32px 0;
 }
 header article .hinfo .signin,
 header article .hinfo .signup {
   position: relative;
   float: left;
-  width: 87px;
-  height: 32px;
+  width: 85px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
   margin: 0 8px 0 0;
-  background: red;
+  border-radius: 3px;
+  color: #fff;
+  border: 1px solid #950000;
+  background: #c71e1e;
+  background: linear-gradient(to top, #c62828 0%, #790000 25%, #c71e1e 47%, #d76b6b 72%, #a40000 90%);
+}
+header article .hinfo .signin:hover, header article .hinfo .signin:active, header article .hinfo .signin.active,
+header article .hinfo .signup:hover,
+header article .hinfo .signup:active,
+header article .hinfo .signup.active {
+  border: 1px solid #950000;
+  background: #a40000;
+  background: linear-gradient(to bottom, #790000 25%, #a40000 71%, #c71e1e 100%);
+}
+header article .hinfo .signup {
+  color: #000000;
+  border: 1px solid #935800;
+  background: #c29540;
+  background: linear-gradient(to top, #c29540 0%, #8d5d1c 29%, #c29540 49%, #f9e19e 66%, #c29540 92%);
+}
+header article .hinfo .signup:hover, header article .hinfo .signup:active, header article .hinfo .signup.active {
+  color: #fff;
+  border: 1px solid #935800;
+  background: #c29540;
+  background: linear-gradient(to bottom, #8d5d1c 25%, #c29540 49%, #f9e19e 100%);
 }
 header article .hinfo .lang {
   position: relative;
   float: left;
   width: 122px;
   height: 32px;
-  background: red;
+  border-radius: 3px;
+  background: #131313;
+  z-index: 20;
+}
+header article .hinfo .lang .select {
+  position: absolute;
+  width: 122px;
+  height: 32px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+header article .hinfo .lang .select p {
+  width: 112px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 0 0 10px;
+  border-radius: 3px;
+  color: #d0d0d0;
+  background: url("../images/langArrow.png") no-repeat right transparent;
+  background-size: 32px;
+  cursor: pointer;
+}
+header article .hinfo .lang .select ul {
+  position: absolute;
+  width: 122px;
+  top: 32px;
+  border-radius: 0 0 3px 3px;
+}
+header article .hinfo .lang .select ul.none {
+  display: none;
+}
+header article .hinfo .lang .select ul li {
+  width: 122px;
+  height: 32px;
+  line-height: 32px;
+  text-indent: 10px;
+  margin: -2px 0 0 0;
+  border-radius: 0 0 3px 3px;
+  background: #131313;
+}
+header article .hinfo .lang .select ul li a {
+  position: static;
+  text-decoration: none;
+  display: block;
+  height: 32px;
+  color: #fff;
+}
+header article .hinfo .lang .select ul li a:hover {
+  background: #fde6a2;
+  color: #000000;
+}
+header article .hinfo .area {
+  position: relative;
+  float: left;
+  width: 122px;
+  height: 32px;
+  border-radius: 3px;
+  background: #131313;
+  z-index: 20;
+}
+header article .hinfo .area .select {
+  position: absolute;
+  width: 122px;
+  height: 32px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+header article .hinfo .area .select p {
+  width: 112px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 0 0 10px;
+  border-radius: 3px;
+  color: #d0d0d0;
+  background: url("../images/langArrow.png") no-repeat right transparent;
+  background-size: 32px;
+  cursor: pointer;
+}
+header article .hinfo .area .select ul {
+  position: absolute;
+  width: 122px;
+  top: 32px;
+  border-radius: 0 0 3px 3px;
+}
+header article .hinfo .area .select ul.none {
+  display: none;
+}
+header article .hinfo .area .select ul li {
+  width: 122px;
+  height: 32px;
+  line-height: 32px;
+  text-indent: 10px;
+  margin: -2px 0 0 0;
+  border-radius: 0 0 3px 3px;
+  background: #131313;
+}
+header article .hinfo .area .select ul li a {
+  position: static;
+  text-decoration: none;
+  display: block;
+  height: 32px;
+  color: #fff;
+}
+header article .hinfo .area .select ul li a:hover {
+  background: #fde6a2;
+  color: #000000;
 }
