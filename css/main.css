@@ -61,6 +61,7 @@ input {
 
 html {
   font-family: Microsoft JhengHei;
+  background: #060606;
   min-width: 1200px;
   height: 100%;
   overflow: hidden;
@@ -105,22 +106,25 @@ header article .hlogo {
   top: 38px;
   left: 45px;
 }
-header article .hinfo {
+header article .hif {
   *zoom: 1;
   position: absolute;
-  width: 779px;
+  width: 657px;
   height: 32px;
   left: 422px;
   top: 15px;
 }
-header article .hinfo:after, header article .hinfo:before {
+header article .hif:after, header article .hif:before {
   content: "";
   display: table;
 }
-header article .hinfo:after {
+header article .hif:after {
   clear: both;
 }
-header article .hinfo .repw {
+header article .hif.none {
+  display: none;
+}
+header article .hif .rpw {
   position: relative;
   float: left;
   width: 72px;
@@ -129,12 +133,13 @@ header article .hinfo .repw {
   font-size: 16px;
   color: #fff;
   margin: 0 13px 0 0;
+  cursor: pointer;
 }
-header article .hinfo .repw:hover, header article .hinfo .repw:active, header article .hinfo .repw.active {
+header article .hif .rpw:hover, header article .hif .rpw:active, header article .hif .rpw.active {
   color: #929090;
 }
-header article .hinfo .ac,
-header article .hinfo .pw {
+header article .hif .ac,
+header article .hif .pw {
   *zoom: 1;
   position: relative;
   float: left;
@@ -144,18 +149,18 @@ header article .hinfo .pw {
   border-radius: 3px;
   background: #000000;
 }
-header article .hinfo .ac:after, header article .hinfo .ac:before,
-header article .hinfo .pw:after,
-header article .hinfo .pw:before {
+header article .hif .ac:after, header article .hif .ac:before,
+header article .hif .pw:after,
+header article .hif .pw:before {
   content: "";
   display: table;
 }
-header article .hinfo .ac:after,
-header article .hinfo .pw:after {
+header article .hif .ac:after,
+header article .hif .pw:after {
   clear: both;
 }
-header article .hinfo .ac .acicon,
-header article .hinfo .pw .acicon {
+header article .hif .ac .acicon,
+header article .hif .pw .acicon {
   float: left;
   width: 32px;
   height: 32px;
@@ -164,8 +169,8 @@ header article .hinfo .pw .acicon {
   background-position: 0 0;
   background-size: 200%;
 }
-header article .hinfo .ac p,
-header article .hinfo .pw p {
+header article .hif .ac p,
+header article .hif .pw p {
   float: left;
   font-size: 14px;
   width: 28px;
@@ -174,8 +179,8 @@ header article .hinfo .pw p {
   line-height: 32px;
   color: #d0d0d0;
 }
-header article .hinfo .ac input,
-header article .hinfo .pw input {
+header article .hif .ac input,
+header article .hif .pw input {
   float: left;
   width: 102px;
   height: 32px;
@@ -185,11 +190,11 @@ header article .hinfo .pw input {
   background: #000000;
   outline: none;
 }
-header article .hinfo .pw .acicon {
+header article .hif .pw .acicon {
   background-position: -32px 0;
 }
-header article .hinfo .signin,
-header article .hinfo .signup {
+header article .hif .si,
+header article .hif .su {
   position: relative;
   float: left;
   width: 85px;
@@ -204,43 +209,172 @@ header article .hinfo .signup {
   background: #c71e1e;
   background: linear-gradient(to top, #c62828 0%, #790000 25%, #c71e1e 47%, #d76b6b 72%, #a40000 90%);
 }
-header article .hinfo .signin:hover, header article .hinfo .signin:active, header article .hinfo .signin.active,
-header article .hinfo .signup:hover,
-header article .hinfo .signup:active,
-header article .hinfo .signup.active {
+header article .hif .si:hover, header article .hif .si:active, header article .hif .si.active,
+header article .hif .su:hover,
+header article .hif .su:active,
+header article .hif .su.active {
   border: 1px solid #950000;
   background: #a40000;
   background: linear-gradient(to bottom, #790000 25%, #a40000 71%, #c71e1e 100%);
 }
-header article .hinfo .signup {
+header article .hif .su {
   color: #000000;
   border: 1px solid #935800;
   background: #c29540;
   background: linear-gradient(to top, #c29540 0%, #8d5d1c 29%, #c29540 49%, #f9e19e 66%, #c29540 92%);
 }
-header article .hinfo .signup:hover, header article .hinfo .signup:active, header article .hinfo .signup.active {
+header article .hif .su:hover, header article .hif .su:active, header article .hif .su.active {
   color: #fff;
   border: 1px solid #935800;
   background: #c29540;
   background: linear-gradient(to bottom, #8d5d1c 25%, #c29540 49%, #f9e19e 100%);
 }
-header article .hinfo .lang {
+header article .hifi {
+  *zoom: 1;
+  position: absolute;
+  width: 379px;
+  height: 37px;
+  left: 692px;
+  top: 12px;
+}
+header article .hifi:after, header article .hifi:before {
+  content: "";
+  display: table;
+}
+header article .hifi:after {
+  clear: both;
+}
+header article .hifi.none {
+  display: none;
+}
+header article .hifi .dt,
+header article .hifi .tr,
+header article .hifi .wl,
+header article .hifi .uif,
+header article .hifi .so {
+  position: relative;
+  float: left;
+}
+header article .hifi .dt {
+  width: 25px;
+  height: 30px;
+  top: 5px;
+  left: 0px;
+  background: url("../images/deposit.png") no-repeat right transparent;
+  background-size: 25px 30px;
+}
+header article .hifi .tr {
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: 20px;
+  background: url("../images/transfer.png") no-repeat right transparent;
+  background-size: 30px;
+}
+header article .hifi .wl {
+  width: 23px;
+  height: 30px;
+  top: 5px;
+  left: 40px;
+  background: url("../images/withdrawal.png") no-repeat right transparent;
+  background-size: 23px 30px;
+}
+header article .hifi .uif {
+  width: 157px;
+  height: 37px;
+  left: 60px;
+}
+header article .hifi .uif .i {
+  position: relative;
+  float: left;
+  width: 37px;
+  height: 37px;
+  background: url("../images/userImage.png") no-repeat right transparent;
+  background-size: 37px 37px;
+}
+header article .hifi .uif .t {
+  position: relative;
+  float: left;
+  width: 93px;
+  height: 30px;
+  top: 5px;
+  left: 7px;
+}
+header article .hifi .uif .t p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #ffffff;
+}
+header article .hifi .uif .t p:nth-of-type(2) {
+  color: #fde6a2;
+}
+header article .hifi .uif .abg {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  left: 135px;
+  top: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+header article .hifi .uif .abg .aw {
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  border-left: 4px solid transparent;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid transparent;
+}
+header article .hifi .uif .abg .ab {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  border-left: 4px solid transparent;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+}
+header article .hifi .so {
+  width: 58px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  top: 3px;
+  left: 76px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #935800;
+  background: #8d5d1c;
+  background: linear-gradient(to top, #c29540 0%, #8d5d1c 29%, #c29540 49%, #f9e19e 66%, #c29540 92%);
+}
+header article .hifi .so:hover, header article .hifi .so:active, header article .hifi .so.active {
+  color: #fff;
+  background: #c29540;
+  background: linear-gradient(to top, #8d5d1c 0%, #c29540 49%, #f9e19e 100%);
+}
+header article .lang {
   position: relative;
   float: left;
   width: 122px;
   height: 32px;
+  left: 1079px;
+  top: 15px;
   border-radius: 3px;
   background: #131313;
   z-index: 20;
 }
-header article .hinfo .lang .select {
+header article .lang .select {
   position: absolute;
   width: 122px;
   height: 32px;
   border-radius: 3px;
   font-size: 14px;
 }
-header article .hinfo .lang .select p {
+header article .lang .select p {
   width: 112px;
   height: 32px;
   line-height: 32px;
@@ -251,16 +385,16 @@ header article .hinfo .lang .select p {
   background-size: 32px;
   cursor: pointer;
 }
-header article .hinfo .lang .select ul {
+header article .lang .select ul {
   position: absolute;
   width: 122px;
   top: 32px;
   border-radius: 0 0 3px 3px;
 }
-header article .hinfo .lang .select ul.none {
+header article .lang .select ul.none {
   display: none;
 }
-header article .hinfo .lang .select ul li {
+header article .lang .select ul li {
   width: 122px;
   height: 32px;
   line-height: 32px;
@@ -269,70 +403,14 @@ header article .hinfo .lang .select ul li {
   border-radius: 0 0 3px 3px;
   background: #131313;
 }
-header article .hinfo .lang .select ul li a {
+header article .lang .select ul li a {
   position: static;
   text-decoration: none;
   display: block;
   height: 32px;
   color: #fff;
 }
-header article .hinfo .lang .select ul li a:hover {
-  background: #fde6a2;
-  color: #000000;
-}
-header article .hinfo .area {
-  position: relative;
-  float: left;
-  width: 122px;
-  height: 32px;
-  border-radius: 3px;
-  background: #131313;
-  z-index: 20;
-}
-header article .hinfo .area .select {
-  position: absolute;
-  width: 122px;
-  height: 32px;
-  border-radius: 3px;
-  font-size: 14px;
-}
-header article .hinfo .area .select p {
-  width: 112px;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 0 0 10px;
-  border-radius: 3px;
-  color: #d0d0d0;
-  background: url("../images/langArrow.png") no-repeat right transparent;
-  background-size: 32px;
-  cursor: pointer;
-}
-header article .hinfo .area .select ul {
-  position: absolute;
-  width: 122px;
-  top: 32px;
-  border-radius: 0 0 3px 3px;
-}
-header article .hinfo .area .select ul.none {
-  display: none;
-}
-header article .hinfo .area .select ul li {
-  width: 122px;
-  height: 32px;
-  line-height: 32px;
-  text-indent: 10px;
-  margin: -2px 0 0 0;
-  border-radius: 0 0 3px 3px;
-  background: #131313;
-}
-header article .hinfo .area .select ul li a {
-  position: static;
-  text-decoration: none;
-  display: block;
-  height: 32px;
-  color: #fff;
-}
-header article .hinfo .area .select ul li a:hover {
+header article .lang .select ul li a:hover {
   background: #fde6a2;
   color: #000000;
 }
