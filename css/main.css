@@ -138,6 +138,11 @@ header article .hif .rpw {
 header article .hif .rpw:hover, header article .hif .rpw:active, header article .hif .rpw.active {
   color: #929090;
 }
+@supports (-webkit-touch-callout: none) {
+  header article .hif .rpw {
+    font-size: 14px;
+  }
+}
 header article .hif .ac,
 header article .hif .pw {
   *zoom: 1;

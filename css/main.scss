@@ -84,6 +84,9 @@ header {
                 &.active {
                     color: #929090;
                 }
+                @supports (-webkit-touch-callout: none) {
+                    font-size: 14px;
+                }
             }
             .ac,
             .pw {
