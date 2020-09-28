@@ -21,14 +21,14 @@
 html {
     font-family: Microsoft JhengHei;
     background: #060606;
-    min-width: 1200px;
+    min-width: 1300px;
     height: 100%;
     overflow: hidden;
     @supports (-webkit-touch-callout: none) {
         position: absolute;
-        transform: scale(0.9);
-        left: -10%;
-        top: -5%;
+        transform: scale(0.8);
+        top: -10%;
+        left: -14%;
     }
 }
 
@@ -43,10 +43,12 @@ a {
 }
 
 header {
+    position: relative;
     height: 183px;
     background: url(../images/headerbg.png) no-repeat top center;
     background-size: 1920px;
     margin: 0 auto;
+    // z-index: 2;
     article {
         position: relative;
         width: 1200px;
@@ -67,7 +69,7 @@ header {
             position: absolute;
             width: 779px - 122px;
             height: 32px;
-            left: 422px;
+            left: 422px - 30px;
             top: 15px;
             .rpw {
                 position: relative;
@@ -177,7 +179,7 @@ header {
             position: absolute;
             width: 379px;
             height: 37px;
-            left: 422px + 779px - 122px - 379px - 8px;
+            left: 422px + 779px - 122px - 379px - 8px - 30px;
             top: 15px - 5px + 2px;
             .dt,
             .tr,
@@ -281,14 +283,7 @@ header {
                 border-radius: 3px;
                 border: 1px solid #935800;
                 background: #8d5d1c;
-                background: linear-gradient(
-                    to top,
-                    #c29540 0%,
-                    #8d5d1c 29%,
-                    #c29540 49%,
-                    #f9e19e 66%,
-                    #c29540 92%
-                );
+                background: linear-gradient(to top, #c29540 0%, #8d5d1c 29%, #c29540 49%, #f9e19e 66%, #c29540 92%);
                 &:hover,
                 &:active,
                 &.active {
@@ -303,7 +298,7 @@ header {
             float: left;
             width: 122px;
             height: 32px;
-            left: 422px + 779px - 122px;
+            left: 422px + 779px - 122px - 30px;
             top: 15px;
             border-radius: 3px;
             background: #131313;

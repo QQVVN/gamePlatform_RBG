@@ -62,16 +62,16 @@ input {
 html {
   font-family: Microsoft JhengHei;
   background: #060606;
-  min-width: 1200px;
+  min-width: 1300px;
   height: 100%;
   overflow: hidden;
 }
 @supports (-webkit-touch-callout: none) {
   html {
     position: absolute;
-    transform: scale(0.9);
-    left: -10%;
-    top: -5%;
+    transform: scale(0.8);
+    top: -10%;
+    left: -14%;
   }
 }
 
@@ -86,6 +86,7 @@ a {
 }
 
 header {
+  position: relative;
   height: 183px;
   background: url(../images/headerbg.png) no-repeat top center;
   background-size: 1920px;
@@ -111,7 +112,7 @@ header article .hif {
   position: absolute;
   width: 657px;
   height: 32px;
-  left: 422px;
+  left: 392px;
   top: 15px;
 }
 header article .hif:after, header article .hif:before {
@@ -240,7 +241,7 @@ header article .hifi {
   position: absolute;
   width: 379px;
   height: 37px;
-  left: 692px;
+  left: 662px;
   top: 12px;
 }
 header article .hifi:after, header article .hifi:before {
@@ -367,7 +368,7 @@ header article .lang {
   float: left;
   width: 122px;
   height: 32px;
-  left: 1079px;
+  left: 1049px;
   top: 15px;
   border-radius: 3px;
   background: #131313;
