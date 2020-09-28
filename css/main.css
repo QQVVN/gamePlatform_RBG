@@ -203,6 +203,7 @@ header article .hif .su {
   line-height: 30px;
   text-align: center;
   margin: 0 8px 0 0;
+  cursor: pointer;
   border-radius: 3px;
   color: #fff;
   border: 1px solid #950000;
