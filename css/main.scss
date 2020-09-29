@@ -517,6 +517,8 @@ main {
                         &:active,
                         &.active {
                             background-position-y: -99px;
+                            animation-name: navbg;
+                            animation-duration: 0.5s;
                         }
                     }
                     .se {
@@ -544,11 +546,6 @@ main {
                         top: 160px;
                         background-position: -288px * 4 0;
                     }
-                    // .bo {
-                    //     left: 672px;
-                    //     top: 10px;
-                    //     background-position: -288px * 5 0;
-                    // }
                 }
             }
             .mcr {
@@ -578,6 +575,8 @@ main {
         &:active,
         &.active {
             background-position-y: -99px;
+            animation-name: navbg;
+            animation-duration: 0.5s;
         }
     }
     .iebg {

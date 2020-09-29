@@ -10,7 +10,9 @@
         }
         *zoom: 1;
     }
-
+    header {
+        z-index: 2;
+    }
     main {
         @include clearfix;
         top: 0px;
@@ -20,6 +22,10 @@
                 top: 0;
                 z-index: 1;
             }
+        }
+        .bo {
+            z-index: 3;
+            top: -55px;
         }
         .iebg {
             display: block;

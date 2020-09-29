@@ -612,6 +612,8 @@ main .mbox .mcont .mcm .cpnav .dg:hover,
 main .mbox .mcont .mcm .cpnav .dg:active,
 main .mbox .mcont .mcm .cpnav .dg.active {
   background-position-y: -99px;
+  animation-name: navbg;
+  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpnav .se {
   left: -82px;
@@ -662,6 +664,8 @@ main .bo {
 }
 main .bo:hover, main .bo:active, main .bo.active {
   background-position-y: -99px;
+  animation-name: navbg;
+  animation-duration: 0.5s;
 }
 main .iebg {
   display: none;
