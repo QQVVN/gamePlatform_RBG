@@ -1,18 +1,25 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   main {
+    *zoom: 1;
     top: 0px;
   }
+  main:after, main:before {
+    content: "";
+    display: table;
+  }
+  main:after {
+    clear: both;
+  }
   main .se {
-    left: 0;
+    position: relative;
+    float: left;
     top: 0;
-    transform: none;
     z-index: 1;
   }
   main .iebg {
     display: block;
     position: relative;
     height: 1200px;
-    background-color: #fff;
     background: url(../images/mbg.jpg) no-repeat top center;
     background-size: 1920px 1200px;
     margin: 0 auto;

@@ -476,6 +476,7 @@ main .mbg {
   animation-iteration-count: infinite;
 }
 main .se {
+  *zoom: 1;
   position: absolute;
   width: 100%;
   max-width: 1920px;
@@ -486,6 +487,13 @@ main .se {
   transform: translateX(-50%);
   background-color: darkcyan;
   opacity: 0.3;
+}
+main .se:after, main .se:before {
+  content: "";
+  display: table;
+}
+main .se:after {
+  clear: both;
 }
 main .se .sel {
   float: left;

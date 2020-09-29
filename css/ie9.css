@@ -1,10 +1,18 @@
 main {
+  *zoom: 1;
   top: 0px;
 }
+main:after, main:before {
+  content: "";
+  display: table;
+}
+main:after {
+  clear: both;
+}
 main .se {
-  left: 0;
+  position: relative;
+  float: left;
   top: 0;
-  transform: none;
   z-index: 1;
 }
 main .iebg {

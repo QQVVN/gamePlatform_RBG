@@ -408,6 +408,7 @@ main {
         animation-iteration-count: infinite;
     }
     .se {
+        @include clearfix;
         position: absolute;
         width: 100%;
         max-width: 1920px;
