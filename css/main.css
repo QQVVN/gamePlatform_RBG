@@ -475,45 +475,58 @@ main .mbg {
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-main .se {
+main .box {
+  position: relative;
+  width: 1300px;
+  height: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  main .box {
+    overflow: hidden;
+  }
+}
+main .box .se {
   *zoom: 1;
   position: absolute;
   width: 100%;
-  max-width: 1920px;
-  min-width: 1300px;
   height: 1050px;
   top: 137px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: darkcyan;
-  opacity: 0.3;
 }
-main .se:after, main .se:before {
+main .box .se:after, main .box .se:before {
   content: "";
   display: table;
 }
-main .se:after {
+main .box .se:after {
   clear: both;
 }
-main .se .sel {
-  float: left;
-  width: 26%;
+main .box .se .sel {
+  position: absolute;
+  width: 502px;
   height: 1050px;
+  left: -23.8%;
   background-color: darkmagenta;
   background: url(../images/SE_l_player.png) no-repeat top center;
-  background-size: 363px 741px;
+  background-size: 363px;
 }
-main .se .sem {
-  float: left;
-  width: 47%;
+main .box .se .sem {
+  position: absolute;
+  width: 905px;
   height: 1050px;
+  left: 14.5%;
   background-color: darkmagenta;
 }
-main .se .ser {
-  float: left;
-  width: 27%;
+main .box .se .ser {
+  position: absolute;
+  width: 518px;
   height: 1050px;
+  left: 84%;
+  top: -13px;
   background-color: darkmagenta;
+  background: url(../images/SE_r_player.png) no-repeat top center;
+  background-size: 518px;
 }
 main .iebg {
   display: none;

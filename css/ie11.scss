@@ -14,15 +14,17 @@
     main {
         @include clearfix;
         top: 0px;
-        .se {
-            position: relative;
-            float: left;
-            top: 0;
-            z-index: 1;
+        .box {
+            .se {
+                position: relative;
+                top: 0;
+                z-index: 1;
+            }
         }
         .iebg {
             display: block;
-            position: relative;
+            position: absolute;
+            width: 1920px;
             height: 1200px;
             background: url(../images/mbg.jpg) no-repeat top center;
             background-size: 1920px 1200px;
