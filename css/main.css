@@ -667,6 +667,11 @@ main .bo:hover, main .bo:active, main .bo.active {
   animation-name: navbg;
   animation-duration: 0.5s;
 }
+@supports (-webkit-touch-callout: none) {
+  main .bo {
+    left: 853px;
+  }
+}
 main .iebg {
   display: none;
 }
