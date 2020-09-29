@@ -39,7 +39,7 @@ a {
     width: 100%;
     height: 100%;
     pointer-events: all;
-    z-index: 100;
+    z-index: 10;
 }
 
 header {
@@ -289,7 +289,7 @@ header {
                 &.active {
                     color: #fff;
                     background: #c29540;
-                    background: linear-gradient(to top, #8d5d1c 0%, #c29540 49%, #f9e19e 100%);
+                    background: linear-gradient(to bottom, #8d5d1c 0%, #c29540 49%, #f9e19e 100%);
                 }
             }
         }
@@ -372,6 +372,7 @@ header {
                     padding: 14px 0 0 0;
                     background: url(../images/navLight.png) no-repeat top center;
                     background-size: 107px 61px;
+                    cursor: pointer;
                     p {
                         color: #ffeaab;
                         &:nth-of-type(2) {
