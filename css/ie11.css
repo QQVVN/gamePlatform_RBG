@@ -10,7 +10,7 @@
   main:after {
     clear: both;
   }
-  main .box .se {
+  main .mbox .mcont {
     position: relative;
     top: 0;
     z-index: 1;
