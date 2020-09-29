@@ -48,7 +48,7 @@ header {
     background: url(../images/headerbg.png) no-repeat top center;
     background-size: 1920px;
     margin: 0 auto;
-    // z-index: 2;
+    z-index: 5;
     article {
         position: relative;
         width: 1300px;
@@ -61,7 +61,7 @@ header {
             background: url(../images/headerlogo.png) no-repeat top center;
             background-size: 100%;
             top: 38px;
-            left: 45px;
+            left: 97px;
         }
         .hif {
             @include clearfix;
@@ -389,5 +389,57 @@ header {
                 }
             }
         }
+    }
+}
+
+main {
+    position: relative;
+    height: 1200px;
+    margin: 0 auto;
+    top: -137px;
+    .mbg {
+        position: absolute;
+        width: 100%;
+        height: 1200px;
+        background: url(../images/mbg.jpg) no-repeat top center;
+        background-size: 1920px 1200px;
+        animation: shakeY;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    .se {
+        position: absolute;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 1300px;
+        height: 1050px;
+        top: 137px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: darkcyan;
+        opacity: 0.3;
+        .sel {
+            float: left;
+            width: 26%;
+            height: 1050px;
+            background-color: darkmagenta;
+            background: url(../images/SE_l_player.png) no-repeat top center;
+            background-size: 363px 741px;
+        }
+        .sem {
+            float: left;
+            width: 47%;
+            height: 1050px;
+            background-color: darkmagenta;
+        }
+        .ser {
+            float: left;
+            width: 27%;
+            height: 1050px;
+            background-color: darkmagenta;
+        }
+    }
+    .iebg {
+        display: none;
     }
 }

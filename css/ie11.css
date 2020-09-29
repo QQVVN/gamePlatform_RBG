@@ -1,0 +1,24 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main {
+    top: 0px;
+  }
+  main .se {
+    left: 0;
+    top: 0;
+    transform: none;
+    z-index: 1;
+  }
+  main .iebg {
+    display: block;
+    position: relative;
+    height: 1200px;
+    background-color: #fff;
+    background: url(../images/mbg.jpg) no-repeat top center;
+    background-size: 1920px 1200px;
+    margin: 0 auto;
+    top: -137px;
+    animation: shakeY;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+}
