@@ -23,7 +23,7 @@ html {
     background: #060606;
     min-width: 1300px;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     @supports (-webkit-touch-callout: none) {
         position: absolute;
         transform: scale(0.8);
@@ -412,8 +412,8 @@ main {
         width: 1300px;
         height: 1200px;
         margin: 0 auto;
-        @media screen and (max-width:1024px) {
-            overflow: hidden;
+        @media screen and (max-width: 1024px) {
+            overflow-x: hidden;
         }
         .se {
             @include clearfix;
@@ -429,7 +429,6 @@ main {
                 width: 502px;
                 height: 1050px;
                 left: -23.8%;
-                background-color: darkmagenta;
                 background: url(../images/SE_l_player.png) no-repeat top center;
                 background-size: 363px;
             }
@@ -439,7 +438,33 @@ main {
                 width: 905px;
                 height: 1050px;
                 left: 14.5%;
-                background-color: darkmagenta;
+                .cp {
+                    position: relative;
+                    width: 517px;
+                    height: 517px;
+                    margin: 0 auto;
+                    top: -13.5%;
+                    background: url(../images/compass.png) no-repeat top center;
+                    background-size: 517px;
+                }
+                .po {
+                    position: relative;
+                    width: 517px;
+                    height: 517px;
+                    top: -13.5% - 49.15%;
+                    margin: 0 auto;
+                    background: url(../images/pointer.png) no-repeat top center;
+                    background-size: 517px;
+                }
+                .cpb {
+                    position: relative;
+                    width: 517px;
+                    height: 517px;
+                    margin: 0 auto;
+                    top: -13.5% - 49.15% - 49.21%;
+                    background: url(../images/compassBlack.png) no-repeat top center;
+                    background-size: 517px;
+                }
             }
             .ser {
                 position: absolute;

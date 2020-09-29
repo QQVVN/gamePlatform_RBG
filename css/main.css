@@ -64,7 +64,7 @@ html {
   background: #060606;
   min-width: 1300px;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 @supports (-webkit-touch-callout: none) {
   html {
@@ -483,7 +483,7 @@ main .box {
 }
 @media screen and (max-width: 1024px) {
   main .box {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 main .box .se {
@@ -507,7 +507,6 @@ main .box .se .sel {
   width: 502px;
   height: 1050px;
   left: -23.8%;
-  background-color: darkmagenta;
   background: url(../images/SE_l_player.png) no-repeat top center;
   background-size: 363px;
 }
@@ -516,7 +515,33 @@ main .box .se .sem {
   width: 905px;
   height: 1050px;
   left: 14.5%;
-  background-color: darkmagenta;
+}
+main .box .se .sem .cp {
+  position: relative;
+  width: 517px;
+  height: 517px;
+  margin: 0 auto;
+  top: -13.5%;
+  background: url(../images/compass.png) no-repeat top center;
+  background-size: 517px;
+}
+main .box .se .sem .po {
+  position: relative;
+  width: 517px;
+  height: 517px;
+  top: -62.65%;
+  margin: 0 auto;
+  background: url(../images/pointer.png) no-repeat top center;
+  background-size: 517px;
+}
+main .box .se .sem .cpb {
+  position: relative;
+  width: 517px;
+  height: 517px;
+  margin: 0 auto;
+  top: -111.86%;
+  background: url(../images/compassBlack.png) no-repeat top center;
+  background-size: 517px;
 }
 main .box .se .ser {
   position: absolute;
