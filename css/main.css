@@ -706,14 +706,14 @@ main .mbox .mcont .mcm .cpb.lt_bg {
 main .mbox .mcont .mcm .cpb.dg_bg {
   background: url(../images/cB_bg.png) no-repeat top center;
   background-size: 600%;
-  background-position: -2585px 0;
+  background-position: -2068px 0;
   animation-name: navbg5;
   animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.bo_bg {
   background: url(../images/cB_bg.png) no-repeat top center;
   background-size: 600%;
-  background-position: -2068px 0;
+  background-position: -2585px 0;
   animation-name: navbg6;
   animation-duration: 0.5s;
 }
