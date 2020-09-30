@@ -486,7 +486,31 @@ main {
                     margin: 0 auto;
                     background: url(../images/pointer.png) no-repeat top center;
                     background-size: 517px;
-                    transform: rotate(0deg);
+                    transform: rotate(90deg);
+                    &.se_deg {
+                        transform: rotate(90deg);
+                        transition-duration: 0.5s;
+                    }
+                    &.oc_deg {
+                        transform: rotate(51deg);
+                        transition-duration: 0.5s;
+                    }
+                    &.sg_deg {
+                        transform: rotate(0deg);
+                        transition-duration: 0.5s;
+                    }
+                    &.lt_deg {
+                        transform: rotate(-55deg);
+                        transition-duration: 0.5s;
+                    }
+                    &.dg_deg {
+                        transform: rotate(-90deg);
+                        transition-duration: 0.5s;
+                    }
+                    &.bo_deg {
+                        transform: rotate(-118deg);
+                        transition-duration: 0.5s;
+                    }
                 }
                 .cpb {
                     position: relative;
@@ -496,6 +520,23 @@ main {
                     top: -11.8% - 49.15% - 49.21%;
                     background: url(../images/compassBlack.png) no-repeat top center;
                     background-size: 517px;
+                    background-position: 0 0;
+                    &.se_bg {
+                        background: url(../images/cB_bg.png) no-repeat top center;
+                        background-size: 600%;
+                        background-position: 0 0;
+                        transition-duration: 0.5s;
+                        animation-name: navbg;
+                        animation-duration: 0.5s;
+                    }
+                    &.oc_bg {
+                        background: url(../images/cB_bg.png) no-repeat top center;
+                        background-size: 600%;
+                        background-position: -517px 0;
+                        transition-duration: 0.5s;
+                        animation-name: navbg;
+                        animation-duration: 0.5s;
+                    }
                 }
                 .cpnav {
                     position: relative;
@@ -560,26 +601,37 @@ main {
             }
         }
     }
-    .bo {
+    .bobox {
         z-index: 1;
-        cursor: pointer;
         position: absolute;
-        width: 288px;
-        height: 99px;
-        left: 1162px;
-        top: 81px;
-        background: url(../images/spNav.png) no-repeat top center;
-        background-size: 600%;
-        background-position: -288px * 5 0;
-        &:hover,
-        &:active,
-        &.active {
-            background-position-y: -99px;
-            animation-name: navbg;
-            animation-duration: 0.5s;
+        width: 1300px;
+        height: 108px;
+        top: 73px;
+        left: 50%;
+        transform: translate(-50%);
+        @media screen and (max-width: 1024px) {
+            overflow-x: hidden;
         }
-        @supports (-webkit-touch-callout: none) {
-            left: 1162px - 309px;
+        .bo {
+            cursor: pointer;
+            position: absolute;
+            width: 288px;
+            height: 99px;
+            left: 862px;
+            top: 10px;
+            background: url(../images/spNav.png) no-repeat top center;
+            background-size: 600%;
+            background-position: -288px * 5 0;
+            &:hover,
+            &:active,
+            &.active {
+                background-position-y: -99px;
+                animation-name: navbg;
+                animation-duration: 0.5s;
+            }
+            @supports (-webkit-touch-callout: none) {
+                left: 1162px - 309px;
+            }
         }
     }
     .iebg {

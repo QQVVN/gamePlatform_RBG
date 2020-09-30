@@ -569,7 +569,31 @@ main .mbox .mcont .mcm .po {
   margin: 0 auto;
   background: url(../images/pointer.png) no-repeat top center;
   background-size: 517px;
+  transform: rotate(90deg);
+}
+main .mbox .mcont .mcm .po.se_deg {
+  transform: rotate(90deg);
+  transition-duration: 0.5s;
+}
+main .mbox .mcont .mcm .po.oc_deg {
+  transform: rotate(51deg);
+  transition-duration: 0.5s;
+}
+main .mbox .mcont .mcm .po.sg_deg {
   transform: rotate(0deg);
+  transition-duration: 0.5s;
+}
+main .mbox .mcont .mcm .po.lt_deg {
+  transform: rotate(-55deg);
+  transition-duration: 0.5s;
+}
+main .mbox .mcont .mcm .po.dg_deg {
+  transform: rotate(-90deg);
+  transition-duration: 0.5s;
+}
+main .mbox .mcont .mcm .po.bo_deg {
+  transform: rotate(-118deg);
+  transition-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb {
   position: relative;
@@ -579,6 +603,23 @@ main .mbox .mcont .mcm .cpb {
   top: -110.16%;
   background: url(../images/compassBlack.png) no-repeat top center;
   background-size: 517px;
+  background-position: 0 0;
+}
+main .mbox .mcont .mcm .cpb.se_bg {
+  background: url(../images/cB_bg.png) no-repeat top center;
+  background-size: 600%;
+  background-position: 0 0;
+  transition-duration: 0.5s;
+  animation-name: navbg;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcm .cpb.oc_bg {
+  background: url(../images/cB_bg.png) no-repeat top center;
+  background-size: 600%;
+  background-position: -517px 0;
+  transition-duration: 0.5s;
+  animation-name: navbg;
+  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpnav {
   position: relative;
@@ -650,25 +691,38 @@ main .mbox .mcont .mcr {
   background: url(../images/SE_r_player.png) no-repeat top center;
   background-size: 518px;
 }
-main .bo {
+main .bobox {
   z-index: 1;
+  position: absolute;
+  width: 1300px;
+  height: 108px;
+  top: 73px;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media screen and (max-width: 1024px) {
+  main .bobox {
+    overflow-x: hidden;
+  }
+}
+main .bobox .bo {
   cursor: pointer;
   position: absolute;
   width: 288px;
   height: 99px;
-  left: 1162px;
-  top: 81px;
+  left: 862px;
+  top: 10px;
   background: url(../images/spNav.png) no-repeat top center;
   background-size: 600%;
   background-position: -1440px 0;
 }
-main .bo:hover, main .bo:active, main .bo.active {
+main .bobox .bo:hover, main .bobox .bo:active, main .bobox .bo.active {
   background-position-y: -99px;
   animation-name: navbg;
   animation-duration: 0.5s;
 }
 @supports (-webkit-touch-callout: none) {
-  main .bo {
+  main .bobox .bo {
     left: 853px;
   }
 }

@@ -18,9 +18,13 @@ main .mbox .mcont {
   top: 0;
   z-index: 1;
 }
-main .bo {
+main .bobox {
   z-index: 3;
-  top: -55px;
+  position: relative;
+  width: 1300px;
+  height: 108px;
+  margin: -1325px 0 0 0;
+  background-color: transparent;
 }
 main .iebg {
   display: block;
