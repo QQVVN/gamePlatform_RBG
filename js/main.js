@@ -45,22 +45,29 @@ $(function () {
     var navB = ["se_bg", "oc_bg", "sg_bg", "lt_bg", "dg_bg", "bo_bg"];
     var navBoffC = "se_bg oc_bg sg_bg lt_bg dg_bg bo_bg";
 
-
-
     $(cpNavB[0]).on("click mouseenter", function () {
         $(".mcm .po").removeClass(cpOffC);
         $(".mcm .po").addClass(navDeg[0]);
 
         $(".mcm .cpb").removeClass(navBoffC);
         $(".mcm .cpb").addClass(navB[0]);
+
+        $(".mcl").removeClass("loc lsg llt ldg lbo");
+        $(".mcr").removeClass("roc rsg rlt rdg rbo");
     });
 
     $(cpNavB[1]).on("click mouseenter", function () {
         $(".mcm .po").removeClass(cpOffC);
         $(".mcm .po").addClass(navDeg[1]);
-        
+
         $(".mcm .cpb").removeClass(navBoffC);
         $(".mcm .cpb").addClass(navB[1]);
+
+        $(".mcl").removeClass("loc lsg llt ldg lbo");
+        $(".mcl").addClass("loc");
+
+        $(".mcr").removeClass("roc rsg rlt rdg rbo");
+        $(".mcr").addClass("roc");
     });
 
     $(cpNavB[2]).on("click mouseenter", function () {
@@ -69,6 +76,12 @@ $(function () {
 
         $(".mcm .cpb").removeClass(navBoffC);
         $(".mcm .cpb").addClass(navB[2]);
+
+        $(".mcl").removeClass("loc lsg llt ldg lbo");
+        $(".mcl").addClass("lsg");
+
+        $(".mcr").removeClass("roc rsg rlt rdg rbo");
+        $(".mcr").addClass("rsg");
     });
 
     $(cpNavB[3]).on("click mouseenter", function () {
@@ -77,6 +90,12 @@ $(function () {
 
         $(".mcm .cpb").removeClass(navBoffC);
         $(".mcm .cpb").addClass(navB[3]);
+
+        $(".mcl").removeClass("loc lsg llt ldg lbo");
+        $(".mcl").addClass("llt");
+
+        $(".mcr").removeClass("roc rsg rlt rdg rbo");
+        $(".mcr").addClass("rlt");
     });
 
     $(cpNavB[4]).on("click mouseenter", function () {
@@ -85,6 +104,12 @@ $(function () {
 
         $(".mcm .cpb").removeClass(navBoffC);
         $(".mcm .cpb").addClass(navB[4]);
+
+        $(".mcl").removeClass("loc lsg llt ldg lbo");
+        $(".mcl").addClass("ldg");
+
+        $(".mcr").removeClass("roc rsg rlt rdg rbo");
+        $(".mcr").addClass("rdg");
     });
 
     $(cpNavB[5]).on("click mouseenter", function () {
@@ -93,6 +118,12 @@ $(function () {
 
         $(".mcm .cpb").removeClass(navBoffC);
         $(".mcm .cpb").addClass(navB[5]);
+
+        $(".mcl").removeClass("loc lsg llt ldg lbo");
+        $(".mcl").addClass("lbo");
+
+        $(".mcr").removeClass("roc rsg rlt rdg rbo");
+        $(".mcr").addClass("rbo");
     });
 
 

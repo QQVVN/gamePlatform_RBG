@@ -497,10 +497,25 @@ header article .lang .select p {
   cursor: pointer;
 }
 header article .lang .select ul {
+  scrollbar-width: thin;
+  scrollbar-color: #8b8b8b #ffffff;
   position: absolute;
   width: 122px;
+  height: 64px;
   top: 32px;
   border-radius: 0 0 3px 3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+header article .lang .select ul::-webkit-scrollbar {
+  width: 8px;
+}
+header article .lang .select ul::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+header article .lang .select ul::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b;
+  border: 2px solid #ffffff;
 }
 header article .lang .select ul.none {
   display: none;
@@ -615,6 +630,35 @@ main .mbox .mcont .mcl {
   left: -23.8%;
   background: url(../images/SE_l_player.png) no-repeat top center;
   background-size: 363px;
+  animation-name: navbg1;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcl.loc {
+  background: url(../images/SE_l_player2.png) no-repeat top center;
+  animation-name: navbg2;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcl.lsg {
+  background: url(../images/SE_l_player3.png) no-repeat top center;
+  left: -22.8%;
+  animation-name: navbg3;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcl.llt {
+  background: url(../images/SE_l_player4.png) no-repeat top center;
+  animation-name: navbg4;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcl.ldg {
+  background: url(../images/SE_l_player5.png) no-repeat top center;
+  left: -20.8%;
+  animation-name: navbg5;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcl.lbo {
+  background: url(../images/SE_l_player6.png) no-repeat top center;
+  animation-name: navbg6;
+  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm {
   position: absolute;
@@ -641,29 +685,26 @@ main .mbox .mcont .mcm .po {
   background-size: 517px;
   transform: rotate(90deg);
 }
+main .mbox .mcont .mcm .po.se_deg, main .mbox .mcont .mcm .po.oc_deg, main .mbox .mcont .mcm .po.sg_deg, main .mbox .mcont .mcm .po.lt_deg, main .mbox .mcont .mcm .po.dg_deg, main .mbox .mcont .mcm .po.bo_deg {
+  transition-duration: 0.5s;
+}
 main .mbox .mcont .mcm .po.se_deg {
   transform: rotate(90deg);
-  transition-duration: 0.5s;
 }
 main .mbox .mcont .mcm .po.oc_deg {
   transform: rotate(51deg);
-  transition-duration: 0.5s;
 }
 main .mbox .mcont .mcm .po.sg_deg {
   transform: rotate(0deg);
-  transition-duration: 0.5s;
 }
 main .mbox .mcont .mcm .po.lt_deg {
   transform: rotate(-55deg);
-  transition-duration: 0.5s;
 }
 main .mbox .mcont .mcm .po.dg_deg {
   transform: rotate(-90deg);
-  transition-duration: 0.5s;
 }
 main .mbox .mcont .mcm .po.bo_deg {
   transform: rotate(-118deg);
-  transition-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb {
   position: relative;
@@ -675,52 +716,39 @@ main .mbox .mcont .mcm .cpb {
   background-size: 517px;
   background-position: 0 0;
 }
-main .mbox .mcont .mcm .cpb.se_bg {
+main .mbox .mcont .mcm .cpb.se_bg, main .mbox .mcont .mcm .cpb.oc_bg, main .mbox .mcont .mcm .cpb.sg_bg, main .mbox .mcont .mcm .cpb.lt_bg, main .mbox .mcont .mcm .cpb.dg_bg, main .mbox .mcont .mcm .cpb.bo_bg {
   background: url(../images/cB_bg.png) no-repeat top center;
   background-size: 600%;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcm .cpb.se_bg {
   background-position: 0 0;
   animation-name: navbg1;
-  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.oc_bg {
-  background: url(../images/cB_bg.png) no-repeat top center;
-  background-size: 600%;
   background-position: -517px 0;
   animation-name: navbg2;
-  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.sg_bg {
-  background: url(../images/cB_bg.png) no-repeat top center;
-  background-size: 600%;
   background-position: -1034px 0;
   animation-name: navbg3;
-  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.lt_bg {
-  background: url(../images/cB_bg.png) no-repeat top center;
-  background-size: 600%;
   background-position: -1551px 0;
   animation-name: navbg4;
-  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.dg_bg {
-  background: url(../images/cB_bg.png) no-repeat top center;
-  background-size: 600%;
   background-position: -2068px 0;
   animation-name: navbg5;
-  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.bo_bg {
-  background: url(../images/cB_bg.png) no-repeat top center;
-  background-size: 600%;
   background-position: -2585px 0;
   animation-name: navbg6;
-  animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpnav {
   position: relative;
   width: 905px;
-  height: 1050px;
+  height: 575px;
   top: -154%;
 }
 main .mbox .mcont .mcm .cpnav .se,
@@ -786,6 +814,40 @@ main .mbox .mcont .mcr {
   background-color: darkmagenta;
   background: url(../images/SE_r_player.png) no-repeat top center;
   background-size: 518px;
+  animation-name: navbg1;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcr.roc {
+  background: url(../images/SE_r_player2.png) no-repeat top center;
+  animation-name: navbg2;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcr.rsg {
+  background: url(../images/SE_r_player3.png) no-repeat top center;
+  width: 861px;
+  left: 58.5%;
+  background-size: 861px;
+  animation-name: navbg3;
+  animation-duration: 0.5s;
+  z-index: -1;
+}
+main .mbox .mcont .mcr.rlt {
+  background: url(../images/SE_r_player4.png) no-repeat top center;
+  animation-name: navbg4;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcr.rdg {
+  background: url(../images/SE_r_player5.png) no-repeat top center;
+  left: 83%;
+  top: -23px;
+  animation-name: navbg5;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcr.rbo {
+  background: url(../images/SE_r_player6.png) no-repeat top center;
+  left: 89%;
+  animation-name: navbg6;
+  animation-duration: 0.5s;
 }
 main .bobox {
   z-index: 1;
