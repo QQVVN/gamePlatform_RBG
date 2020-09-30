@@ -59,7 +59,77 @@ input {
   padding: 0;
 }
 
-@keyframes navbg {
+@keyframes navbg1 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes navbg2 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes navbg3 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes navbg4 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes navbg5 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes navbg6 {
   0% {
     transform: scale(1);
   }
@@ -609,16 +679,42 @@ main .mbox .mcont .mcm .cpb.se_bg {
   background: url(../images/cB_bg.png) no-repeat top center;
   background-size: 600%;
   background-position: 0 0;
-  transition-duration: 0.5s;
-  animation-name: navbg;
+  animation-name: navbg1;
   animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.oc_bg {
   background: url(../images/cB_bg.png) no-repeat top center;
   background-size: 600%;
   background-position: -517px 0;
-  transition-duration: 0.5s;
-  animation-name: navbg;
+  animation-name: navbg2;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcm .cpb.sg_bg {
+  background: url(../images/cB_bg.png) no-repeat top center;
+  background-size: 600%;
+  background-position: -1034px 0;
+  animation-name: navbg3;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcm .cpb.lt_bg {
+  background: url(../images/cB_bg.png) no-repeat top center;
+  background-size: 600%;
+  background-position: -1551px 0;
+  animation-name: navbg4;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcm .cpb.dg_bg {
+  background: url(../images/cB_bg.png) no-repeat top center;
+  background-size: 600%;
+  background-position: -2585px 0;
+  animation-name: navbg5;
+  animation-duration: 0.5s;
+}
+main .mbox .mcont .mcm .cpb.bo_bg {
+  background: url(../images/cB_bg.png) no-repeat top center;
+  background-size: 600%;
+  background-position: -2068px 0;
+  animation-name: navbg6;
   animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpnav {
@@ -653,7 +749,7 @@ main .mbox .mcont .mcm .cpnav .dg:hover,
 main .mbox .mcont .mcm .cpnav .dg:active,
 main .mbox .mcont .mcm .cpnav .dg.active {
   background-position-y: -99px;
-  animation-name: navbg;
+  animation-name: navbg1;
   animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm .cpnav .se {
@@ -718,7 +814,7 @@ main .bobox .bo {
 }
 main .bobox .bo:hover, main .bobox .bo:active, main .bobox .bo.active {
   background-position-y: -99px;
-  animation-name: navbg;
+  animation-name: navbg1;
   animation-duration: 0.5s;
 }
 @supports (-webkit-touch-callout: none) {

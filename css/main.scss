@@ -18,20 +18,23 @@
     }
 }
 
-@keyframes navbg {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(1.1);
-    }
-    50% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
+@for $var from 1 through 6 {
+    @keyframes navbg#{$var} {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.1);
+        }
+        50% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 }
+
 
 html {
     font-family: Microsoft JhengHei;
@@ -525,16 +528,42 @@ main {
                         background: url(../images/cB_bg.png) no-repeat top center;
                         background-size: 600%;
                         background-position: 0 0;
-                        transition-duration: 0.5s;
-                        animation-name: navbg;
+                        animation-name: navbg1;
                         animation-duration: 0.5s;
                     }
                     &.oc_bg {
                         background: url(../images/cB_bg.png) no-repeat top center;
                         background-size: 600%;
                         background-position: -517px 0;
-                        transition-duration: 0.5s;
-                        animation-name: navbg;
+                        animation-name: navbg2;
+                        animation-duration: 0.5s;
+                    }
+                    &.sg_bg {
+                        background: url(../images/cB_bg.png) no-repeat top center;
+                        background-size: 600%;
+                        background-position: -517px*2 0;
+                        animation-name: navbg3;
+                        animation-duration: 0.5s;
+                    }
+                    &.lt_bg {
+                        background: url(../images/cB_bg.png) no-repeat top center;
+                        background-size: 600%;
+                        background-position: -517px*3 0;
+                        animation-name: navbg4;
+                        animation-duration: 0.5s;
+                    }
+                    &.dg_bg {
+                        background: url(../images/cB_bg.png) no-repeat top center;
+                        background-size: 600%;
+                        background-position: -517px*5 0;
+                        animation-name: navbg5;
+                        animation-duration: 0.5s;
+                    }
+                    &.bo_bg {
+                        background: url(../images/cB_bg.png) no-repeat top center;
+                        background-size: 600%;
+                        background-position: -517px*4 0;
+                        animation-name: navbg6;
                         animation-duration: 0.5s;
                     }
                 }
@@ -558,7 +587,7 @@ main {
                         &:active,
                         &.active {
                             background-position-y: -99px;
-                            animation-name: navbg;
+                            animation-name: navbg1;
                             animation-duration: 0.5s;
                         }
                     }
@@ -626,7 +655,7 @@ main {
             &:active,
             &.active {
                 background-position-y: -99px;
-                animation-name: navbg;
+                animation-name: navbg1;
                 animation-duration: 0.5s;
             }
             @supports (-webkit-touch-callout: none) {
