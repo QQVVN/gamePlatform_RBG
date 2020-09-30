@@ -560,7 +560,7 @@ header article nav ul li p:nth-of-type(2) {
 header article nav ul li:active, header article nav ul li:hover, header article nav ul li.active {
   background: url(../images/navHover.png) no-repeat top center;
   background-size: 107px 61px;
-  animation-name: navbg;
+  animation-name: navbg1;
   animation-duration: 0.5s;
 }
 
