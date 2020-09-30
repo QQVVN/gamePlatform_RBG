@@ -887,3 +887,19 @@ main .bobox .bo:hover, main .bobox .bo:active, main .bobox .bo.active {
 main .iebg {
   display: none;
 }
+main .wbg {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 625px;
+  height: 737px;
+}
+main .wbg .wbgl {
+  position: absolute;
+  width: 745px;
+  height: 732px;
+  top: 0px;
+  background: url(../images/wave_l.png) no-repeat top center;
+  background-size: 745px 732px;
+}
