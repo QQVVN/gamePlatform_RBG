@@ -35,6 +35,16 @@
     }
 }
 
+@keyframes marqee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 html {
     font-family: Microsoft JhengHei;
     background: #060606;
@@ -591,31 +601,31 @@ main {
                     &.bo_bg {
                         background: url(../images/cB_bg.png) no-repeat top center;
                         background-size: 600%;
-                        animation-duration: 0.5s;
+                        animation: 0.5s;
                     }
                     &.se_bg {
                         background-position: 0 0;
-                        animation-name: navbg1;
+                        animation: navbg1;
                     }
                     &.oc_bg {
                         background-position: -517px 0;
-                        animation-name: navbg2;
+                        animation: navbg2;
                     }
                     &.sg_bg {
                         background-position: -517px * 2 0;
-                        animation-name: navbg3;
+                        animation: navbg3;
                     }
                     &.lt_bg {
                         background-position: -517px * 3 0;
-                        animation-name: navbg4;
+                        animation: navbg4;
                     }
                     &.dg_bg {
                         background-position: -517px * 4 0;
-                        animation-name: navbg5;
+                        animation: navbg5;
                     }
                     &.bo_bg {
                         background-position: -517px * 5 0;
-                        animation-name: navbg6;
+                        animation: navbg6;
                     }
                 }
             }
@@ -629,39 +639,33 @@ main {
                 background-color: darkmagenta;
                 background: url(../images/SE_r_player.png) no-repeat top center;
                 background-size: 518px;
-                animation-name: navbg1;
-                animation-duration: 0.5s;
+                animation: navbg1 0.5s;
                 &.roc {
                     background: url(../images/SE_r_player2.png) no-repeat top center;
-                    animation-name: navbg2;
-                    animation-duration: 0.5s;
+                    animation: navbg2 0.5s;
                 }
                 &.rsg {
                     background: url(../images/SE_r_player3.png) no-repeat top center;
                     width: 861px;
                     left: 58.5%;
                     background-size: 861px;
-                    animation-name: navbg3;
-                    animation-duration: 0.5s;
+                    animation: navbg3 0.5s;
                     z-index: -1;
                 }
                 &.rlt {
                     background: url(../images/SE_r_player4.png) no-repeat top center;
-                    animation-name: navbg4;
-                    animation-duration: 0.5s;
+                    animation: navbg4 0.5s;
                 }
                 &.rdg {
                     background: url(../images/SE_r_player5.png) no-repeat top center;
                     left: 83%;
                     top: -23px;
-                    animation-name: navbg5;
-                    animation-duration: 0.5s;
+                    animation: navbg5 0.5s;
                 }
                 &.rbo {
                     background: url(../images/SE_r_player6.png) no-repeat top center;
                     left: 89%;
-                    animation-name: navbg6;
-                    animation-duration: 0.5s;
+                    animation: navbg6 0.5s;
                 }
             }
         }
@@ -693,8 +697,7 @@ main {
             &:active,
             &.active {
                 background-position-y: -99px;
-                animation-name: navbg1;
-                animation-duration: 0.5s;
+                animation: navbg1 0.5s;
             }
             @supports (-webkit-touch-callout: none) {
                 left: 1162px - 309px;
@@ -760,13 +763,14 @@ main {
         .hg {
             float: left;
             width: 390px;
-            height: 527px;
+            height: 544px;
+            margin: -13px 10px 0 0;
             background: url(../images/hotgamebg.png) no-repeat top center;
-            background-size: 390px 527px;
+            background-size: 390px 544px;
             ul {
                 width: 312px;
                 height: 400px;
-                margin: 83px auto 0;
+                margin: 102px auto 0;
                 li {
                     width: 312px;
                     height: 100px;
@@ -799,8 +803,7 @@ main {
                         &:hover,
                         &:active,
                         &.active {
-                            animation-name: navbg1;
-                            animation-duration: 0.5s;
+                            animation: navbg1 0.5s;
                         }
                     }
                     .text {
@@ -831,8 +834,7 @@ main {
                         &:active,
                         &.active {
                             background-position: 0 -24px;
-                            animation-name: navbg1;
-                            animation-duration: 0.5s;
+                            animation: navbg1 0.5s;
                         }
                     }
                 }
@@ -840,9 +842,44 @@ main {
         }
         .wcr {
             float: left;
-            width: 1300px - 390px;
+            width: 865px;
             height: 596px;
-            background-color: aquamarine;
+            .news {
+                width: 835px;
+                height: 52px;
+                margin: 15px 0 26px 28px;
+                border-radius: 25px;
+                background-color: rgba(84, 84, 87, 0.6);
+                @include clearfix;
+                .spr {
+                    float: left;
+                    position: relative;
+                    top: -4px;
+                    left: -7px;
+                    width: 86px;
+                    height: 68px;
+                    background: url(../images/speaker.png);
+                    background-size: 86px 68px;
+                }
+                .nt {
+                    width: 749px;
+                    overflow-x: hidden;
+                    p {
+                        font-size: 16px;
+                        color: #ffffff;
+                        line-height: 52px;
+                        animation: marqee 15s linear infinite;
+                        &:hover {
+                            animation-play-state: paused;
+                        }
+                    }
+                }
+            }
+            .bnr {
+                width: 860px;
+                height: 422px;
+                background-color: darkorange;
+            }
         }
     }
 }

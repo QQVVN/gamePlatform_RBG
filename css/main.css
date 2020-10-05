@@ -143,6 +143,14 @@ input {
     transform: scale(1);
   }
 }
+@keyframes marqee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 html {
   font-family: Microsoft JhengHei;
   background: #060606;
@@ -733,31 +741,31 @@ main .mbox .mcont .mcm .cpb {
 main .mbox .mcont .mcm .cpb.se_bg, main .mbox .mcont .mcm .cpb.oc_bg, main .mbox .mcont .mcm .cpb.sg_bg, main .mbox .mcont .mcm .cpb.lt_bg, main .mbox .mcont .mcm .cpb.dg_bg, main .mbox .mcont .mcm .cpb.bo_bg {
   background: url(../images/cB_bg.png) no-repeat top center;
   background-size: 600%;
-  animation-duration: 0.5s;
+  animation: 0.5s;
 }
 main .mbox .mcont .mcm .cpb.se_bg {
   background-position: 0 0;
-  animation-name: navbg1;
+  animation: navbg1;
 }
 main .mbox .mcont .mcm .cpb.oc_bg {
   background-position: -517px 0;
-  animation-name: navbg2;
+  animation: navbg2;
 }
 main .mbox .mcont .mcm .cpb.sg_bg {
   background-position: -1034px 0;
-  animation-name: navbg3;
+  animation: navbg3;
 }
 main .mbox .mcont .mcm .cpb.lt_bg {
   background-position: -1551px 0;
-  animation-name: navbg4;
+  animation: navbg4;
 }
 main .mbox .mcont .mcm .cpb.dg_bg {
   background-position: -2068px 0;
-  animation-name: navbg5;
+  animation: navbg5;
 }
 main .mbox .mcont .mcm .cpb.bo_bg {
   background-position: -2585px 0;
-  animation-name: navbg6;
+  animation: navbg6;
 }
 main .mbox .mcont .mcr {
   z-index: 2;
@@ -769,40 +777,34 @@ main .mbox .mcont .mcr {
   background-color: darkmagenta;
   background: url(../images/SE_r_player.png) no-repeat top center;
   background-size: 518px;
-  animation-name: navbg1;
-  animation-duration: 0.5s;
+  animation: navbg1 0.5s;
 }
 main .mbox .mcont .mcr.roc {
   background: url(../images/SE_r_player2.png) no-repeat top center;
-  animation-name: navbg2;
-  animation-duration: 0.5s;
+  animation: navbg2 0.5s;
 }
 main .mbox .mcont .mcr.rsg {
   background: url(../images/SE_r_player3.png) no-repeat top center;
   width: 861px;
   left: 58.5%;
   background-size: 861px;
-  animation-name: navbg3;
-  animation-duration: 0.5s;
+  animation: navbg3 0.5s;
   z-index: -1;
 }
 main .mbox .mcont .mcr.rlt {
   background: url(../images/SE_r_player4.png) no-repeat top center;
-  animation-name: navbg4;
-  animation-duration: 0.5s;
+  animation: navbg4 0.5s;
 }
 main .mbox .mcont .mcr.rdg {
   background: url(../images/SE_r_player5.png) no-repeat top center;
   left: 83%;
   top: -23px;
-  animation-name: navbg5;
-  animation-duration: 0.5s;
+  animation: navbg5 0.5s;
 }
 main .mbox .mcont .mcr.rbo {
   background: url(../images/SE_r_player6.png) no-repeat top center;
   left: 89%;
-  animation-name: navbg6;
-  animation-duration: 0.5s;
+  animation: navbg6 0.5s;
 }
 main .cmnbox {
   z-index: 5;
@@ -848,8 +850,7 @@ main .cmnbox .bo:hover,
 main .cmnbox .bo:active,
 main .cmnbox .bo.active {
   background-position-y: -99px;
-  animation-name: navbg1;
-  animation-duration: 0.5s;
+  animation: navbg1 0.5s;
 }
 @supports (-webkit-touch-callout: none) {
   main .cmnbox .se,
@@ -930,14 +931,15 @@ main .wcon:after {
 main .wcon .hg {
   float: left;
   width: 390px;
-  height: 527px;
+  height: 544px;
+  margin: -13px 10px 0 0;
   background: url(../images/hotgamebg.png) no-repeat top center;
-  background-size: 390px 527px;
+  background-size: 390px 544px;
 }
 main .wcon .hg ul {
   width: 312px;
   height: 400px;
-  margin: 83px auto 0;
+  margin: 102px auto 0;
 }
 main .wcon .hg ul li {
   width: 312px;
@@ -978,8 +980,7 @@ main .wcon .hg ul li .icon.no4 {
   background-position: -210px 0;
 }
 main .wcon .hg ul li .icon:hover, main .wcon .hg ul li .icon:active, main .wcon .hg ul li .icon.active {
-  animation-name: navbg1;
-  animation-duration: 0.5s;
+  animation: navbg1 0.5s;
 }
 main .wcon .hg ul li .text {
   width: 170px;
@@ -1008,12 +1009,53 @@ main .wcon .hg ul li .like {
 }
 main .wcon .hg ul li .like:hover, main .wcon .hg ul li .like:active, main .wcon .hg ul li .like.active {
   background-position: 0 -24px;
-  animation-name: navbg1;
-  animation-duration: 0.5s;
+  animation: navbg1 0.5s;
 }
 main .wcon .wcr {
   float: left;
-  width: 910px;
+  width: 865px;
   height: 596px;
-  background-color: aquamarine;
+}
+main .wcon .wcr .news {
+  width: 835px;
+  height: 52px;
+  margin: 15px 0 26px 28px;
+  border-radius: 25px;
+  background-color: rgba(84, 84, 87, 0.6);
+  *zoom: 1;
+}
+main .wcon .wcr .news:after, main .wcon .wcr .news:before {
+  content: "";
+  display: table;
+}
+main .wcon .wcr .news:after {
+  clear: both;
+}
+main .wcon .wcr .news .spr {
+  float: left;
+  position: relative;
+  top: -4px;
+  left: -7px;
+  width: 86px;
+  height: 68px;
+  background: url(../images/speaker.png);
+  background-size: 86px 68px;
+}
+main .wcon .wcr .news .nt {
+  width: 749px;
+  overflow-x: hidden;
+}
+main .wcon .wcr .news .nt p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 52px;
+  animation: marqee 15s linear infinite;
+}
+main .wcon .wcr .news .nt p:hover {
+  animation-play-state: paused;
+}
+main .wcon .wcr .bnr {
+  width: 860px;
+  height: 422px;
+  background-color: darkorange;
 }
