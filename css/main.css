@@ -1046,16 +1046,105 @@ main .wcon .wcr .news .nt {
   overflow-x: hidden;
 }
 main .wcon .wcr .news .nt p {
+  position: relative;
   font-size: 16px;
   color: #ffffff;
   line-height: 52px;
   animation: marqee 15s linear infinite;
 }
 main .wcon .wcr .news .nt p:hover {
+  cursor: pointer;
   animation-play-state: paused;
 }
 main .wcon .wcr .bnr {
+  position: relative;
   width: 860px;
   height: 422px;
-  background-color: darkorange;
+}
+main .wcon .wcr .bnr ul {
+  position: relative;
+  width: 830px;
+  height: 422px;
+  margin: 0 0 0 30px;
+  overflow-x: hidden;
+}
+main .wcon .wcr .bnr ul li {
+  position: absolute;
+  width: 830px;
+  height: 422px;
+  left: 0px;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(2) {
+  left: 830px;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(2) .img {
+  background-position: -830px 0;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(3) {
+  left: 1660px;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(3) .img {
+  background-position: -1660px 0;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(4) {
+  left: 2490px;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(4) .img {
+  background-position: -2490px 0;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(5) {
+  left: 3320px;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(5) .img {
+  background-position: -3320px 0;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(6) {
+  left: 4150px;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(6) .img {
+  background-position: -4150px 0;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(7) {
+  left: 4980px;
+}
+main .wcon .wcr .bnr ul li:nth-of-type(7) .img {
+  background-position: -4980px 0;
+}
+main .wcon .wcr .bnr ul li .img {
+  width: 830px;
+  height: 422px;
+  background: url(../images/bannerImg.png);
+  background-size: 5810px 422px;
+  background-position: 0 0;
+}
+main .wcon .wcr .bnr ul li .imgB {
+  position: absolute;
+  width: 224px;
+  height: 50px;
+  top: 325px;
+  left: 176px;
+  background: url(../images/bannerB.png);
+  background-size: 224px 100px;
+  background-position: 0 0;
+}
+main .wcon .wcr .bnr ul li .imgB:hover, main .wcon .wcr .bnr ul li .imgB:active, main .wcon .wcr .bnr ul li .imgB.active {
+  cursor: pointer;
+  background-position: 0 -50px;
+}
+main .wcon .wcr .bnr .lar,
+main .wcon .wcr .bnr .rar {
+  cursor: pointer;
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  top: 188px;
+  background: url(../images/arrow.png);
+  background-size: 47px;
+}
+main .wcon .wcr .bnr .lar {
+  left: 8px;
+}
+main .wcon .wcr .bnr .rar {
+  left: 836px;
+  transform: rotate(180deg);
 }

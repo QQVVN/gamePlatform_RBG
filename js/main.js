@@ -125,5 +125,13 @@ $(function () {
         $(".mcr").removeClass("roc rsg rlt rdg rbo");
         $(".mcr").addClass("rbo");
     });
-    
+
+    // banner arrow
+    $(".wcr .bnr .lar").click(function (e) {
+        e.preventDefault();
+        $(".wcr .bnr ul li").css("left", function (index, value) {
+            return parseFloat(value) - 830;
+        });
+    });
+
 });

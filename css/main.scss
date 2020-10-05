@@ -865,20 +865,111 @@ main {
                     width: 749px;
                     overflow-x: hidden;
                     p {
+                        position: relative;
                         font-size: 16px;
                         color: #ffffff;
                         line-height: 52px;
                         animation: marqee 15s linear infinite;
                         &:hover {
+                            cursor: pointer;
                             animation-play-state: paused;
                         }
                     }
                 }
             }
             .bnr {
+                position: relative;
                 width: 860px;
                 height: 422px;
-                background-color: darkorange;
+                ul {
+                    position: relative;
+                    width: 830px;
+                    height: 422px;
+                    margin: 0 0 0 30px;
+                    overflow-x: hidden;
+                    li {
+                        position: absolute;
+                        width: 830px;
+                        height: 422px;
+                        left: 0px;
+                        &:nth-of-type(2) {
+                            left: 830px;
+                            .img {
+                                background-position: -830px 0;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            left: 830px * 2;
+                            .img {
+                                background-position: -830px * 2 0;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            left: 830px * 3;
+                            .img {
+                                background-position: -830px * 3 0;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            left: 830px * 4;
+                            .img {
+                                background-position: -830px * 4 0;
+                            }
+                        }
+                        &:nth-of-type(6) {
+                            left: 830px * 5;
+                            .img {
+                                background-position: -830px * 5 0;
+                            }
+                        }
+                        &:nth-of-type(7) {
+                            left: 830px * 6;
+                            .img {
+                                background-position: -830px * 6 0;
+                            }
+                        }
+                        .img {
+                            width: 830px;
+                            height: 422px;
+                            background: url(../images/bannerImg.png);
+                            background-size: 5810px 422px;
+                            background-position: 0 0;
+                        }
+                        .imgB {
+                            position: absolute;
+                            width: 224px;
+                            height: 50px;
+                            top: 325px;
+                            left: 176px;
+                            background: url(../images/bannerB.png);
+                            background-size: 224px 100px;
+                            background-position: 0 0;
+                            &:hover,
+                            &:active,
+                            &.active {
+                                cursor: pointer;
+                                background-position: 0 -50px;
+                            }
+                        }
+                    }
+                }
+                .lar,
+                .rar {
+                    cursor: pointer;
+                    position: absolute;
+                    width: 47px;
+                    height: 47px;
+                    top: 188px;
+                    background: url(../images/arrow.png);
+                    background-size: 47px;
+                }
+                .lar {
+                    left: 8px;
+                }
+                .rar {
+                    left: 836px;
+                    transform: rotate(180deg);
+                }
             }
         }
     }
