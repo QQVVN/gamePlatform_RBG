@@ -38,7 +38,7 @@ $(function () {
     });
 
     // compass pointer
-    var cpNavB = [".cpnav .se", ".cpnav .oc", ".cpnav .sg", ".cpnav .lt", ".cpnav .dg", ".bobox .bo"];
+    var cpNavB = [".cmnbox .se", ".cmnbox .oc", ".cmnbox .sg", ".cmnbox .lt", ".cmnbox .dg", ".cmnbox .bo"];
     var navDeg = ["se_deg", "oc_deg", "sg_deg", "lt_deg", "dg_deg", "bo_deg"];
     var cpOffC = "se_deg oc_deg sg_deg lt_deg dg_deg bo_deg";
 
@@ -125,6 +125,5 @@ $(function () {
         $(".mcr").removeClass("roc rsg rlt rdg rbo");
         $(".mcr").addClass("rbo");
     });
-
-
+    
 });

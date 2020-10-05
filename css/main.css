@@ -175,7 +175,7 @@ header {
   background: url(../images/headerbg.png) no-repeat top center;
   background-size: 1920px;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 5;
 }
 header article {
   position: relative;
@@ -585,8 +585,20 @@ main {
   margin: 0 auto;
   top: -137px;
 }
-main .mbg {
-  position: absolute;
+main .mbgbox {
+  z-index: -1;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1200px;
+}
+@media screen and (max-width: 1024px) {
+  main .mbgbox {
+    overflow-x: hidden;
+  }
+}
+main .mbgbox .mbg {
   width: 100%;
   height: 1200px;
   background: url(../images/mbg.jpg) no-repeat top center;
@@ -594,13 +606,13 @@ main .mbg {
   animation: shakeY;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  z-index: -1;
 }
 main .mbox {
   position: relative;
   width: 1300px;
   height: 1200px;
   margin: 0 auto;
+  top: -1200px;
 }
 @media screen and (max-width: 1024px) {
   main .mbox {
@@ -624,6 +636,7 @@ main .mbox .mcont:after {
   clear: both;
 }
 main .mbox .mcont .mcl {
+  z-index: 2;
   position: absolute;
   width: 502px;
   height: 1050px;
@@ -661,6 +674,7 @@ main .mbox .mcont .mcl.lbo {
   animation-duration: 0.5s;
 }
 main .mbox .mcont .mcm {
+  z-index: 4;
   position: absolute;
   width: 905px;
   height: 1050px;
@@ -745,67 +759,8 @@ main .mbox .mcont .mcm .cpb.bo_bg {
   background-position: -2585px 0;
   animation-name: navbg6;
 }
-main .mbox .mcont .mcm .cpnav {
-  position: relative;
-  width: 905px;
-  height: 575px;
-  top: -154%;
-}
-main .mbox .mcont .mcm .cpnav .se,
-main .mbox .mcont .mcm .cpnav .oc,
-main .mbox .mcont .mcm .cpnav .sg,
-main .mbox .mcont .mcm .cpnav .lt,
-main .mbox .mcont .mcm .cpnav .dg {
-  cursor: pointer;
-  position: absolute;
-  width: 288px;
-  height: 99px;
-  background: url(../images/spNav.png) no-repeat top center;
-  background-size: 600%;
-}
-main .mbox .mcont .mcm .cpnav .se:hover, main .mbox .mcont .mcm .cpnav .se:active, main .mbox .mcont .mcm .cpnav .se.active,
-main .mbox .mcont .mcm .cpnav .oc:hover,
-main .mbox .mcont .mcm .cpnav .oc:active,
-main .mbox .mcont .mcm .cpnav .oc.active,
-main .mbox .mcont .mcm .cpnav .sg:hover,
-main .mbox .mcont .mcm .cpnav .sg:active,
-main .mbox .mcont .mcm .cpnav .sg.active,
-main .mbox .mcont .mcm .cpnav .lt:hover,
-main .mbox .mcont .mcm .cpnav .lt:active,
-main .mbox .mcont .mcm .cpnav .lt.active,
-main .mbox .mcont .mcm .cpnav .dg:hover,
-main .mbox .mcont .mcm .cpnav .dg:active,
-main .mbox .mcont .mcm .cpnav .dg.active {
-  background-position-y: -99px;
-  animation-name: navbg1;
-  animation-duration: 0.5s;
-}
-main .mbox .mcont .mcm .cpnav .se {
-  left: -82px;
-  top: 160px;
-  background-position: 0 0;
-}
-main .mbox .mcont .mcm .cpnav .oc {
-  left: -10px;
-  top: 348px;
-  background-position: -288px 0;
-}
-main .mbox .mcont .mcm .cpnav .sg {
-  left: 310px;
-  top: 450px;
-  background-position: -576px 0;
-}
-main .mbox .mcont .mcm .cpnav .lt {
-  left: 635px;
-  top: 348px;
-  background-position: -864px 0;
-}
-main .mbox .mcont .mcm .cpnav .dg {
-  left: 702px;
-  top: 160px;
-  background-position: -1152px 0;
-}
 main .mbox .mcont .mcr {
+  z-index: 2;
   position: absolute;
   width: 518px;
   height: 1050px;
@@ -849,57 +804,113 @@ main .mbox .mcont .mcr.rbo {
   animation-name: navbg6;
   animation-duration: 0.5s;
 }
-main .bobox {
-  z-index: 1;
+main .cmnbox {
+  z-index: 5;
   position: absolute;
   width: 1300px;
-  height: 108px;
+  height: 575px;
   top: 73px;
   left: 50%;
   transform: translate(-50%);
 }
 @media screen and (max-width: 1024px) {
-  main .bobox {
+  main .cmnbox {
     overflow-x: hidden;
   }
 }
-main .bobox .bo {
+main .cmnbox .se,
+main .cmnbox .oc,
+main .cmnbox .sg,
+main .cmnbox .lt,
+main .cmnbox .dg,
+main .cmnbox .bo {
   cursor: pointer;
   position: absolute;
   width: 288px;
   height: 99px;
-  left: 862px;
-  top: 10px;
   background: url(../images/spNav.png) no-repeat top center;
   background-size: 600%;
-  background-position: -1440px 0;
 }
-main .bobox .bo:hover, main .bobox .bo:active, main .bobox .bo.active {
+main .cmnbox .se:hover, main .cmnbox .se:active, main .cmnbox .se.active,
+main .cmnbox .oc:hover,
+main .cmnbox .oc:active,
+main .cmnbox .oc.active,
+main .cmnbox .sg:hover,
+main .cmnbox .sg:active,
+main .cmnbox .sg.active,
+main .cmnbox .lt:hover,
+main .cmnbox .lt:active,
+main .cmnbox .lt.active,
+main .cmnbox .dg:hover,
+main .cmnbox .dg:active,
+main .cmnbox .dg.active,
+main .cmnbox .bo:hover,
+main .cmnbox .bo:active,
+main .cmnbox .bo.active {
   background-position-y: -99px;
   animation-name: navbg1;
   animation-duration: 0.5s;
 }
 @supports (-webkit-touch-callout: none) {
-  main .bobox .bo {
+  main .cmnbox .se,
+main .cmnbox .oc,
+main .cmnbox .sg,
+main .cmnbox .lt,
+main .cmnbox .dg,
+main .cmnbox .bo {
     left: 853px;
   }
+}
+main .cmnbox .se {
+  left: 107px;
+  top: 158px;
+  background-position: 0 0;
+}
+main .cmnbox .oc {
+  left: 179px;
+  top: 346px;
+  background-position: -288px 0;
+}
+main .cmnbox .sg {
+  left: 498px;
+  top: 448px;
+  background-position: -576px 0;
+}
+main .cmnbox .lt {
+  left: 824px;
+  top: 346px;
+  background-position: -864px 0;
+}
+main .cmnbox .dg {
+  left: 891px;
+  top: 158px;
+  background-position: -1152px 0;
+}
+main .cmnbox .bo {
+  left: 862px;
+  top: 10px;
+  background-position: -1440px 0;
 }
 main .iebg {
   display: none;
 }
-main .wbg {
-  position: absolute;
-  width: 100%;
+main .wbgbox {
+  z-index: 3;
+  position: relative;
+  top: -1944px;
   left: 50%;
   transform: translateX(-50%);
-  top: 625px;
-  height: 737px;
+  width: 100%;
+  height: 784px;
 }
-main .wbg .wbgl {
-  position: absolute;
-  width: 745px;
-  height: 732px;
-  top: -125px;
-  background: url(../images/wave_l.png) no-repeat top center;
-  background-size: 745px 732px;
+@media screen and (max-width: 1024px) {
+  main .wbgbox {
+    overflow-x: hidden;
+  }
+}
+main .wbgbox .wbg {
+  width: 100%;
+  height: 784px;
+  background: url(../images/wave.png) no-repeat top center;
+  background-size: 1920px;
 }

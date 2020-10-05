@@ -65,7 +65,7 @@ header {
     background: url(../images/headerbg.png) no-repeat top center;
     background-size: 1920px;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 5;
     article {
         position: relative;
         width: 1300px;
@@ -448,22 +448,32 @@ main {
     height: 1200px;
     margin: 0 auto;
     top: -137px;
-    .mbg {
-        position: absolute;
+    .mbgbox {
+        z-index: -1;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100%;
         height: 1200px;
-        background: url(../images/mbg.jpg) no-repeat top center;
-        background-size: 1920px 1200px;
-        animation: shakeY;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        z-index: -1;
+        @media screen and (max-width: 1024px) {
+            overflow-x: hidden;
+        }
+        .mbg {
+            width: 100%;
+            height: 1200px;
+            background: url(../images/mbg.jpg) no-repeat top center;
+            background-size: 1920px 1200px;
+            animation: shakeY;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
     }
     .mbox {
         position: relative;
         width: 1300px;
         height: 1200px;
         margin: 0 auto;
+        top: -1200px;
         @media screen and (max-width: 1024px) {
             overflow-x: hidden;
         }
@@ -476,6 +486,7 @@ main {
             left: 50%;
             transform: translateX(-50%);
             .mcl {
+                z-index: 2;
                 position: absolute;
                 width: 502px;
                 height: 1050px;
@@ -513,6 +524,7 @@ main {
                 }
             }
             .mcm {
+                z-index: 4;
                 position: absolute;
                 width: 905px;
                 height: 1050px;
@@ -606,58 +618,9 @@ main {
                         animation-name: navbg6;
                     }
                 }
-                .cpnav {
-                    position: relative;
-                    width: 905px;
-                    height: 575px;
-                    top: -154%;
-                    .se,
-                    .oc,
-                    .sg,
-                    .lt,
-                    .dg {
-                        cursor: pointer;
-                        position: absolute;
-                        width: 288px;
-                        height: 99px;
-                        background: url(../images/spNav.png) no-repeat top center;
-                        background-size: 600%;
-                        &:hover,
-                        &:active,
-                        &.active {
-                            background-position-y: -99px;
-                            animation-name: navbg1;
-                            animation-duration: 0.5s;
-                        }
-                    }
-                    .se {
-                        left: -82px;
-                        top: 160px;
-                        background-position: 0 0;
-                    }
-                    .oc {
-                        left: -10px;
-                        top: 348px;
-                        background-position: -288px 0;
-                    }
-                    .sg {
-                        left: 310px;
-                        top: 450px;
-                        background-position: -288px * 2 0;
-                    }
-                    .lt {
-                        left: 635px;
-                        top: 348px;
-                        background-position: -288px * 3 0;
-                    }
-                    .dg {
-                        left: 702px;
-                        top: 160px;
-                        background-position: -288px * 4 0;
-                    }
-                }
             }
             .mcr {
+                z-index: 2;
                 position: absolute;
                 width: 518px;
                 height: 1050px;
@@ -703,27 +666,29 @@ main {
             }
         }
     }
-    .bobox {
-        z-index: 1;
+    .cmnbox {
+        z-index: 5;
         position: absolute;
         width: 1300px;
-        height: 108px;
+        height: 575px;
         top: 73px;
         left: 50%;
         transform: translate(-50%);
         @media screen and (max-width: 1024px) {
             overflow-x: hidden;
         }
+        .se,
+        .oc,
+        .sg,
+        .lt,
+        .dg,
         .bo {
             cursor: pointer;
             position: absolute;
             width: 288px;
             height: 99px;
-            left: 862px;
-            top: 10px;
             background: url(../images/spNav.png) no-repeat top center;
             background-size: 600%;
-            background-position: -288px * 5 0;
             &:hover,
             &:active,
             &.active {
@@ -735,24 +700,56 @@ main {
                 left: 1162px - 309px;
             }
         }
+        .se {
+            left: -82px + 189px;
+            top: 160px - 2px;
+            background-position: 0 0;
+        }
+        .oc {
+            left: -10px + 189px;
+            top: 348px - 2px;
+            background-position: -288px 0;
+        }
+        .sg {
+            left: 498px;
+            top: 448px;
+            background-position: -288px * 2 0;
+        }
+        .lt {
+            left: 635px + 189px;
+            top: 348px - 2px;
+            background-position: -288px * 3 0;
+        }
+        .dg {
+            left: 702px + 189px;
+            top: 160px - 2px;
+            background-position: -288px * 4 0;
+        }
+        .bo {
+            left: 862px;
+            top: 10px;
+            background-position: -288px * 5 0;
+        }
     }
     .iebg {
         display: none;
     }
-    .wbg {
-        position: absolute;
-        width: 100%;
+    .wbgbox {
+        z-index: 3;
+        position: relative;
+        top: -744px - 1200px;
         left: 50%;
         transform: translateX(-50%);
-        top: 625px;
-        height: 737px;
-        .wbgl {
-            position: absolute;
-            width: 745px;
-            height: 732px;
-            top: -125px;
-            background: url(../images/wave_l.png) no-repeat top center;
-            background-size: 745px 732px;
+        width: 100%;
+        height: 784px;
+        @media screen and (max-width: 1024px) {
+            overflow-x: hidden;
+        }
+        .wbg {
+            width: 100%;
+            height: 784px;
+            background: url(../images/wave.png) no-repeat top center;
+            background-size: 1920px;
         }
     }
 }

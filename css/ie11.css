@@ -5,7 +5,7 @@
 
   main {
     *zoom: 1;
-    top: 0px;
+    top: -137px;
   }
   main:after, main:before {
     content: "";
@@ -14,30 +14,56 @@
   main:after {
     clear: both;
   }
+  main .mbgbox {
+    z-index: -1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1200px;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (max-width: 1024px), screen and (-ms-high-contrast: none) and (max-width: 1024px) {
+  main .mbgbox {
+    overflow-x: hidden;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main .mbgbox .mbg {
+    width: 100%;
+    height: 1200px;
+    background: url(../images/mbg.jpg) no-repeat top center;
+    background-size: 1920px 1200px;
+    animation: shakeY;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main .mbox {
+    top: -1063px;
+  }
   main .mbox .mcont {
     position: relative;
     top: 0;
     z-index: 1;
   }
-  main .bobox {
-    z-index: 2;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main .cmnbox {
+    z-index: 4;
     position: relative;
     width: 1300px;
     height: 108px;
-    margin: -1325px 0 0 0;
+    top: -2323px;
     background-color: transparent;
   }
-  main .iebg {
-    display: block;
-    position: absolute;
-    width: 1920px;
-    height: 1200px;
-    background: url(../images/mbg.jpg) no-repeat top center;
-    background-size: 1920px 1200px;
-    margin: 0 auto;
-    top: -137px;
-    animation: shakeY;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+  main .cmnbox .sg {
+    top: 436px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main .wbgbox {
+    top: -2051px;
   }
 }
