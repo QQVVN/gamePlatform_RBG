@@ -67,3 +67,8 @@
     top: -2051px;
   }
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main .wcon {
+    top: -2647px;
+  }
+}

@@ -891,17 +891,14 @@ main .cmnbox .bo {
   top: 10px;
   background-position: -1440px 0;
 }
-main .iebg {
-  display: none;
-}
 main .wbgbox {
   z-index: 3;
   position: relative;
+  width: 100%;
+  height: 784px;
   top: -1944px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  height: 784px;
 }
 @media screen and (max-width: 1024px) {
   main .wbgbox {
@@ -913,4 +910,110 @@ main .wbgbox .wbg {
   height: 784px;
   background: url(../images/wave.png) no-repeat top center;
   background-size: 1920px;
+}
+main .wcon {
+  z-index: 4;
+  position: relative;
+  width: 1300px;
+  height: 596px;
+  top: -2540px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+main .wcon:after, main .wcon:before {
+  content: "";
+  display: table;
+}
+main .wcon:after {
+  clear: both;
+}
+main .wcon .hg {
+  float: left;
+  width: 390px;
+  height: 527px;
+  background: url(../images/hotgamebg.png) no-repeat top center;
+  background-size: 390px 527px;
+}
+main .wcon .hg ul {
+  width: 312px;
+  height: 400px;
+  margin: 83px auto 0;
+}
+main .wcon .hg ul li {
+  width: 312px;
+  height: 100px;
+  *zoom: 1;
+}
+main .wcon .hg ul li:after, main .wcon .hg ul li:before {
+  content: "";
+  display: table;
+}
+main .wcon .hg ul li:after {
+  clear: both;
+}
+main .wcon .hg ul li:nth-of-type(even) {
+  background-color: #0b0b0b;
+}
+main .wcon .hg ul li .icon,
+main .wcon .hg ul li .text,
+main .wcon .hg ul li .like {
+  float: left;
+  height: 70px;
+}
+main .wcon .hg ul li .icon {
+  position: relative;
+  width: 70px;
+  margin: 14px 13px 14px 0;
+  background: url(../images/hgLionIcon.png) no-repeat top center;
+  background-size: 280px 70px;
+  background-position: 0 0;
+}
+main .wcon .hg ul li .icon.no2 {
+  background-position: -70px 0;
+}
+main .wcon .hg ul li .icon.no3 {
+  background-position: -140px 0;
+}
+main .wcon .hg ul li .icon.no4 {
+  background-position: -210px 0;
+}
+main .wcon .hg ul li .icon:hover, main .wcon .hg ul li .icon:active, main .wcon .hg ul li .icon.active {
+  animation-name: navbg1;
+  animation-duration: 0.5s;
+}
+main .wcon .hg ul li .text {
+  width: 170px;
+  margin: 14px 31px 14px 0;
+}
+main .wcon .hg ul li .text p {
+  font-size: 18px;
+  color: #ffeaab;
+  margin: 12px 0 8px 0;
+}
+main .wcon .hg ul li .text p:nth-of-type(2) {
+  margin: 0 0 0 0;
+}
+main .wcon .hg ul li .text p span {
+  color: #ffffff;
+}
+main .wcon .hg ul li .like {
+  cursor: pointer;
+  width: 27px;
+  height: 24px;
+  margin: 38px 0;
+  background: url(../images/likeIcon.png) no-repeat top center;
+  background-size: 27px 48px;
+  background-position: 0 0;
+  animation-duration: 0.5s;
+}
+main .wcon .hg ul li .like:hover, main .wcon .hg ul li .like:active, main .wcon .hg ul li .like.active {
+  background-position: 0 -24px;
+  animation-name: navbg1;
+  animation-duration: 0.5s;
+}
+main .wcon .wcr {
+  float: left;
+  width: 910px;
+  height: 596px;
+  background-color: aquamarine;
 }

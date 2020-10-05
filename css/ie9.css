@@ -4,7 +4,7 @@ header {
 
 main {
   *zoom: 1;
-  top: 0px;
+  top: -137px;
 }
 main:after, main:before {
   content: "";
@@ -16,7 +16,6 @@ main:after {
 main .mbgbox {
   z-index: -1;
   position: relative;
-  top: -137px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -36,6 +35,9 @@ main .mbgbox .mbg {
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
+main .mbox {
+  top: -1063px;
+}
 main .mbox .mcont {
   position: relative;
   top: 0;
@@ -46,12 +48,15 @@ main .cmnbox {
   position: relative;
   width: 1300px;
   height: 108px;
-  top: -2460px;
+  top: -2323px;
   background-color: transparent;
 }
 main .cmnbox .sg {
   top: 436px;
 }
 main .wbgbox {
-  top: -2188px;
+  top: -2051px;
+}
+main .wcon {
+  top: -2647px;
 }
