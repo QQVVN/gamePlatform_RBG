@@ -127,32 +127,99 @@ $(function () {
     });
 
     // banner arrow
-    $(".wcr .bnr .lar").click(function (e) {
+    $(".wcr .lar").click(function (e) {
         e.preventDefault();
-        var liLength = $(".wcr .bnr ul").find("li").length;
-        var liLeft = $(".wcr .bnr ul li").last().css("left");
-        var imgWidth = parseInt($(".wcr .bnr ul li .img").css("width"));
-        if (liLeft === (String((liLength - 1) * imgWidth) + "px")) {
+        var ulLeft = $(".wcr .bnr ul").css("left");
+        var imgWidth = parseInt($(".wcr .bnr ul li").css("width"));
+        if (ulLeft === "0px") {
             return;
         } else {
-            $(".wcr .bnr ul li").css("left", function (index, value) {
+            $(".wcr .bnr ul").css("left", function (index, value) {
                 return parseFloat(value) + imgWidth;
             });
         }
+        var prev = $(".index ul li").filter(".active").prev();
+        var filter = $(".index ul li").filter(".active");
+        prev.addClass("active");
+        filter.removeClass("active");
     });
+    $(".wcr .lar").on("mouseenter", function () {
+        window.clearInterval(timer);
+    })
 
-    $(".wcr .bnr .rar").click(function (e) {
+    $(".wcr .lar").on("mouseleave", function () {
+        timer = setTimer();
+    })
+
+    
+    $(".wcr .rar").click(function (e) {
         e.preventDefault();
-        var liLength = $(".wcr .bnr ul").find("li").length;
-        var liLeft = $(".wcr .bnr ul li").first().css("left");
-        var imgWidth = parseInt($(".wcr .bnr ul li .img").css("width"));
-        if (liLeft === ("-" + String((liLength - 1) * imgWidth) + "px")) {
+        var ulLeft = $(".wcr .bnr ul").css("left");
+        var imgWidth = parseInt($(".wcr .bnr ul li").css("width"));
+        if (ulLeft === "-4980px") {
             return;
         } else {
-            $(".wcr .bnr ul li").css("left", function (index, value) {
+            $(".wcr .bnr ul").css("left", function (index, value) {
                 return parseFloat(value) - imgWidth;
             });
         }
+        var next = $(".index ul li").filter(".active").next();
+        var filter = $(".index ul li").filter(".active");
+        next.addClass("active");
+        filter.removeClass("active");
     });
+
+    $(".wcr .rar").on("mouseenter", function () {
+        window.clearInterval(timer);
+    })
+
+    $(".wcr .rar").on("mouseleave", function () {
+        timer = setTimer();
+    })
+
+    // banner index
+    var iNow = 0;
+    $(".index ul li").click(function (e) {
+        e.preventDefault();
+        var imgWidth = parseInt($(".wcr .bnr ul li").css("width"));
+        var index = $(this).index();
+        iNow = index;
+        $(".wcr .bnr ul").css("left", function (index, value) {
+            return parseFloat((iNow * (-imgWidth)));
+        });
+        $(".index ul li").eq(iNow).siblings("li").removeClass("active");
+        $(".index ul li").eq(iNow).addClass("active");
+    });
+
+    $(".index ul li").on("mouseenter", function () {
+        window.clearInterval(timer);
+    })
+
+    $(".index ul li").on("mouseleave", function () {
+        timer = setTimer();
+    })
+
+    function setTimer() {
+        return setInterval(function () {
+            iNow += 1;
+            if (iNow > $(".index ul li").length - 1) {
+                iNow = 0;
+            }
+            $(".index ul li").eq(iNow).trigger("click");
+            $(".index ul li").eq(iNow).siblings("li").removeClass("active");
+            $(".index ul li").eq(iNow).addClass("active");
+        }, 2000);
+    }
+
+    var timer = null;
+    timer = setTimer();
+
+    $(".wcr .bnr ul").on("mouseenter", function () {
+        window.clearInterval(timer);
+    })
+
+    $(".wcr .bnr ul").on("mouseleave", function () {
+        timer = setTimer();
+    })
 
 });

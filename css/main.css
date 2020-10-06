@@ -1067,56 +1067,40 @@ main .wcon .wcr .bnr ul {
   position: relative;
   width: 830px;
   height: 422px;
+  left: 0px;
+  transition: 0.3s;
 }
 main .wcon .wcr .bnr ul li {
   position: absolute;
   width: 830px;
   height: 422px;
-  left: 0px;
-  transition: 0.3s;
+  background: url(../images/bannerImg.png) no-repeat top center;
+  background-size: 5810px 422px;
+  background-position: 0 0;
 }
 main .wcon .wcr .bnr ul li:nth-of-type(2) {
   left: 830px;
-}
-main .wcon .wcr .bnr ul li:nth-of-type(2) .img {
   background-position: -830px 0;
 }
 main .wcon .wcr .bnr ul li:nth-of-type(3) {
   left: 1660px;
-}
-main .wcon .wcr .bnr ul li:nth-of-type(3) .img {
   background-position: -1660px 0;
 }
 main .wcon .wcr .bnr ul li:nth-of-type(4) {
   left: 2490px;
-}
-main .wcon .wcr .bnr ul li:nth-of-type(4) .img {
   background-position: -2490px 0;
 }
 main .wcon .wcr .bnr ul li:nth-of-type(5) {
   left: 3320px;
-}
-main .wcon .wcr .bnr ul li:nth-of-type(5) .img {
   background-position: -3320px 0;
 }
 main .wcon .wcr .bnr ul li:nth-of-type(6) {
   left: 4150px;
-}
-main .wcon .wcr .bnr ul li:nth-of-type(6) .img {
   background-position: -4150px 0;
 }
 main .wcon .wcr .bnr ul li:nth-of-type(7) {
   left: 4980px;
-}
-main .wcon .wcr .bnr ul li:nth-of-type(7) .img {
   background-position: -4980px 0;
-}
-main .wcon .wcr .bnr ul li .img {
-  width: 830px;
-  height: 422px;
-  background: url(../images/bannerImg.png);
-  background-size: 5810px 422px;
-  background-position: 0 0;
 }
 main .wcon .wcr .bnr ul li .imgB {
   position: absolute;
@@ -1124,7 +1108,7 @@ main .wcon .wcr .bnr ul li .imgB {
   height: 50px;
   top: 325px;
   left: 176px;
-  background: url(../images/bannerB.png);
+  background: url(../images/bannerB.png) no-repeat top center;
   background-size: 224px 100px;
   background-position: 0 0;
 }
@@ -1143,10 +1127,10 @@ main .wcon .wcr .rar {
   background-size: 47px;
 }
 main .wcon .wcr .lar {
-  left: 406px;
+  left: 408px;
 }
 main .wcon .wcr .rar {
-  left: 0px;
+  left: 1235px;
   transform: rotate(180deg);
 }
 main .wcon .wcr .index {
