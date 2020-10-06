@@ -132,7 +132,7 @@ $(function () {
         var liLength = $(".wcr .bnr ul").find("li").length;
         var liLeft = $(".wcr .bnr ul li").last().css("left");
         var imgWidth = parseInt($(".wcr .bnr ul li .img").css("width"));
-        if (liLeft === (String((liLength-1)*imgWidth)+"px")) {
+        if (liLeft === (String((liLength - 1) * imgWidth) + "px")) {
             return;
         } else {
             $(".wcr .bnr ul li").css("left", function (index, value) {
@@ -146,7 +146,7 @@ $(function () {
         var liLength = $(".wcr .bnr ul").find("li").length;
         var liLeft = $(".wcr .bnr ul li").first().css("left");
         var imgWidth = parseInt($(".wcr .bnr ul li .img").css("width"));
-        if (liLeft === ("-"+ String((liLength-1)*imgWidth)+"px")) {
+        if (liLeft === ("-" + String((liLength - 1) * imgWidth) + "px")) {
             return;
         } else {
             $(".wcr .bnr ul li").css("left", function (index, value) {

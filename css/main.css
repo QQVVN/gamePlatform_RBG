@@ -1058,15 +1058,15 @@ main .wcon .wcr .news .nt p:hover {
 }
 main .wcon .wcr .bnr {
   position: relative;
-  width: 860px;
+  width: 830px;
   height: 422px;
+  margin: 0 0 0 30px;
+  overflow-x: hidden;
 }
 main .wcon .wcr .bnr ul {
   position: relative;
   width: 830px;
   height: 422px;
-  margin: 0 0 0 30px;
-  overflow-x: hidden;
 }
 main .wcon .wcr .bnr ul li {
   position: absolute;
@@ -1132,21 +1132,21 @@ main .wcon .wcr .bnr ul li .imgB:hover, main .wcon .wcr .bnr ul li .imgB:active,
   cursor: pointer;
   background-position: 0 -50px;
 }
-main .wcon .wcr .bnr .lar,
-main .wcon .wcr .bnr .rar {
+main .wcon .wcr .lar,
+main .wcon .wcr .rar {
   cursor: pointer;
   position: absolute;
   width: 47px;
   height: 47px;
-  top: 188px;
+  top: 277px;
   background: url(../images/arrow.png);
   background-size: 47px;
 }
-main .wcon .wcr .bnr .lar {
-  left: 8px;
+main .wcon .wcr .lar {
+  left: 406px;
 }
-main .wcon .wcr .bnr .rar {
-  left: 836px;
+main .wcon .wcr .rar {
+  left: 0px;
   transform: rotate(180deg);
 }
 main .wcon .wcr .index {
@@ -1178,6 +1178,7 @@ main .wcon .wcr .index ul li:nth-of-type(n + 2) {
   margin: 0 0 0 16px;
 }
 main .wcon .wcr .index ul li:hover, main .wcon .wcr .index ul li:active, main .wcon .wcr .index ul li.active {
+  cursor: pointer;
   background: #c09442;
   background: linear-gradient(to left, #f6e09d 0%, #c09442 100%);
 }

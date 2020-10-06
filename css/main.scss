@@ -879,14 +879,16 @@ main {
             }
             .bnr {
                 position: relative;
-                width: 860px;
+                width: 830px;
                 height: 422px;
+                margin: 0 0 0 30px;
+                overflow-x: hidden;
                 ul {
                     position: relative;
                     width: 830px;
                     height: 422px;
-                    margin: 0 0 0 30px;
-                    overflow-x: hidden;
+                    // margin: 0 0 0 30px;
+                    // overflow-x: hidden;
                     li {
                         position: absolute;
                         width: 830px;
@@ -954,23 +956,23 @@ main {
                         }
                     }
                 }
-                .lar,
-                .rar {
-                    cursor: pointer;
-                    position: absolute;
-                    width: 47px;
-                    height: 47px;
-                    top: 188px;
-                    background: url(../images/arrow.png);
-                    background-size: 47px;
-                }
-                .lar {
-                    left: 8px;
-                }
-                .rar {
-                    left: 836px;
-                    transform: rotate(180deg);
-                }
+            }
+            .lar,
+            .rar {
+                cursor: pointer;
+                position: absolute;
+                width: 47px;
+                height: 47px;
+                top: 277px;
+                background: url(../images/arrow.png);
+                background-size: 47px;
+            }
+            .lar {
+                left: 406px;
+            }
+            .rar {
+                left: 0px;
+                transform: rotate(180deg);
             }
             .index {
                 position: relative;
@@ -993,12 +995,9 @@ main {
                         &:hover,
                         &:active,
                         &.active {
+                            cursor: pointer;
                             background: #c09442;
-                            background: linear-gradient(
-                                to left,
-                                #f6e09d 0%,
-                                #c09442 100%
-                            );
+                            background: linear-gradient(to left, #f6e09d 0%, #c09442 100%);
                         }
                     }
                 }
