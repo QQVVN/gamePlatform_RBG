@@ -10,9 +10,16 @@
         }
         *zoom: 1;
     }
+
+    body {
+        height: 1437px;
+        overflow: hidden;
+    }
+
     header {
         z-index: 2;
     }
+
     main {
         @include clearfix;
         top: -137px;
@@ -61,5 +68,10 @@
         .wcon {
             top: -2540px - 107px;
         }
+    }
+    
+    footer {
+        top: -2784px;
+        margin: 0 auto;
     }
 }

@@ -1,4 +1,9 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body {
+    height: 1437px;
+    overflow: hidden;
+  }
+
   header {
     z-index: 2;
   }
@@ -70,5 +75,11 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   main .wcon {
     top: -2647px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  footer {
+    top: -2784px;
+    margin: 0 auto;
   }
 }

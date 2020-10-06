@@ -1166,3 +1166,53 @@ main .wcon .wcr .index ul li:hover, main .wcon .wcr .index ul li:active, main .w
   background: #c09442;
   background: linear-gradient(to left, #f6e09d 0%, #c09442 100%);
 }
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin: -97px auto 0;
+  background-color: #c09442;
+}
+footer nav {
+  position: relative;
+  width: 100%;
+  height: 46px;
+  margin: 0 auto;
+  background: #dbdbdb;
+  box-shadow: 1px 1px 5px 0px #cacaca inset;
+  background: linear-gradient(to bottom, #ffffff 0%, #dbdbdb 100%);
+}
+footer nav ul {
+  width: 1300px;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer nav ul li {
+  display: inline-block;
+  width: 110px;
+  height: 46px;
+  font-size: 18px;
+  color: #454545;
+  text-align: center;
+  border-left: 1px solid #7d7d7d;
+}
+footer nav ul li:nth-of-type(n+2) {
+  margin: 0 0 0 -5px;
+}
+footer nav ul li:last-of-type {
+  border-right: 1px solid #7d7d7d;
+}
+footer nav ul li:hover, footer nav ul li:active, footer nav ul li.active {
+  background: #b0b0b0;
+  background: linear-gradient(to top, #f0f0f0 6%, #d1d1d1 48%, #b0b0b0 86%);
+}
+footer section {
+  width: 100%;
+  height: 104px;
+  margin: 0 auto;
+  background: #2a2a2a;
+  background: linear-gradient(to top, #060606 0%, #1a1a1a 50%, #2a2a2a 50%, #575757 91%, #6f6f6f 100%);
+}

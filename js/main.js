@@ -151,7 +151,6 @@ $(function () {
         timer = setTimer();
     })
 
-    
     $(".wcr .rar").click(function (e) {
         e.preventDefault();
         var ulLeft = $(".wcr .bnr ul").css("left");
