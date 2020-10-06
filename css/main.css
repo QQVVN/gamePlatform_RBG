@@ -1073,6 +1073,7 @@ main .wcon .wcr .bnr ul li {
   width: 830px;
   height: 422px;
   left: 0px;
+  transition: 0.3s;
 }
 main .wcon .wcr .bnr ul li:nth-of-type(2) {
   left: 830px;
@@ -1147,4 +1148,36 @@ main .wcon .wcr .bnr .lar {
 main .wcon .wcr .bnr .rar {
   left: 836px;
   transform: rotate(180deg);
+}
+main .wcon .wcr .index {
+  position: relative;
+  width: 830px;
+  height: 6px;
+  margin: 25px 0 0 30px;
+}
+main .wcon .wcr .index ul {
+  width: 830px;
+  height: 6px;
+  *zoom: 1;
+}
+main .wcon .wcr .index ul:after, main .wcon .wcr .index ul:before {
+  content: "";
+  display: table;
+}
+main .wcon .wcr .index ul:after {
+  clear: both;
+}
+main .wcon .wcr .index ul li {
+  float: left;
+  width: 104.8571428571px;
+  height: 6px;
+  border-radius: 3px;
+  background: #131313;
+}
+main .wcon .wcr .index ul li:nth-of-type(n + 2) {
+  margin: 0 0 0 16px;
+}
+main .wcon .wcr .index ul li:hover, main .wcon .wcr .index ul li:active, main .wcon .wcr .index ul li.active {
+  background: #c09442;
+  background: linear-gradient(to left, #f6e09d 0%, #c09442 100%);
 }

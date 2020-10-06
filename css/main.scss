@@ -892,6 +892,7 @@ main {
                         width: 830px;
                         height: 422px;
                         left: 0px;
+                        transition: 0.3s;
                         &:nth-of-type(2) {
                             left: 830px;
                             .img {
@@ -969,6 +970,37 @@ main {
                 .rar {
                     left: 836px;
                     transform: rotate(180deg);
+                }
+            }
+            .index {
+                position: relative;
+                width: 830px;
+                height: 6px;
+                margin: 25px 0 0 30px;
+                ul {
+                    width: 830px;
+                    height: 6px;
+                    @include clearfix;
+                    li {
+                        float: left;
+                        width: (830px - (16px * 6)) / 7;
+                        height: 6px;
+                        border-radius: 3px;
+                        background: #131313;
+                        &:nth-of-type(n + 2) {
+                            margin: 0 0 0 16px;
+                        }
+                        &:hover,
+                        &:active,
+                        &.active {
+                            background: #c09442;
+                            background: linear-gradient(
+                                to left,
+                                #f6e09d 0%,
+                                #c09442 100%
+                            );
+                        }
+                    }
                 }
             }
         }

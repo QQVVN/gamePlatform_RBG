@@ -129,9 +129,30 @@ $(function () {
     // banner arrow
     $(".wcr .bnr .lar").click(function (e) {
         e.preventDefault();
-        $(".wcr .bnr ul li").css("left", function (index, value) {
-            return parseFloat(value) - 830;
-        });
+        var liLength = $(".wcr .bnr ul").find("li").length;
+        var liLeft = $(".wcr .bnr ul li").last().css("left");
+        var imgWidth = parseInt($(".wcr .bnr ul li .img").css("width"));
+        if (liLeft === (String((liLength-1)*imgWidth)+"px")) {
+            return;
+        } else {
+            $(".wcr .bnr ul li").css("left", function (index, value) {
+                return parseFloat(value) + imgWidth;
+            });
+        }
+    });
+
+    $(".wcr .bnr .rar").click(function (e) {
+        e.preventDefault();
+        var liLength = $(".wcr .bnr ul").find("li").length;
+        var liLeft = $(".wcr .bnr ul li").first().css("left");
+        var imgWidth = parseInt($(".wcr .bnr ul li .img").css("width"));
+        if (liLeft === ("-"+ String((liLength-1)*imgWidth)+"px")) {
+            return;
+        } else {
+            $(".wcr .bnr ul li").css("left", function (index, value) {
+                return parseFloat(value) - imgWidth;
+            });
+        }
     });
 
 });
