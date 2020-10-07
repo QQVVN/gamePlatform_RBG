@@ -45,6 +45,52 @@
     }
 }
 
+@keyframes shakeUD {
+    0% {
+        transform: translateY(0%);
+    }
+
+    10% {
+        transform: translateY(30%);
+    }
+
+    20% {
+        transform: translateY(0%);
+    }
+
+    30% {
+        transform: translateY(25%);
+    }
+
+    40% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(20%);
+    }
+
+    60% {
+        transform: translateY(0%);
+    }
+
+    70% {
+        transform: translateY(15%);
+    }
+
+    80% {
+        transform: translateY(0%);
+    }
+
+    90% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 html {
     font-family: Microsoft JhengHei;
     background: #060606;
@@ -81,13 +127,20 @@ aside {
         left: 0px;
         top: 200px;
         z-index: 5;
-        .lr {
+        &:hover {
+            .al {
+                .ali {
+                    animation: shakeUD 1s;
+                }
+            }
+        }
+        .al {
             position: relative;
             width: 58px;
             height: 197px;
             background: url(../images/asideLbg.png) no-repeat top center;
             background-size: 58px 197px;
-            .lri {
+            .ali {
                 position: absolute;
                 width: 37px;
                 height: 45px;
@@ -103,6 +156,13 @@ aside {
         right: 0px;
         top: 200px;
         z-index: 5;
+        &:hover {
+            .ar {
+                .ari {
+                    animation: shakeUD 1s;
+                }
+            }
+        }
         .ar {
             position: relative;
             width: 58px;
