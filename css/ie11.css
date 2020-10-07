@@ -1,9 +1,4 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  body {
-    height: 1437px;
-    overflow: hidden;
-  }
-
   header {
     z-index: 2;
   }

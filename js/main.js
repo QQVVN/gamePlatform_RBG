@@ -207,7 +207,7 @@ $(function () {
             $(".index ul li").eq(iNow).trigger("click");
             $(".index ul li").eq(iNow).siblings("li").removeClass("active");
             $(".index ul li").eq(iNow).addClass("active");
-        }, 2000);
+        }, 3000);
     }
 
     var timer = null;

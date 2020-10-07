@@ -59,6 +59,12 @@ html {
     }
 }
 
+body {
+    position: relative;
+    height: 1437px;
+    overflow: hidden;
+}
+
 a {
     position: absolute;
     left: 0;
@@ -67,6 +73,53 @@ a {
     height: 100%;
     pointer-events: all;
     z-index: 10;
+}
+
+aside {
+    &:first-of-type {
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        z-index: 5;
+        .lr {
+            position: relative;
+            width: 58px;
+            height: 197px;
+            background: url(../images/asideLbg.png) no-repeat top center;
+            background-size: 58px 197px;
+            .lri {
+                position: absolute;
+                width: 37px;
+                height: 45px;
+                top: 13px;
+                left: 6px;
+                background: url(../images/asideLbgIcon.png) no-repeat top center;
+                background-size: 37px 45px;
+            }
+        }
+    }
+    &:last-of-type {
+        position: absolute;
+        right: 0px;
+        top: 200px;
+        z-index: 5;
+        .ar {
+            position: relative;
+            width: 58px;
+            height: 197px;
+            background: url(../images/asideRbg.png) no-repeat top center;
+            background-size: 58px 197px;
+            .ari {
+                position: absolute;
+                width: 43px;
+                height: 43px;
+                top: 13px;
+                left: 12px;
+                background: url(../images/asideRbgIcon.png) no-repeat top center;
+                background-size: 43px;
+            }
+        }
+    }
 }
 
 header {
@@ -1010,13 +1063,20 @@ footer {
             text-align: center;
             li {
                 display: inline-block;
+                position: relative;
                 width: 110px;
                 height: 46px;
                 font-size: 18px;
                 color: #454545;
                 text-align: center;
                 border-left: 1px solid #7d7d7d;
-                &:nth-of-type(n+2) {
+                a {
+                    color: #454545;
+                    &:link {
+                        text-decoration: none;
+                    }
+                }
+                &:nth-of-type(n + 2) {
                     margin: 0 0 0 -5px;
                 }
                 &:last-of-type {
@@ -1026,7 +1086,7 @@ footer {
                 &:active,
                 &.active {
                     background: #b0b0b0;
-                    background: linear-gradient(to top, #f0f0f0 6%,#d1d1d1 48%, #b0b0b0 86%);
+                    background: linear-gradient(to top, #f0f0f0 6%, #d1d1d1 48%, #b0b0b0 86%);
                 }
             }
         }
@@ -1037,5 +1097,18 @@ footer {
         margin: 0 auto;
         background: #2a2a2a;
         background: linear-gradient(to top, #060606 0%, #1a1a1a 50%, #2a2a2a 50%, #575757 91%, #6f6f6f 100%);
+        p {
+            cursor: default;
+            text-align: center;
+            font-size: 18px;
+            &:nth-of-type(1) {
+                color: #f4f4f4;
+                line-height: 41px;
+            }
+            &:nth-of-type(2) {
+                color: #949494;
+                line-height: 22px;
+            }
+        }
     }
 }
