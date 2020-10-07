@@ -218,6 +218,46 @@ a {
   z-index: 10;
 }
 
+.newbox {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.newbox.none {
+  display: none;
+}
+.newbox .new {
+  position: absolute;
+  width: 479px;
+  height: 293px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background: #ffffff;
+  left: 50%;
+  top: 22.5%;
+  transform: translate(-50%, -22.5%);
+}
+.newbox .new .con {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.newbox .new .con .t {
+  position: relative;
+  width: 479px;
+  height: 45px;
+  background: url(../images/newTbg.png) no-repeat top center;
+  background-size: 479px;
+}
+.newbox .new .con .t .X {
+  width: 16px;
+  height: 16px;
+  background: url(../images/X.png) no-repeat top center;
+  background-size: 16px;
+}
+
 aside:first-of-type {
   position: absolute;
   left: 0px;
