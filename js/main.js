@@ -5,11 +5,6 @@ $(function () {
     var X = $(".newbox .new .con .t .X");
     var ti = $(".newbox .new .con .b .news .ti");
 
-
-    $(".newbox").on("click", function () {
-        $(".newbox").addClass("none");
-    });
-
     X.on("click", function () {
         $(".newbox").addClass("none");
     });

@@ -133,7 +133,6 @@ a {
     .new {
         position: absolute;
         width: 479px;
-        // height: 293px;
         border: 1px solid #ffffff;
         border-radius: 10px;
         background: #ffffff;
@@ -218,6 +217,17 @@ a {
             }
             .b {
                 width: 479px;
+                max-height: 286px;
+                overflow-y: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                scrollbar-face-color: #ffffff;
+                scrollbar-track-color: #ffffff;
+                scrollbar-arrow-color: #ffffff;
+                scrollbar-shadow-color: #ffffff;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
                 .news {
                     width: 479px;
                     .ti {
@@ -659,17 +669,21 @@ header {
                     cursor: pointer;
                 }
                 ul {
+                    scrollbar-face-color: #000000;
+                    scrollbar-track-color: #000000;
+                    scrollbar-arrow-color: #fde6a2;
+                    scrollbar-shadow-color: #000000;
                     scrollbar-width: thin;
-                    scrollbar-color: #8b8b8b #ffffff;
+                    scrollbar-color: #fde6a2 #000000;
                     &::-webkit-scrollbar {
                         width: 8px;
                     }
                     &::-webkit-scrollbar-track {
-                        background: #ffffff;
+                        background: #000000;
                     }
                     &::-webkit-scrollbar-thumb {
-                        background-color: #8b8b8b;
-                        border: 2px solid #ffffff;
+                        background-color: #fde6a2;
+                        border: 2px solid #000000;
                     }
 
                     position: absolute;

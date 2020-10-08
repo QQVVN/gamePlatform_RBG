@@ -315,6 +315,17 @@ a {
 }
 .newbox .new .con .b {
   width: 479px;
+  max-height: 286px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scrollbar-face-color: #ffffff;
+  scrollbar-track-color: #ffffff;
+  scrollbar-arrow-color: #ffffff;
+  scrollbar-shadow-color: #ffffff;
+}
+.newbox .new .con .b::-webkit-scrollbar {
+  display: none;
 }
 .newbox .new .con .b .news {
   width: 479px;
@@ -775,8 +786,12 @@ header article .lang .select p {
   cursor: pointer;
 }
 header article .lang .select ul {
+  scrollbar-face-color: #000000;
+  scrollbar-track-color: #000000;
+  scrollbar-arrow-color: #fde6a2;
+  scrollbar-shadow-color: #000000;
   scrollbar-width: thin;
-  scrollbar-color: #8b8b8b #ffffff;
+  scrollbar-color: #fde6a2 #000000;
   position: absolute;
   width: 122px;
   height: 64px;
@@ -789,11 +804,11 @@ header article .lang .select ul::-webkit-scrollbar {
   width: 8px;
 }
 header article .lang .select ul::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #000000;
 }
 header article .lang .select ul::-webkit-scrollbar-thumb {
-  background-color: #8b8b8b;
-  border: 2px solid #ffffff;
+  background-color: #fde6a2;
+  border: 2px solid #000000;
 }
 header article .lang .select ul.none {
   display: none;
