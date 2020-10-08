@@ -186,6 +186,41 @@ input {
     transform: translateX(0%);
   }
 }
+@keyframes hightAni {
+  0% {
+    height: 0%;
+  }
+  10% {
+    height: 10%;
+  }
+  20% {
+    height: 20%;
+  }
+  30% {
+    height: 30%;
+  }
+  40% {
+    height: 40%;
+  }
+  50% {
+    height: 50%;
+  }
+  60% {
+    height: 60%;
+  }
+  70% {
+    height: 70%;
+  }
+  80% {
+    height: 80%;
+  }
+  90% {
+    height: 90%;
+  }
+  100% {
+    height: 100%;
+  }
+}
 html {
   font-family: Microsoft JhengHei;
   background: #060606;
@@ -231,7 +266,6 @@ a {
 .newbox .new {
   position: absolute;
   width: 479px;
-  height: 293px;
   border: 1px solid #ffffff;
   border-radius: 10px;
   background: #ffffff;
@@ -267,6 +301,7 @@ a {
   line-height: 45px;
 }
 .newbox .new .con .t .X {
+  cursor: pointer;
   position: absolute;
   left: 453px;
   top: 16px;
@@ -275,23 +310,122 @@ a {
   background: url(../images/X.png) no-repeat top center;
   background-size: 16px;
 }
-.newbox .new .con .c {
+.newbox .new .con .m {
   width: 479px;
-  height: 56px;
+  height: 52px;
+  border-bottom: 1px solid #dcdcdc;
 }
-.newbox .new .con .c p {
+.newbox .new .con .m div {
   display: inline-block;
   width: 72px;
   height: 56px;
-  line-height: 56px;
+  line-height: 52px;
   text-align: center;
   color: #727272;
+  position: relative;
 }
-.newbox .new .con .c p:first-of-type {
-  margin: 0 0 0 20px;
+.newbox .new .con .m div:first-of-type {
+  margin: 0 0 0 32px;
 }
-.newbox .new .con .c p:nth-of-type(n+2) {
+.newbox .new .con .m div:nth-of-type(n + 2) {
   margin: 0 0 0 7px;
+}
+.newbox .new .con .m div:hover, .newbox .new .con .m div:active, .newbox .new .con .m div.active {
+  cursor: pointer;
+  color: #cb0000;
+}
+.newbox .new .con .m div:hover::after, .newbox .new .con .m div:active::after, .newbox .new .con .m div.active::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  width: 72px;
+  height: 4px;
+  border-radius: 2px;
+  background: #d20000;
+  background: linear-gradient(to left, #a80000 0%, #d20000 100%);
+}
+.newbox .new .con .b {
+  width: 479px;
+}
+.newbox .new .con .b .news {
+  width: 479px;
+}
+.newbox .new .con .b .news .ti {
+  cursor: pointer;
+  display: inline-block;
+  color: #000000;
+  margin: 23px 0px 23px 32px;
+  font-size: 17px;
+}
+.newbox .new .con .b .news .ti:hover {
+  color: #c90000;
+}
+.newbox .new .con .b .news .ti:hover .arrow {
+  border-color: #c90000 transparent transparent transparent;
+}
+.newbox .new .con .b .news .ti:active, .newbox .new .con .b .news .ti.active {
+  color: #c90000;
+}
+.newbox .new .con .b .news .ti:active .arrow, .newbox .new .con .b .news .ti.active .arrow {
+  border-color: #c90000 transparent transparent transparent;
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+.newbox .new .con .b .news .ti:active .pbox, .newbox .new .con .b .news .ti.active .pbox {
+  height: 130px;
+  transition: 0.3s;
+}
+.newbox .new .con .b .news .ti:first-of-type {
+  margin: 23px 0 23px/2 32px;
+}
+.newbox .new .con .b .news .ti .arrow {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+  transform: rotate(-90deg);
+  transition: 0.3s;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #2f333e transparent transparent transparent;
+  margin: 0 0 2px 326px;
+}
+.newbox .new .con .b .news .ti .arrow::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+  left: -10px;
+  top: -13px;
+}
+.newbox .new .con .b .news .ti .pbox {
+  width: 400px;
+  height: 0px;
+  overflow: auto;
+  transition: 0.3s;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scrollbar-face-color: #ffffff;
+  scrollbar-track-color: #ffffff;
+  scrollbar-arrow-color: #ffffff;
+  scrollbar-shadow-color: #ffffff;
+}
+.newbox .new .con .b .news .ti .pbox::-webkit-scrollbar {
+  display: none;
+}
+.newbox .new .con .b .news .ti .pbox p {
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  color: #000000;
+  padding: 0;
+  margin: 20px 0px 20px 0px;
 }
 
 aside:first-of-type {

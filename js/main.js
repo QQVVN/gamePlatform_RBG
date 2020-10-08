@@ -1,6 +1,24 @@
 $(function () {
     console.log('script main.js');
 
+    //news 
+    var X = $(".newbox .new .con .t .X");
+    var ti = $(".newbox .new .con .b .news .ti");
+
+
+    $(".newbox").on("click", function () {
+        $(".newbox").addClass("none");
+    });
+
+    X.on("click", function () {
+        $(".newbox").addClass("none");
+    });
+
+    ti.on("click", function () {
+        $(this).toggleClass("active");
+    });
+
+
     // select js
     $(".select p").click(function (e) {
         e.preventDefault();

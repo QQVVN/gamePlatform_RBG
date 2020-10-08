@@ -91,6 +91,52 @@
     }
 }
 
+@keyframes hightAni {
+    0% {
+        height: 0%;
+    }
+
+    10% {
+        height: 10%;
+    }
+
+    20% {
+        height: 20%;
+    }
+
+    30% {
+        height: 30%;
+    }
+
+    40% {
+        height: 40%;
+    }
+
+    50% {
+        height: 50%;
+    }
+
+    60% {
+        height: 60%;
+    }
+
+    70% {
+        height: 70%;
+    }
+
+    80% {
+        height: 80%;
+    }
+
+    90% {
+        height: 90%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
 html {
     font-family: Microsoft JhengHei;
     background: #060606;
@@ -133,7 +179,7 @@ a {
     .new {
         position: absolute;
         width: 479px;
-        height: 293px;
+        // height: 293px;
         border: 1px solid #ffffff;
         border-radius: 10px;
         background: #ffffff;
@@ -166,6 +212,7 @@ a {
                     line-height: 45px;
                 }
                 .X {
+                    cursor: pointer;
                     position: absolute;
                     left: 453px;
                     top: 16px;
@@ -175,23 +222,124 @@ a {
                     background-size: 16px;
                 }
             }
-            .c {
+            .m {
                 width: 479px;
-                height: 56px;
-                p {
+                height: 52px;
+                border-bottom: 1px solid #dcdcdc;
+                div {
                     display: inline-block;
                     width: 72px;
                     height: 56px;
-                    line-height: 56px;
+                    line-height: 52px;
                     text-align: center;
                     color: #727272;
+                    position: relative;
                     &:first-of-type {
-                        margin: 0 0 0 20px;
+                        margin: 0 0 0 32px;
                     }
-                    &:nth-of-type(n+2) {
+                    &:nth-of-type(n + 2) {
                         margin: 0 0 0 7px;
                     }
-                    
+                    &:hover,
+                    &:active,
+                    &.active {
+                        cursor: pointer;
+                        color: #cb0000;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 4px;
+                            left: 0px;
+                            width: 72px;
+                            height: 4px;
+                            border-radius: 2px;
+                            background: #d20000;
+                            background: linear-gradient(to left, #a80000 0%, #d20000 100%);
+                        }
+                    }
+                }
+            }
+            .b {
+                width: 479px;
+                .news {
+                    width: 479px;
+                    .ti {
+                        cursor: pointer;
+                        display: inline-block;
+                        color: #000000;
+                        margin: 23px 0px 23px 32px;
+                        font-size: 17px;
+                        &:hover {
+                            color: #c90000;
+                            .arrow {
+                                border-color: #c90000 transparent transparent transparent;
+                            }
+                        }
+                        &:active,
+                        &.active {
+                            color: #c90000;
+                            .arrow {
+                                border-color: #c90000 transparent transparent transparent;
+                                transform: rotate(0deg);
+                                transition: 0.3s;
+                            }
+                            .pbox {
+                                height: 130px;
+                                transition: 0.3s;
+                            }
+                        }
+                        &:first-of-type {
+                            margin: 23px 0 23px/2 32px;
+                        }
+                        .arrow {
+                            cursor: pointer;
+                            display: inline-block;
+                            position: relative;
+                            width: 0;
+                            height: 0;
+                            transform: rotate(-90deg);
+                            transition: 0.3s;
+                            border-style: solid;
+                            border-width: 10px 10px 0 10px;
+                            border-color: #2f333e transparent transparent transparent;
+                            margin: 0 0 2px 326px;
+                            &::after {
+                                content: " ";
+                                display: inline-block;
+                                position: absolute;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 10px 10px 0 10px;
+                                border-color: #ffffff transparent transparent transparent;
+                                left: -10px;
+                                top: -13px;
+                            }
+                        }
+                        .pbox {
+                            width: 400px;
+                            height: 0px;
+                            overflow: auto;
+                            transition: 0.3s;
+                            -ms-overflow-style: none;
+                            scrollbar-width: none;
+                            scrollbar-face-color: #ffffff;
+                            scrollbar-track-color: #ffffff;
+                            scrollbar-arrow-color: #ffffff;
+                            scrollbar-shadow-color: #ffffff;
+                            &::-webkit-scrollbar {
+                                display: none;
+                            }
+                            p {
+                                width: 400px;
+                                height: auto;
+                                overflow: hidden;
+                                color: #000000;
+                                padding: 0;
+                                margin: 20px 0px 20px 0px;
+                            }
+                        }
+                    }
                 }
             }
         }
