@@ -151,13 +151,47 @@ a {
                 background: url(../images/newTbg.png) no-repeat top center;
                 background-size: 479px;
                 .i {
-                    
+                    position: absolute;
+                    left: 2px;
+                    top: -10px;
+                    width: 86px;
+                    height: 68px;
+                    background: url(../images/speaker.png) no-repeat top center;
+                    background-size: 86px 68px;
+                }
+                p {
+                    text-align: center;
+                    font-size: 24px;
+                    color: #ffffff;
+                    line-height: 45px;
                 }
                 .X {
+                    position: absolute;
+                    left: 453px;
+                    top: 16px;
                     width: 16px;
                     height: 16px;
                     background: url(../images/X.png) no-repeat top center;
                     background-size: 16px;
+                }
+            }
+            .c {
+                width: 479px;
+                height: 56px;
+                p {
+                    display: inline-block;
+                    width: 72px;
+                    height: 56px;
+                    line-height: 56px;
+                    text-align: center;
+                    color: #727272;
+                    &:first-of-type {
+                        margin: 0 0 0 20px;
+                    }
+                    &:nth-of-type(n+2) {
+                        margin: 0 0 0 7px;
+                    }
+                    
                 }
             }
         }

@@ -251,11 +251,47 @@ a {
   background: url(../images/newTbg.png) no-repeat top center;
   background-size: 479px;
 }
+.newbox .new .con .t .i {
+  position: absolute;
+  left: 2px;
+  top: -10px;
+  width: 86px;
+  height: 68px;
+  background: url(../images/speaker.png) no-repeat top center;
+  background-size: 86px 68px;
+}
+.newbox .new .con .t p {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 45px;
+}
 .newbox .new .con .t .X {
+  position: absolute;
+  left: 453px;
+  top: 16px;
   width: 16px;
   height: 16px;
   background: url(../images/X.png) no-repeat top center;
   background-size: 16px;
+}
+.newbox .new .con .c {
+  width: 479px;
+  height: 56px;
+}
+.newbox .new .con .c p {
+  display: inline-block;
+  width: 72px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  color: #727272;
+}
+.newbox .new .con .c p:first-of-type {
+  margin: 0 0 0 20px;
+}
+.newbox .new .con .c p:nth-of-type(n+2) {
+  margin: 0 0 0 7px;
 }
 
 aside:first-of-type {
