@@ -1,0 +1,127 @@
+$white: #ffffff;
+$black: #000000;
+
+
+$html_bg: #060606;
+
+
+//newbox color
+$newbox_bg: rgb(0, 0, 0, 0.5);
+$new_bg: $white;
+$new_con_m_border_bottom: #dcdcdc;
+$new_con_m_div: #727272;
+$new_con_m_div_haa: #cb0000;
+$new_con_m_div_haa_after_bg: #d20000;
+$new_con_m_div_haa_after_bg_l_gra: linear-gradient(to left, #a80000 0%, #d20000 100%);
+$new_con_b_scrollbar: $white;
+$new_con_b_news_ti: $black;
+$new_con_b_news_ti_haa: #c90000;
+$new_con_b_news_ti_haa_arrow: #c90000 transparent transparent transparent;
+$new_con_b_news_ti_arrow_border_color: #2f333e transparent transparent transparent;
+$new_con_b_news_ti_arrow_after_border_color: $white transparent transparent transparent;
+$new_con_b_news_ti_pbox_scrollbar: $white;
+$new_con_b_news_ti_pbox_p: $black;
+
+
+//header hif color
+$header_article_hif_rpw: $white;
+$header_article_hif_rpw_haa: #929090;
+$header_article_hif_acpw_bg: $black;
+$header_article_hif_acpw_p: #d0d0d0;
+$header_article_hif_acpw_input: $white;
+$header_article_hif_acpw_input_bg: $black;
+$header_article_hif_sisu: $white;
+$header_article_hif_sisu_border: #950000;
+$header_article_hif_sisu_bg: #c71e1e;
+$header_article_hif_sisu_bg_l_gra: linear-gradient(
+    to top,
+    #c62828 0%,
+    #790000 25%,
+    #c71e1e 47%,
+    #d76b6b 72%,
+    #a40000 90%
+);
+$header_article_hif_sisu_border_haa: #950000;
+$header_article_hif_sisu_bg_haa: #a40000;
+$header_article_hif_sisu_bg_l_gra_haa: linear-gradient(to bottom, #790000 25%, #a40000 71%, #c71e1e 100%);
+$header_article_hif_su: $black;
+$header_article_hif_su_border: #935800;
+$header_article_hif_su_bg: #c29540;
+$header_article_hif_su_bg_l_gra: linear-gradient(
+    to top,
+    #c29540 0%,
+    #8d5d1c 29%,
+    #c29540 49%,
+    #f9e19e 66%,
+    #c29540 92%
+);
+$header_article_hif_su_haa: $white;
+$header_article_hif_su_border_haa: #935800;
+$header_article_hif_su_bg_haa: #c29540;
+$header_article_hif_su_bg_l_gra_haa: linear-gradient(to bottom, #8d5d1c 25%, #c29540 49%, #f9e19e 100%);
+
+
+//header hifi color
+$header_article_hifi_uif_t_p: $white;
+$header_article_hifi_uif_t_nth2: #fde6a2;
+$header_article_hifi_uif_t_abg_bg: $black;
+$header_article_hifi_uif_t_abg_awab_border_l: transparent;
+$header_article_hifi_uif_t_abg_awab_border_r: transparent;
+$header_article_hifi_uif_t_abg_aw_border_t: $white;
+$header_article_hifi_uif_t_abg_ab_border_t: $black;
+$header_article_hifi_so_border: #935800;
+$header_article_hifi_so_bg: #8d5d1c;
+$header_article_hifi_so_bg_l_gra: linear-gradient(
+    to top,
+    #c29540 0%,
+    #8d5d1c 29%,
+    #c29540 49%,
+    #f9e19e 66%,
+    #c29540 92%
+);
+$header_article_hifi_so_haa: $white;
+$header_article_hifi_so_bg_haa: #c29540;
+$header_article_hifi_so_bg_l_gra_haa: linear-gradient(to bottom, #8d5d1c 0%, #c29540 49%, #f9e19e 100%);
+
+
+//header lang color
+$header_article_lang_bg: #131313;
+$header_article_lang_select_p: #d0d0d0;
+$header_article_lang_select_ul_scrollbar1: #000000;
+$header_article_lang_select_ul_scrollbar2: #fde6a2;
+$header_article_lang_select_ul_li_bg: #131313;
+$header_article_lang_select_ul_li_a: $white;
+$header_article_lang_select_ul_li_a_hover: $black;
+$header_article_lang_select_ul_li_a_hover_bg: #fde6a2;
+
+
+//header nav color
+$header_article_nav_li_p: #ffeaab;
+
+
+//main wcon color
+$main_wcon_hg_li: #0b0b0b;
+$main_wcon_hg_li_text_p: #ffeaab;
+$main_wcon_hg_li_text_p_span: $white;
+$main_wcon_wcr_news_bg: rgba(84, 84, 87, 0.6);
+$main_wcon_wcr_news_nt_p: $white;
+$main_wcon_wcr_index_li_bg: #131313;
+$main_wcon_wcr_index_li_hover_bg: #c09442;
+$main_wcon_wcr_index_li_hover_bg_l_gra: linear-gradient(to left, #f6e09d 0%, #c09442 100%);
+
+
+//footer color
+$footer_bg: #c09442;
+$footer_nav_bg: #dbdbdb;
+$footer_nav_bs: #cacaca;
+$footer_nav_bg_l_gra: linear-gradient(to bottom, #ffffff 0%, #dbdbdb 100%);
+$footer_nav_li: #454545;
+$footer_nav_li_border_l: #7d7d7d;
+$footer_nav_li_a: #454545;
+$footer_nav_li_last_border_r: #7d7d7d;
+$footer_nav_li_haa_bg: #b0b0b0;
+$footer_nav_li_haa_bg_l_gra: linear-gradient(to top, #f0f0f0 6%, #d1d1d1 48%, #b0b0b0 86%);
+$footer_section_bg: #2a2a2a;
+$footer_section_bg_l_gra: linear-gradient(to top, #060606 0%, #1a1a1a 50%, #2a2a2a 50%, #575757 91%, #6f6f6f 100%);
+$footer_section_p_nth1: #f4f4f4;
+$footer_section_p_nth2: #949494;
