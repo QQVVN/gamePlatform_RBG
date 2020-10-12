@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: normal;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Microsoft JhengHei;
+  background: #060606;
+  min-width: 1300px;
+  height: 100%;
+  overflow-x: hidden;
+}
+@supports (-webkit-touch-callout: none) {
+  html {
+    position: absolute;
+    transform: scale(0.8);
+    top: -10%;
+    left: -14%;
+  }
+}
+
+body {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  height: 1000px;
+}
+main article {
+  position: relative;
+  width: 1300px;
+  height: 1000px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+main article:after, main article:before {
+  content: "";
+  display: table;
+}
+main article:after {
+  clear: both;
+}
+main article section {
+  position: absolute;
+  height: 1000px;
+}
+main article section:first-of-type {
+  left: 103px;
+  top: 52px;
+  width: 549px;
+  height: 679px;
+  background: lightblue;
+  background: url(../images/player.png) no-repeat top center;
+  background-size: 549px;
+}
+main article section:last-of-type {
+  width: 791px;
+  left: 509px;
+}
+main article section .inputbox {
+  position: absolute;
+  left: 176px;
+  top: 92px;
+  width: 332px;
+  height: 502px;
+  background: orangered;
+}
+main article section .inputbox input {
+  width: 332px;
+  height: 40px;
+  margin: 20px 0 0 0;
+  border-radius: 3px;
+  background: #b5b5b5;
+}
+main article section .inputbox input::placeholder {
+  font-size: 16px;
+  color: #3e3e3e;
+}
+main article section .inputbox .checkbox {
+  width: 100%;
+}
+main article section .inputbox .checkbox input {
+  border: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  background: url(../images/checkboxbg.png) no-repeat top center;
+  background-size: 16px;
+}
+main article section .inputbox .checkbox input:checked {
+  border: 0px;
+  background: url(../images/checkboxbg2.png) no-repeat top center;
+  background-size: 16px;
+}
+main article section .inputbox .checkbox p {
+  display: inline-block;
+}
+
+.bg {
+  position: relative;
+  z-index: -1;
+  top: -1000px;
+  height: 1000px;
+  background: url(../images/bg.jpg) no-repeat top center;
+  background-size: 1920px 1000px;
+}

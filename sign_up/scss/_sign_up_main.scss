@@ -1,0 +1,95 @@
+html {
+    font-family: Microsoft JhengHei;
+    background: $html_bg;
+    min-width: 1300px;
+    height: 100%;
+    overflow-x: hidden;
+    @supports (-webkit-touch-callout: none) {
+        position: absolute;
+        transform: scale(0.8);
+        top: -10%;
+        left: -14%;
+    }
+}
+
+body {
+    position: relative;
+    height: 1000px;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    height: 1000px;
+    article {
+        position: relative;
+        width: 1300px;
+        height: 1000px;
+        margin: 0 auto;
+        @include clearfix;
+        section {
+            position: absolute;
+            height: 1000px;
+            &:first-of-type {
+                left: 103px;
+                top: 52px;
+                width: 549px;
+                height: 679px;
+                background: lightblue;
+                background: url(../images/player.png) no-repeat top center;
+                background-size: 549px;
+            }
+            &:last-of-type {
+                width: 1300px - 509px;
+                left: 509px;
+            }
+            .inputbox {
+                position: absolute;
+                left: 176px;
+                top: 92px;
+                width: 332px;
+                height: 502px;
+                background: orangered;
+                input {
+                    width: 332px;
+                    height: 40px;
+                    margin: 20px 0 0 0;
+                    border-radius: 3px;
+                    background: #b5b5b5;
+                    &::placeholder {
+                        font-size: 16px;
+                        color: #3e3e3e;
+                    }
+                }
+                .checkbox {
+                    width: 100%;
+                    input {
+                        border: none;
+                        width: 16px;
+                        height: 16px;
+                        margin: 0;
+                        background: url(../images/checkboxbg.png) no-repeat top center;
+                        background-size: 16px;
+                        &:checked {
+                            border: 0px;
+                            background: url(../images/checkboxbg2.png) no-repeat top center;
+                            background-size: 16px;
+                        }
+                    }
+                    p {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg {
+    position: relative;
+    z-index: -1;
+    top: -1000px;
+    height: 1000px;
+    background: url(../images/bg.jpg) no-repeat top center;
+    background-size: 1920px 1000px;
+}
