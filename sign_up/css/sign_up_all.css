@@ -204,13 +204,6 @@ html {
   height: 100%;
   overflow-x: hidden;
 }
-@supports (-webkit-touch-callout: none) {
-  html {
-    position: absolute;
-    transform: scale(0.5);
-    overflow-x: hidden;
-  }
-}
 
 body {
   position: relative;

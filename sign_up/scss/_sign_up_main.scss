@@ -6,13 +6,13 @@ html {
     min-width: 1300px;
     height: 100%;
     overflow-x: hidden;
-    @include ios {
-        position: absolute;
-        transform: scale(0.5);
-        // top: -10%;
-        // left: -14%;
-        overflow-x: hidden;
-    }
+    // @include ios {
+    //     position: absolute;
+    //     transform: scale(0.5);
+    //     top: -10%;
+    //     left: -14%;
+    //     overflow-x: hidden;
+    // }
 }
 
 body {
