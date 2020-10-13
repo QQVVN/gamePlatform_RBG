@@ -202,7 +202,7 @@ html {
   background: #060606;
   min-width: 1300px;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @supports (-webkit-touch-callout: none) {
   html {
@@ -210,7 +210,6 @@ html {
     transform: scale(0.8);
     top: -10%;
     left: -14%;
-    overflow: hidden;
   }
 }
 
