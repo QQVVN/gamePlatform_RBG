@@ -1,7 +1,7 @@
 @include a;
 
 html {
-    font-family: Microsoft JhengHei;
+    font-family: $font-MJ;
     background: $html_bg;
     min-width: 1300px;
     height: 100%;
