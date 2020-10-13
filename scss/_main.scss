@@ -1,3 +1,5 @@
+@include a;
+
 html {
     font-family: Microsoft JhengHei;
     background: $html_bg;
@@ -17,8 +19,6 @@ body {
     height: 1437px;
     overflow: hidden;
 }
-
-@include a;
 
 .newbox {
     position: absolute;

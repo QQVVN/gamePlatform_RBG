@@ -2,9 +2,13 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>sign_up_page</title>
     <link rel="stylesheet" href="./css/sign_up_all.css">
+    <!--[if IE 9]>
+        <link rel="stylesheet" href="./css/ie9.css">
+    <![endif]-->
 </head>
 <body>
     <main>
@@ -19,11 +23,19 @@
                     <input type="tel" placeholder="手機">
                     <input type="text" placeholder="手機驗證碼">
                     <input type="text" placeholder="驗證碼">
-                    <div class="checkbox">
+                    <div class="ckbox">
                         <input type="checkbox">
-                        <p>已閱讀並同意 <span>相關條款與隱私政策</span></p>
+                        <p>已閱讀並同意 <span>相關條款與隱私政策<a href="#"></a></span></p>
                     </div>
-                    
+                    <button type="submit">確認</button>
+                </div>
+                <div class="ie9ph">
+                    <p>帳號</p>
+                    <p>密碼</p>
+                    <p>確認密碼</p>
+                    <p>手機</p>
+                    <p>手機驗證碼</p>
+                    <p>驗證碼</p>
                 </div>
             </section>
         </article>
