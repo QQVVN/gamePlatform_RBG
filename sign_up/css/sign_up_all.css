@@ -202,14 +202,14 @@ html {
   background: #060606;
   min-width: 1300px;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 @supports (-webkit-touch-callout: none) {
   html {
     position: absolute;
     transform: scale(0.8);
     top: -10%;
-    left: -14%;
+    left: -50%;
   }
 }
 
