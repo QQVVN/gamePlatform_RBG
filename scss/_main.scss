@@ -6,7 +6,7 @@ html {
     min-width: 1300px;
     height: 100%;
     overflow-x: hidden;
-    @supports (-webkit-touch-callout: none) {
+    @include ios {
         position: absolute;
         transform: scale(0.8);
         top: -10%;
@@ -315,7 +315,7 @@ header {
                 &.active {
                     color: $header_article_hif_rpw_haa;
                 }
-                @supports (-webkit-touch-callout: none) {
+                @include ios {
                     font-size: 14px;
                 }
             }
@@ -375,7 +375,6 @@ header {
                 margin: 0 8px 0 0;
                 cursor: pointer;
                 border-radius: 3px;
-                color: $header_article_hif_sisu;
                 border: 1px solid $header_article_hif_sisu_border;
                 background: $header_article_hif_sisu_bg;
                 background: $header_article_hif_sisu_bg_l_gra;
@@ -386,9 +385,11 @@ header {
                     background: $header_article_hif_sisu_bg_haa;
                     background: $header_article_hif_sisu_bg_l_gra_haa;
                 }
+                a {
+                    color: $header_article_hif_sisu;
+                }
             }
             .su {
-                color: $header_article_hif_su;
                 border: 1px solid $header_article_hif_su_border;
                 background: $header_article_hif_su_bg;
                 background: $header_article_hif_su_bg_l_gra;
@@ -399,6 +400,14 @@ header {
                     border: 1px solid $header_article_hif_su_border_haa;
                     background: $header_article_hif_su_bg_haa;
                     background: $header_article_hif_su_bg_l_gra_haa;
+                }
+                a {
+                    color: $header_article_hif_su;
+                    &:hover,
+                    &:active,
+                    &.active {
+                        color: $header_article_hif_su_haa;
+                    }
                 }
             }
         }
@@ -502,7 +511,7 @@ header {
                         top: 3px + 3px;
                         left: 3px;
                         border-left: 4px solid $header_article_hifi_uif_t_abg_awab_border_l;
-                        border-top: 4px solid $header_article_hifi_uif_t_abg_aw_border_;
+                        border-top: 4px solid $header_article_hifi_uif_t_abg_aw_border_t;
                         border-right: 4px solid $header_article_hifi_uif_t_abg_awab_border_r;
                     }
                     .ab {
@@ -670,7 +679,7 @@ main {
         transform: translateX(-50%);
         width: 100%;
         height: 1200px;
-        @media screen and (max-width: 1024px) {
+        @include px1024 {
             overflow-x: hidden;
         }
         .mbg {
@@ -689,7 +698,7 @@ main {
         height: 1200px;
         margin: 0 auto;
         top: -1200px;
-        @media screen and (max-width: 1024px) {
+        @include px1024 {
             overflow-x: hidden;
         }
         .mcont {
@@ -883,7 +892,7 @@ main {
         top: 73px;
         left: 50%;
         transform: translate(-50%);
-        @media screen and (max-width: 1024px) {
+        @include px1024 {
             overflow-x: hidden;
         }
         .se,
@@ -904,7 +913,7 @@ main {
                 background-position-y: -99px;
                 animation: navbg1 0.5s;
             }
-            @supports (-webkit-touch-callout: none) {
+            @include ios {
                 left: 1162px - 309px;
             }
         }
@@ -947,7 +956,7 @@ main {
         top: -744px - 1200px;
         left: 50%;
         transform: translateX(-50%);
-        @media screen and (max-width: 1024px) {
+        @include px1024 {
             overflow-x: hidden;
         }
         .wbg {

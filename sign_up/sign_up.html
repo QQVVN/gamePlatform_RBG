@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
     <title>sign_up_page</title>
     <link rel="stylesheet" href="./css/sign_up_all.css">
     <!--[if IE 9]>
         <link rel="stylesheet" href="./css/ie9.css">
     <![endif]-->
 </head>
+
 <body>
     <main>
         <article>
@@ -18,7 +20,7 @@
                 <div class="inputbox">
                     <div class="title">註冊</div>
                     <input type="text" placeholder="請輸入帳號">
-                    <input type="password" placeholder="輸入密碼">
+                    <input class="password" type="password" placeholder="輸入密碼">
                     <input type="password" placeholder="確認密碼">
                     <input type="tel" placeholder="手機">
                     <input type="text" placeholder="手機驗證碼">
@@ -29,6 +31,14 @@
                     </div>
                     <button type="submit">確認</button>
                 </div>
+                <div class="eyebg">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </div>
+                <div class="eye"></div>
+                <div class="vcode">
+                    <p>傳送驗證碼</p>
+                </div>
                 <div class="ie9ph">
                     <p>帳號</p>
                     <p>密碼</p>
@@ -38,8 +48,18 @@
                     <p>驗證碼</p>
                 </div>
             </section>
+            <div class="back">
+                <div class="icon"></div>
+                <a href="javascript:history.back()">
+                    <p>上一頁</p>
+                </a>
+            </div>
         </article>
     </main>
     <div class="bg"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/sign_up_js.js"></script>
 </body>
+
 </html>

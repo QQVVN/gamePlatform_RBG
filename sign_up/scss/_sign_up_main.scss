@@ -6,11 +6,12 @@ html {
     min-width: 1300px;
     height: 100%;
     overflow-x: hidden;
-    @supports (-webkit-touch-callout: none) {
+    @include ios {
         position: absolute;
         transform: scale(0.8);
         top: -10%;
         left: -14%;
+        overflow-x: hidden;
     }
 }
 
@@ -28,6 +29,42 @@ main {
         width: 1300px;
         height: 1000px;
         margin: 0 auto;
+        .back {
+            position: relative;
+            width: 120px - 2px;
+            height: 40px - 2px;
+            line-height: 40px - 2px;
+            text-align: center;
+            left: 232px;
+            top: 97px;
+            border-radius: 20px;
+            border: 1px solid $back_border;
+            box-shadow: 0px 6px 6px -5px $back_boxshadow;
+            background: $back_bg;
+            background: $back_bg_l_gra;
+            &:hover,
+            &:active,
+            &.active {
+                background: $back_haa_bg;
+                background: $back_haa_bg_l_gra;
+            }
+            .icon {
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                left: 19px;
+                top: 8px;
+                background: url(../images/back-button.png) no-repeat top center;
+                background-size: 22px;
+            }
+            a {
+                p {
+                    font-size: 16px;
+                    color: $white;
+                    padding: 0 0 0 20px;
+                }
+            }
+        }
         section {
             position: absolute;
             height: 1000px;
@@ -58,6 +95,9 @@ main {
                 input[type="text"],
                 input[type="password"],
                 input[type="tel"] {
+                    @include ff {
+                        outline: 0;
+                    }
                     width: 332px - 12px;
                     height: 40px;
                     padding: 0 0 0 12px;
@@ -127,6 +167,46 @@ main {
                         border: 5px solid $button_haa_border;
                         background: $button_haa_bg_l_gra;
                         transition: 0.2s;
+                    }
+                }
+            }
+            .eyebg {
+                display: none;
+            }
+            .eye {
+                cursor: pointer;
+                position: absolute;
+                width: 20px;
+                height: 19px;
+                left: 475px;
+                top: 207px;
+                background: url(../images/eye.png) no-repeat top center;
+                background-size: 20px;
+                &.show {
+                    background: url(../images/beye.png) no-repeat top center;
+                }
+            }
+            .vcode {
+                position: absolute;
+                width: 86px;
+                height: 29px;
+                line-height: 29px;
+                text-align: center;
+                left: 415px;
+                top: 320px;
+                border: 1px solid $vcode_border;
+                border-radius: 3px;
+                p {
+                    color: $vcode_p;
+                    font-size: 14px;
+                }
+                &:hover,
+                &:active,
+                &.active {
+                    cursor: pointer;
+                    background: $vcode_haa_bg;
+                    p {
+                        color: $white;
                     }
                 }
             }

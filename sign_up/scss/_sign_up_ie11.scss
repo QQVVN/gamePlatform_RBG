@@ -1,3 +1,23 @@
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    
+@include ie {
+    main {
+        article {
+            section {
+                .eyebg {
+                    display: block;
+                    .one,
+                    .two {
+                        position: absolute;
+                        width: 25px;
+                        height: 19px;
+                        left: 475px;
+                        top: 207px;
+                        background: $input_bg;
+                    }
+                    .two {
+                        top: 268px;
+                    }
+                }
+            }
+        }
+    }
 }

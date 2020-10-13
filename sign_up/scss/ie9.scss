@@ -1,32 +1,113 @@
-@import '../../scss/_reset_css';
-@import '../../scss/_variable';
-@import '_sign_up_color';
-@import '../../scss/_mixin';
-@import '../../scss/_keyframes';
+@import "_sign_up_color";
 
 main {
     article {
+        .back {
+            p {
+                display: block;
+            }
+            a {
+                z-index: 1;
+            }
+        }
         section {
             .inputbox {
-                input[type="text"],
-                input[type="password"],
-                input[type="tel"] {
-                    width: 332px - 50px;
-                    padding: 0 0 0 50px;
+                input[type="text"] {
+                    &:nth-of-type(1) {
+                        width: 332px - 50px;
+                        padding: 0 0 0 50px;
+                    }
+                    &:nth-of-type(2) {
+                        width: 332px - 50px;
+                        padding: 0 0 0 50px;
+                    }
+                    &:nth-of-type(3) {
+                        width: 332px - 82px;
+                        padding: 0 0 0 82px;
+                    }
+                    &:nth-of-type(4) {
+                        width: 332px - 50px;
+                        padding: 0 0 0 50px;
+                    }
+                    &:nth-of-type(5) {
+                        width: 332px - 98px;
+                        padding: 0 0 0 98px;
+                    }
+                    &:nth-of-type(6) {
+                        width: 332px - 68px;
+                        padding: 0 0 0 68px;
+                    }
+                }
+                input[type="password"] {
+                    &:nth-of-type(2) {
+                        width: 332px - 50px;
+                        padding: 0 0 0 50px;
+                    }
+                    &:nth-of-type(3) {
+                        width: 332px - 82px;
+                        padding: 0 0 0 82px;
+                    }
+                }
+            }
+            .ckbox {
+                width: 80%;
+                margin: 30px auto;
+                input[type="checkbox"] {
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                    top: 2px;
+                    outline: 0;
+                    border-radius: 3px;
+                    background: $input_checkbox_bg;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 5px;
+                        height: 11px;
+                        top: 0px;
+                        left: 4px;
+                        border: solid $black;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                        opacity: 0;
+                    }
+                    &:checked {
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .eyebg {
+                display: block;
+                .one,
+                .two {
+                    position: absolute;
+                    width: 25px;
+                    height: 19px;
+                    left: 475px;
+                    top: 207px;
+                    background: $input_bg;
+                }
+                .two {
+                    top: 268px;
                 }
             }
             .ie9ph {
                 position: absolute;
                 display: block;
                 left: 185px;
-                top: 150px;
+                top: 148px;
                 p {
-                    margin: 0 0 42px 0;
-                    &:nth-of-type(2) {
-                        margin: 0 0 45px 0;
-                    }
+                    margin: 0 0 45px 0;
+                    &:nth-of-type(2),
                     &:nth-of-type(3) {
-                        margin: 0 0 46px 0;
+                        margin: 0 0 44px 0;
+                    }
+                    &:nth-of-type(5) {
+                        margin: 0 0 43px 0;
                     }
                 }
             }
