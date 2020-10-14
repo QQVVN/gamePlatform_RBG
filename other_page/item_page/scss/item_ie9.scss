@@ -5,7 +5,9 @@ body {
 main {
     top: -188px;
     .ibbox {
-        top: -1210px;
+        position: relative;
+        top: -1200px;
+        margin: 0 auto;
     }
 }
 
