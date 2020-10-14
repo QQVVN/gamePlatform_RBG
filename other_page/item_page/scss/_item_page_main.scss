@@ -29,14 +29,14 @@ main {
             transform: translateX(-50%);
             width: 847px;
             height: 128px;
-            background: url(../images/item_bottom_bg.png)no-repeat top center;
-            background-size: 847px*6;
+            background: url(../images/item_bottom_bg.png) no-repeat top center;
+            background-size: 847px * 6;
             background-position: 0 0;
+            @include ibbg_position;
         }
     }
 }
 
 footer {
-    // top: -363px;
     top: -838px;
 }

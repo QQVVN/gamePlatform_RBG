@@ -221,6 +221,21 @@ main .ibbox .ibbg {
   background-size: 5082px;
   background-position: 0 0;
 }
+main .ibbox .ibbg.bg2 {
+  background-position: -847px 0;
+}
+main .ibbox .ibbg.bg3 {
+  background-position: -1694px 0;
+}
+main .ibbox .ibbg.bg4 {
+  background-position: -2541px 0;
+}
+main .ibbox .ibbg.bg5 {
+  background-position: -3388px 0;
+}
+main .ibbox .ibbg.bg6 {
+  background-position: -4235px 0;
+}
 
 footer {
   top: -838px;

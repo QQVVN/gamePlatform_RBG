@@ -52,3 +52,13 @@
         @content;
     }
 }
+
+@mixin ibbg_position {
+    @for $var from 2 through 6 {
+        $num: -847px;
+        $var-1: $var - 1;
+        &.bg#{$var} {
+            background-position: $num * $var-1 0;
+        }
+    }
+}
