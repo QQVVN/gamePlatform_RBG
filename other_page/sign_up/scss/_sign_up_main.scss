@@ -142,8 +142,17 @@ main {
                         display: inline-block;
                         padding: 0;
                         line-height: 0;
-                        span {
-                            position: relative;
+                    }
+                    .rules {
+                        display: inline-block;
+                        position: relative;
+                        width: 144px;
+                        height: 21px;
+                        top: 7px;
+                        left: 0px;
+                        a {
+                            width: 144px;
+                            height: 21px;
                             color: $ckbox_p_span;
                         }
                     }

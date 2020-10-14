@@ -5,65 +5,31 @@ main article .back a {
   z-index: 1;
 }
 main article section .inputbox input[type=text]:nth-of-type(1) {
-  width: 282px;
-  padding: 0 0 0 50px;
-}
-main article section .inputbox input[type=text]:nth-of-type(2) {
-  width: 282px;
-  padding: 0 0 0 50px;
-}
-main article section .inputbox input[type=text]:nth-of-type(3) {
-  width: 250px;
-  padding: 0 0 0 82px;
+  width: 277px;
+  padding: 0 0 0 55px;
 }
 main article section .inputbox input[type=text]:nth-of-type(4) {
-  width: 282px;
-  padding: 0 0 0 50px;
+  width: 191px;
+  padding: 0 86px 0 55px;
 }
 main article section .inputbox input[type=text]:nth-of-type(5) {
-  width: 234px;
-  padding: 0 0 0 98px;
+  width: 229px;
+  padding: 0 0 0 103px;
 }
 main article section .inputbox input[type=text]:nth-of-type(6) {
-  width: 264px;
-  padding: 0 0 0 68px;
+  width: 259px;
+  padding: 0 0 0 73px;
 }
 main article section .inputbox input[type=password]:nth-of-type(2) {
-  width: 282px;
-  padding: 0 0 0 50px;
+  width: 277px;
+  padding: 0 0 0 55px;
 }
 main article section .inputbox input[type=password]:nth-of-type(3) {
-  width: 250px;
-  padding: 0 0 0 82px;
+  width: 245px;
+  padding: 0 0 0 87px;
 }
-main article section .ckbox {
-  width: 80%;
-  margin: 30px auto;
-}
-main article section .ckbox input[type=checkbox] {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  top: 2px;
-  outline: 0;
-  border-radius: 3px;
-  background: #b5b5b5;
-}
-main article section .ckbox input[type=checkbox]::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 5px;
-  height: 11px;
-  top: 0px;
-  left: 4px;
-  border: solid #000000;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  opacity: 0;
-}
-main article section .ckbox input[type=checkbox]:checked::before {
-  opacity: 1;
+main article section .inputbox .ckbox .rules {
+  top: 5px;
 }
 main article section .eyebg {
   display: block;
@@ -85,6 +51,7 @@ main article section .ie9ph {
   display: block;
   left: 185px;
   top: 148px;
+  color: #6b6b6b;
 }
 main article section .ie9ph p {
   margin: 0 0 45px 0;

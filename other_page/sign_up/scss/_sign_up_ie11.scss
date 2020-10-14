@@ -2,10 +2,24 @@
     main {
         article {
             section {
+                .inputbox {
+                    input[type="tel"] {
+                        &:nth-of-type(4) {
+                            width: 332px - 12px - 86px;
+                            padding: 0 86px 0 12px;
+                        }
+                    }
+                    .ckbox {
+                        .rules {
+                            top: 5px;
+                        }
+                    }
+                }
                 .eyebg {
                     display: block;
                     .one,
-                    .two {
+                    .two,
+                    .three {
                         position: absolute;
                         width: 25px;
                         height: 19px;

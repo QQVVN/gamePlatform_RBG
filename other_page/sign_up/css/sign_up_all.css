@@ -347,8 +347,17 @@ main article section .inputbox .ckbox p {
   padding: 0;
   line-height: 0;
 }
-main article section .inputbox .ckbox p span {
+main article section .inputbox .ckbox .rules {
+  display: inline-block;
   position: relative;
+  width: 144px;
+  height: 21px;
+  top: 7px;
+  left: 0px;
+}
+main article section .inputbox .ckbox .rules a {
+  width: 144px;
+  height: 21px;
   color: #b70000;
 }
 main article section .inputbox button {
@@ -421,11 +430,19 @@ main article section .ie9ph {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main article section .inputbox input[type=tel]:nth-of-type(4) {
+    width: 234px;
+    padding: 0 86px 0 12px;
+  }
+  main article section .inputbox .ckbox .rules {
+    top: 5px;
+  }
   main article section .eyebg {
     display: block;
   }
   main article section .eyebg .one,
-main article section .eyebg .two {
+main article section .eyebg .two,
+main article section .eyebg .three {
     position: absolute;
     width: 25px;
     height: 19px;
