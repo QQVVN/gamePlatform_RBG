@@ -28,9 +28,6 @@ main article section .inputbox input[type=password]:nth-of-type(3) {
   width: 245px;
   padding: 0 0 0 87px;
 }
-main article section .inputbox .ckbox .rules {
-  top: 5px;
-}
 main article section .eyebg {
   display: block;
 }
