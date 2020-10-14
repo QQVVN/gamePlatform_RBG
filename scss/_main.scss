@@ -279,6 +279,7 @@ header {
     margin: 0 auto;
     z-index: 5;
     article {
+        font-family: $font-MJ;
         position: relative;
         width: 1300px;
         height: 183px;
@@ -668,6 +669,7 @@ header {
 }
 
 main {
+    font-family: $font-MJ;
     position: relative;
     height: 1200px;
     margin: 0 auto;
@@ -1209,6 +1211,7 @@ footer {
     margin: -97px auto 0;
     background: $footer_bg;
     nav {
+        font-family: $font-MJ;
         position: relative;
         width: 100%;
         height: 46px;
@@ -1253,6 +1256,7 @@ footer {
         }
     }
     section {
+        font-family: $font-MJ;
         width: 100%;
         height: 104px;
         margin: 0 auto;
