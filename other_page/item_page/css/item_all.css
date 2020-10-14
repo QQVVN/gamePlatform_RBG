@@ -210,6 +210,17 @@ body {
 main {
   top: -198px;
 }
+main .ibbox .ibbg {
+  position: absolute;
+  top: 432px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 847px;
+  height: 128px;
+  background: url(../images/item_bottom_bg.png) no-repeat top center;
+  background-size: 5082px;
+  background-position: 0 0;
+}
 
 footer {
   top: -838px;
@@ -218,6 +229,13 @@ footer {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
     height: 962px;
+  }
+
+  main .ibbox {
+    position: relative;
+    top: -1200px;
+    background-color: #fff;
+    margin: 0 auto;
   }
 
   footer {

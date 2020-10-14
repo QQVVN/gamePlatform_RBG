@@ -5,6 +5,9 @@ body {
 main {
   top: -188px;
 }
+main .ibbox {
+  top: -1210px;
+}
 
 footer {
   top: -838px;

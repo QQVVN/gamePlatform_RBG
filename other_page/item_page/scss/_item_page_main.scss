@@ -21,6 +21,19 @@ body {
 
 main {
     top: -198px;
+    .ibbox {
+        .ibbg {
+            position: absolute;
+            top: 432px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 847px;
+            height: 128px;
+            background: url(../images/item_bottom_bg.png)no-repeat top center;
+            background-size: 847px*6;
+            background-position: 0 0;
+        }
+    }
 }
 
 footer {
