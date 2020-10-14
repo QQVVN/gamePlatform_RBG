@@ -186,3 +186,41 @@ input {
     transform: translateX(0%);
   }
 }
+body {
+  height: 937px;
+}
+
+.banbox {
+  position: relative;
+  height: 267px;
+  top: -188px;
+  margin: 0 auto;
+}
+.banbox .banner {
+  position: absolute;
+  width: 1920px;
+  height: 267px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/item_banner.jpg) no-repeat top center;
+  background-size: 11520px 267px;
+  background-position: 0 0;
+}
+
+main {
+  top: -198px;
+}
+
+footer {
+  top: -838px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body {
+    height: 962px;
+  }
+
+  footer {
+    top: -838px;
+  }
+}
