@@ -5,12 +5,19 @@ body {
 main {
   top: -188px;
 }
+main .btnbox {
+  position: relative;
+  left: 0px;
+  top: -1200px;
+  transform: translateX(0%);
+  margin: 0 auto;
+}
 main .ibbox {
   position: relative;
-  top: -1200px;
+  top: -1750px;
   margin: 0 auto;
 }
 
 footer {
-  top: -838px;
+  top: -1388px;
 }

@@ -227,11 +227,67 @@ main {
 }
 main .btnbox {
   position: absolute;
-  left: 0px;
+  left: 50%;
   top: 10px;
+  transform: translateX(-50%);
   width: 1200px;
-  height: 100px;
-  background: red;
+  height: 550px;
+}
+main .btnbox .sebtn {
+  width: 56%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .btnbox .sebtn .l,
+main .btnbox .sebtn .r {
+  position: relative;
+  display: inline-block;
+  width: 330px;
+  height: 65%;
+  margin: 40px 0 0;
+  background: url(../images/se/ab_sport.png) no-repeat top center;
+  background-size: 100%;
+  background-position: 0 0;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+main .btnbox .sebtn .l .p,
+main .btnbox .sebtn .r .p {
+  position: absolute;
+  left: 1px;
+  top: 23px;
+  width: 92%;
+  height: 100%;
+  background: url(../images/se/ab_players.png) no-repeat top center;
+  background-size: 100%;
+  background-position: 0 0;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+main .btnbox .sebtn .l:hover, main .btnbox .sebtn .l:active, main .btnbox .sebtn .l.active,
+main .btnbox .sebtn .r:hover,
+main .btnbox .sebtn .r:active,
+main .btnbox .sebtn .r.active {
+  animation: navbg1 0.8s;
+  opacity: 1;
+}
+main .btnbox .sebtn .l:hover .p, main .btnbox .sebtn .l:active .p, main .btnbox .sebtn .l.active .p,
+main .btnbox .sebtn .r:hover .p,
+main .btnbox .sebtn .r:active .p,
+main .btnbox .sebtn .r.active .p {
+  animation: navbg1 0.5s;
+  opacity: 1;
+}
+main .btnbox .sebtn .r {
+  background: url(../images/se/cd_sport.png) no-repeat top center;
+  background-size: 100%;
+}
+main .btnbox .sebtn .r .p {
+  left: 1px;
+  top: -6px;
+  width: 88%;
+  background: url(../images/se/cd_players.png) no-repeat top center;
+  background-size: 100%;
 }
 main .ibbox .ibbg {
   position: absolute;
@@ -271,16 +327,18 @@ footer {
 
   main .btnbox {
     position: relative;
+    left: 0px;
     top: -1190px;
+    transform: translateX(0%);
     margin: 0 auto;
   }
   main .ibbox {
     position: relative;
-    top: -1200px;
+    top: -1750px;
     margin: 0 auto;
   }
 
   footer {
-    top: -838px;
+    top: -1388px;
   }
 }
