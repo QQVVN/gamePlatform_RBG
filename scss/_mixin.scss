@@ -194,6 +194,16 @@
     }
 }
 
+@mixin item-banner-position {
+    @for $var from 2 through 6 {
+        $num: -1920px;
+        $var2: $var - 1;
+        &.ban#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
 @mixin ibbg_position {
     @for $var from 2 through 6 {
         $num: -847px;

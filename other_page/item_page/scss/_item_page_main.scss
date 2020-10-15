@@ -16,11 +16,20 @@ body {
         background: url(../images/item_banner.jpg) no-repeat top center;
         background-size: 1920px * 6 267px;
         background-position: 0 0;
+        @include item-banner-position;
     }
 }
 
 main {
     top: -198px;
+    .btnbox {
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        width: 1200px;
+        height: 100px;
+        background:red;
+    }
     .ibbox {
         .ibbg {
             position: absolute;
