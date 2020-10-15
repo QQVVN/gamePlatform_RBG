@@ -25,7 +25,15 @@
         height: 100%;
         pointer-events: all;
         z-index: 10;
-        text-decoration:none;
+        text-decoration: none;
+    }
+}
+
+@mixin haa {
+    &:hover,
+    &:active,
+    &.active {
+        @content;
     }
 }
 
@@ -53,6 +61,139 @@
     }
 }
 
+@mixin po-deg {
+    &.se_deg,
+    &.oc_deg,
+    &.sg_deg,
+    &.lt_deg,
+    &.dg_deg,
+    &.bo_deg {
+        transition-duration: 0.5s;
+    }
+    &.se_deg {
+        transform: rotate(90deg);
+    }
+    &.oc_deg {
+        transform: rotate(51deg);
+    }
+    &.sg_deg {
+        transform: rotate(0deg);
+    }
+    &.lt_deg {
+        transform: rotate(-55deg);
+    }
+    &.dg_deg {
+        transform: rotate(-90deg);
+    }
+    &.bo_deg {
+        transform: rotate(-118deg);
+    }
+}
+
+@mixin cpb-deg {
+    &.se_bg,
+    &.oc_bg,
+    &.sg_bg,
+    &.lt_bg,
+    &.dg_bg,
+    &.bo_bg {
+        background: url(../images/cB_bg.png) no-repeat top center;
+        background-size: 600%;
+        animation: 0.5s;
+    }
+    &.se_bg {
+        background-position: 0 0;
+        animation: navbg1 0.5s;
+    }
+    &.oc_bg {
+        background-position: -517px 0;
+        animation: navbg2 0.5s;
+    }
+    &.sg_bg {
+        background-position: -517px * 2 0;
+        animation: navbg3 0.5s;
+    }
+    &.lt_bg {
+        background-position: -517px * 3 0;
+        animation: navbg4 0.5s;
+    }
+    &.dg_bg {
+        background-position: -517px * 4 0;
+        animation: navbg5 0.5s;
+    }
+    &.bo_bg {
+        background-position: -517px * 5 0;
+        animation: navbg6 0.5s;
+    }
+}
+
+@mixin mcl-player {
+    &.loc {
+        background: url(../images/SE_l_player2.png) no-repeat top center;
+        animation: navbg2 0.5s;
+    }
+    &.lsg {
+        background: url(../images/SE_l_player3.png) no-repeat top center;
+        left: -22.8%;
+        animation: navbg3 0.5s;
+    }
+    &.llt {
+        background: url(../images/SE_l_player4.png) no-repeat top center;
+        animation: navbg4 0.5s;
+    }
+    &.ldg {
+        background: url(../images/SE_l_player5.png) no-repeat top center;
+        left: -20.8%;
+        animation: navbg5 0.5s;
+    }
+    &.lbo {
+        background: url(../images/SE_l_player6.png) no-repeat top center;
+        animation: navbg6 0.5s;
+    }
+}
+
+@mixin mcr-player {
+    &.roc {
+        background: url(../images/SE_r_player2.png) no-repeat top center;
+        animation: navbg2 0.5s;
+    }
+    &.rsg {
+        background: url(../images/SE_r_player3.png) no-repeat top center;
+        width: 861px;
+        left: 58.5%;
+        background-size: 861px;
+        animation: navbg3 0.5s;
+        z-index: -1;
+    }
+    &.rlt {
+        background: url(../images/SE_r_player4.png) no-repeat top center;
+        animation: navbg4 0.5s;
+    }
+    &.rdg {
+        background: url(../images/SE_r_player5.png) no-repeat top center;
+        left: 83%;
+        top: -23px;
+        animation: navbg5 0.5s;
+    }
+    &.rbo {
+        background: url(../images/SE_r_player6.png) no-repeat top center;
+        left: 89%;
+        animation: navbg6 0.5s;
+    }
+}
+
+@mixin bnr-position {
+    @for $var from 2 through 7 {
+        $num: 830px;
+        $num2: -830px;
+        $var2: $var - 1;
+        &:nth-of-type(#{$var}) {
+            left: $num * $var2;
+            background-position: $num2 * $var2 0;
+        }
+    }
+}
+
 @mixin ibbg_position {
     @for $var from 2 through 6 {
         $num: -847px;
@@ -60,5 +201,41 @@
         &.bg#{$var} {
             background-position: $num * $var-1 0;
         }
+    }
+}
+
+@mixin wcon-icon-position {
+    @for $var from 2 through 4 {
+        $num: -70px;
+        $var2: $var - 1;
+        &.no#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
+@mixin scrollbar-color($width, $face, $track, $arrow, $shadow) {
+    scrollbar-width: $width;
+    scrollbar-face-color: $face;
+    scrollbar-track-color: $track;
+    scrollbar-arrow-color: $arrow;
+    scrollbar-shadow-color: $shadow;
+}
+
+@mixin -webkit-scrollbar(
+    $-webkit-scrollbar-width,
+    $-webkit-scrollbar-track,
+    $-webkit-scrollbar-thumb-bg,
+    $-webkit-scrollbar-thumb-border
+) {
+    &::-webkit-scrollbar {
+        width: $-webkit-scrollbar-width;
+    }
+    &::-webkit-scrollbar-track {
+        background: $-webkit-scrollbar-track;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $-webkit-scrollbar-thumb-bg;
+        border: $-webkit-scrollbar-thumb-border;
     }
 }

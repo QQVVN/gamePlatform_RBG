@@ -93,9 +93,7 @@ body {
                     &:nth-of-type(n + 2) {
                         margin: 0 0 0 7px;
                     }
-                    &:hover,
-                    &:active,
-                    &.active {
+                    @include haa {
                         cursor: pointer;
                         color: $new_con_m_div_haa;
                         &::after {
@@ -117,14 +115,17 @@ body {
                 max-height: 286px;
                 overflow-y: scroll;
                 -ms-overflow-style: none;
-                scrollbar-width: none;
-                scrollbar-face-color: $new_con_b_scrollbar;
-                scrollbar-track-color: $new_con_b_scrollbar;
-                scrollbar-arrow-color: $new_con_b_scrollbar;
-                scrollbar-shadow-color: $new_con_b_scrollbar;
+                @include scrollbar-color(
+                    none,
+                    $new_con_b_scrollbar,
+                    $new_con_b_scrollbar,
+                    $new_con_b_scrollbar,
+                    $new_con_b_scrollbar
+                );
                 &::-webkit-scrollbar {
                     display: none;
                 }
+
                 .news {
                     width: 479px;
                     .ti {
@@ -186,11 +187,13 @@ body {
                             overflow: auto;
                             transition: 0.3s;
                             -ms-overflow-style: none;
-                            scrollbar-width: none;
-                            scrollbar-face-color: $new_con_b_news_ti_pbox_scrollbar;
-                            scrollbar-track-color: $new_con_b_news_ti_pbox_scrollbar;
-                            scrollbar-arrow-color: $new_con_b_news_ti_pbox_scrollbar;
-                            scrollbar-shadow-color: $new_con_b_news_ti_pbox_scrollbar;
+                            @include scrollbar-color(
+                                none,
+                                $new_con_b_news_ti_pbox_scrollbar,
+                                $new_con_b_news_ti_pbox_scrollbar,
+                                $new_con_b_news_ti_pbox_scrollbar,
+                                $new_con_b_news_ti_pbox_scrollbar
+                            );
                             &::-webkit-scrollbar {
                                 display: none;
                             }
@@ -311,9 +314,7 @@ header {
                 color: $header_article_hif_rpw;
                 margin: 0 13px 0 0;
                 cursor: pointer;
-                &:hover,
-                &:active,
-                &.active {
+                @include haa {
                     color: $header_article_hif_rpw_haa;
                 }
                 @include ios {
@@ -379,9 +380,7 @@ header {
                 border: 1px solid $header_article_hif_sisu_border;
                 background: $header_article_hif_sisu_bg;
                 background: $header_article_hif_sisu_bg_l_gra;
-                &:hover,
-                &:active,
-                &.active {
+                @include haa {
                     border: 1px solid $header_article_hif_sisu_border_haa;
                     background: $header_article_hif_sisu_bg_haa;
                     background: $header_article_hif_sisu_bg_l_gra_haa;
@@ -394,9 +393,7 @@ header {
                 border: 1px solid $header_article_hif_su_border;
                 background: $header_article_hif_su_bg;
                 background: $header_article_hif_su_bg_l_gra;
-                &:hover,
-                &:active,
-                &.active {
+                @include haa {
                     color: $header_article_hif_su_haa;
                     border: 1px solid $header_article_hif_su_border_haa;
                     background: $header_article_hif_su_bg_haa;
@@ -404,9 +401,7 @@ header {
                 }
                 a {
                     color: $header_article_hif_su;
-                    &:hover,
-                    &:active,
-                    &.active {
+                    @include haa {
                         color: $header_article_hif_su_haa;
                     }
                 }
@@ -432,9 +427,7 @@ header {
             .tr,
             .wl {
                 transition-duration: 0.3s;
-                &:hover,
-                &:active,
-                &.active {
+                @include haa {
                     filter: sepia() saturate(8);
                     transform: scale(1.3);
                     transition-duration: 0.1s;
@@ -538,9 +531,7 @@ header {
                 border: 1px solid $header_article_hifi_so_border;
                 background: $header_article_hifi_so_bg;
                 background: $header_article_hifi_so_bg_l_gra;
-                &:hover,
-                &:active,
-                &.active {
+                @include haa {
                     color: $header_article_hifi_so_haa;
                     background: $header_article_hifi_so_bg_haa;
                     background: $header_article_hifi_so_bg_l_gra_haa;
@@ -575,23 +566,6 @@ header {
                     cursor: pointer;
                 }
                 ul {
-                    scrollbar-face-color: $header_article_lang_select_ul_scrollbar1;
-                    scrollbar-track-color: $header_article_lang_select_ul_scrollbar1;
-                    scrollbar-arrow-color: $header_article_lang_select_ul_scrollbar2;
-                    scrollbar-shadow-color: $header_article_lang_select_ul_scrollbar1;
-                    scrollbar-width: thin;
-                    scrollbar-color: $header_article_lang_select_ul_scrollbar2 $header_article_lang_select_ul_scrollbar1;
-                    &::-webkit-scrollbar {
-                        width: 8px;
-                    }
-                    &::-webkit-scrollbar-track {
-                        background: $header_article_lang_select_ul_scrollbar1;
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        background-color: $header_article_lang_select_ul_scrollbar2;
-                        border: 2px solid $header_article_lang_select_ul_scrollbar1;
-                    }
-
                     position: absolute;
                     width: 122px;
                     height: 32px * 2;
@@ -602,6 +576,22 @@ header {
                     &.none {
                         display: none;
                     }
+                    @include scrollbar-color(
+                        thin,
+                        $header_article_lang_select_ul_scrollbar1,
+                        $header_article_lang_select_ul_scrollbar1,
+                        $header_article_lang_select_ul_scrollbar2,
+                        $header_article_lang_select_ul_scrollbar1
+                    );
+
+                    scrollbar-color: $header_article_lang_select_ul_scrollbar2 $header_article_lang_select_ul_scrollbar1;
+
+                    @include -webkit-scrollbar(
+                        8px,
+                        $header_article_lang_select_ul_scrollbar1,
+                        $header_article_lang_select_ul_scrollbar2,
+                        2px solid $header_article_lang_select_ul_scrollbar1
+                    );
                     li {
                         width: 122px;
                         height: 32px;
@@ -654,9 +644,7 @@ header {
                             margin: 3px 0 0 0;
                         }
                     }
-                    &:active,
-                    &:hover,
-                    &.active {
+                    @include haa {
                         background: url(../images/navHover.png) no-repeat top center;
                         background-size: 107px 61px;
                         animation-name: navbg1;
@@ -721,33 +709,7 @@ main {
                 background-size: 363px;
                 animation-name: navbg1;
                 animation-duration: 0.5s;
-                &.loc {
-                    background: url(../images/SE_l_player2.png) no-repeat top center;
-                    animation-name: navbg2;
-                    animation-duration: 0.5s;
-                }
-                &.lsg {
-                    background: url(../images/SE_l_player3.png) no-repeat top center;
-                    left: -22.8%;
-                    animation-name: navbg3;
-                    animation-duration: 0.5s;
-                }
-                &.llt {
-                    background: url(../images/SE_l_player4.png) no-repeat top center;
-                    animation-name: navbg4;
-                    animation-duration: 0.5s;
-                }
-                &.ldg {
-                    background: url(../images/SE_l_player5.png) no-repeat top center;
-                    left: -20.8%;
-                    animation-name: navbg5;
-                    animation-duration: 0.5s;
-                }
-                &.lbo {
-                    background: url(../images/SE_l_player6.png) no-repeat top center;
-                    animation-name: navbg6;
-                    animation-duration: 0.5s;
-                }
+                @include mcl-player;
             }
             .mcm {
                 z-index: 4;
@@ -773,32 +735,7 @@ main {
                     background: url(../images/pointer.png) no-repeat top center;
                     background-size: 517px;
                     transform: rotate(90deg);
-                    &.se_deg,
-                    &.oc_deg,
-                    &.sg_deg,
-                    &.lt_deg,
-                    &.dg_deg,
-                    &.bo_deg {
-                        transition-duration: 0.5s;
-                    }
-                    &.se_deg {
-                        transform: rotate(90deg);
-                    }
-                    &.oc_deg {
-                        transform: rotate(51deg);
-                    }
-                    &.sg_deg {
-                        transform: rotate(0deg);
-                    }
-                    &.lt_deg {
-                        transform: rotate(-55deg);
-                    }
-                    &.dg_deg {
-                        transform: rotate(-90deg);
-                    }
-                    &.bo_deg {
-                        transform: rotate(-118deg);
-                    }
+                    @include po-deg;
                 }
                 .cpb {
                     position: relative;
@@ -809,40 +746,7 @@ main {
                     background: url(../images/compassBlack.png) no-repeat top center;
                     background-size: 517px;
                     background-position: 0 0;
-                    &.se_bg,
-                    &.oc_bg,
-                    &.sg_bg,
-                    &.lt_bg,
-                    &.dg_bg,
-                    &.bo_bg {
-                        background: url(../images/cB_bg.png) no-repeat top center;
-                        background-size: 600%;
-                        animation: 0.5s;
-                    }
-                    &.se_bg {
-                        background-position: 0 0;
-                        animation: navbg1;
-                    }
-                    &.oc_bg {
-                        background-position: -517px 0;
-                        animation: navbg2;
-                    }
-                    &.sg_bg {
-                        background-position: -517px * 2 0;
-                        animation: navbg3;
-                    }
-                    &.lt_bg {
-                        background-position: -517px * 3 0;
-                        animation: navbg4;
-                    }
-                    &.dg_bg {
-                        background-position: -517px * 4 0;
-                        animation: navbg5;
-                    }
-                    &.bo_bg {
-                        background-position: -517px * 5 0;
-                        animation: navbg6;
-                    }
+                    @include cpb-deg;
                 }
             }
             .mcr {
@@ -856,33 +760,7 @@ main {
                 background: url(../images/SE_r_player.png) no-repeat top center;
                 background-size: 518px;
                 animation: navbg1 0.5s;
-                &.roc {
-                    background: url(../images/SE_r_player2.png) no-repeat top center;
-                    animation: navbg2 0.5s;
-                }
-                &.rsg {
-                    background: url(../images/SE_r_player3.png) no-repeat top center;
-                    width: 861px;
-                    left: 58.5%;
-                    background-size: 861px;
-                    animation: navbg3 0.5s;
-                    z-index: -1;
-                }
-                &.rlt {
-                    background: url(../images/SE_r_player4.png) no-repeat top center;
-                    animation: navbg4 0.5s;
-                }
-                &.rdg {
-                    background: url(../images/SE_r_player5.png) no-repeat top center;
-                    left: 83%;
-                    top: -23px;
-                    animation: navbg5 0.5s;
-                }
-                &.rbo {
-                    background: url(../images/SE_r_player6.png) no-repeat top center;
-                    left: 89%;
-                    animation: navbg6 0.5s;
-                }
+                @include mcr-player;
             }
         }
     }
@@ -909,9 +787,7 @@ main {
             height: 99px;
             background: url(../images/spNav.png) no-repeat top center;
             background-size: 600%;
-            &:hover,
-            &:active,
-            &.active {
+            @include haa {
                 background-position-y: -99px;
                 animation: navbg1 0.5s;
             }
@@ -1007,18 +883,8 @@ main {
                         background: url(../images/hgLionIcon.png) no-repeat top center;
                         background-size: 280px 70px;
                         background-position: 0 0;
-                        &.no2 {
-                            background-position: -70px 0;
-                        }
-                        &.no3 {
-                            background-position: -70px * 2 0;
-                        }
-                        &.no4 {
-                            background-position: -70px * 3 0;
-                        }
-                        &:hover,
-                        &:active,
-                        &.active {
+                        @include wcon-icon-position;
+                        @include haa {
                             animation: navbg1 0.5s;
                         }
                     }
@@ -1046,9 +912,7 @@ main {
                         background-size: 27px 48px;
                         background-position: 0 0;
                         animation-duration: 0.5s;
-                        &:hover,
-                        &:active,
-                        &.active {
+                        @include haa {
                             background-position: 0 -24px;
                             animation: navbg1 0.5s;
                         }
@@ -1112,30 +976,7 @@ main {
                         background: url(../images/bannerImg.png) no-repeat top center;
                         background-size: 5810px 422px;
                         background-position: 0 0;
-                        &:nth-of-type(2) {
-                            left: 830px;
-                            background-position: -830px 0;
-                        }
-                        &:nth-of-type(3) {
-                            left: 830px * 2;
-                            background-position: -830px * 2 0;
-                        }
-                        &:nth-of-type(4) {
-                            left: 830px * 3;
-                            background-position: -830px * 3 0;
-                        }
-                        &:nth-of-type(5) {
-                            left: 830px * 4;
-                            background-position: -830px * 4 0;
-                        }
-                        &:nth-of-type(6) {
-                            left: 830px * 5;
-                            background-position: -830px * 5 0;
-                        }
-                        &:nth-of-type(7) {
-                            left: 830px * 6;
-                            background-position: -830px * 6 0;
-                        }
+                        @include bnr-position;
                         .imgB {
                             position: absolute;
                             width: 224px;
@@ -1145,9 +986,7 @@ main {
                             background: url(../images/bannerB.png) no-repeat top center;
                             background-size: 224px 100px;
                             background-position: 0 0;
-                            &:hover,
-                            &:active,
-                            &.active {
+                            @include haa {
                                 cursor: pointer;
                                 background-position: 0 -50px;
                             }
@@ -1190,9 +1029,7 @@ main {
                         &:nth-of-type(n + 2) {
                             margin: 0 0 0 16px;
                         }
-                        &:hover,
-                        &:active,
-                        &.active {
+                        @include haa {
                             cursor: pointer;
                             background: $main_wcon_wcr_index_li_hover_bg;
                             background: $main_wcon_wcr_index_li_hover_bg_l_gra;
@@ -1246,9 +1083,7 @@ footer {
                 &:last-of-type {
                     border-right: 1px solid $footer_nav_li_last_border_r;
                 }
-                &:hover,
-                &:active,
-                &.active {
+                @include haa {
                     background: $footer_nav_li_haa_bg;
                     background: $footer_nav_li_haa_bg_l_gra;
                 }

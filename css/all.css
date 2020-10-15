@@ -796,12 +796,6 @@ header article .lang .select p {
   cursor: pointer;
 }
 header article .lang .select ul {
-  scrollbar-face-color: #000000;
-  scrollbar-track-color: #000000;
-  scrollbar-arrow-color: #fde6a2;
-  scrollbar-shadow-color: #000000;
-  scrollbar-width: thin;
-  scrollbar-color: #fde6a2 #000000;
   position: absolute;
   width: 122px;
   height: 64px;
@@ -809,6 +803,15 @@ header article .lang .select ul {
   border-radius: 0 0 3px 3px;
   overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-face-color: #000000;
+  scrollbar-track-color: #000000;
+  scrollbar-arrow-color: #fde6a2;
+  scrollbar-shadow-color: #000000;
+  scrollbar-color: #fde6a2 #000000;
+}
+header article .lang .select ul.none {
+  display: none;
 }
 header article .lang .select ul::-webkit-scrollbar {
   width: 8px;
@@ -819,9 +822,6 @@ header article .lang .select ul::-webkit-scrollbar-track {
 header article .lang .select ul::-webkit-scrollbar-thumb {
   background-color: #fde6a2;
   border: 2px solid #000000;
-}
-header article .lang .select ul.none {
-  display: none;
 }
 header article .lang .select ul li {
   width: 122px;
@@ -875,7 +875,7 @@ header article nav ul li p:nth-of-type(2) {
   font-size: 12px;
   margin: 3px 0 0 0;
 }
-header article nav ul li:active, header article nav ul li:hover, header article nav ul li.active {
+header article nav ul li:hover, header article nav ul li:active, header article nav ul li.active {
   background: url(../images/navHover.png) no-repeat top center;
   background-size: 107px 61px;
   animation-name: navbg1;
@@ -952,30 +952,25 @@ main .mbox .mcont .mcl {
 }
 main .mbox .mcont .mcl.loc {
   background: url(../images/SE_l_player2.png) no-repeat top center;
-  animation-name: navbg2;
-  animation-duration: 0.5s;
+  animation: navbg2 0.5s;
 }
 main .mbox .mcont .mcl.lsg {
   background: url(../images/SE_l_player3.png) no-repeat top center;
   left: -22.8%;
-  animation-name: navbg3;
-  animation-duration: 0.5s;
+  animation: navbg3 0.5s;
 }
 main .mbox .mcont .mcl.llt {
   background: url(../images/SE_l_player4.png) no-repeat top center;
-  animation-name: navbg4;
-  animation-duration: 0.5s;
+  animation: navbg4 0.5s;
 }
 main .mbox .mcont .mcl.ldg {
   background: url(../images/SE_l_player5.png) no-repeat top center;
   left: -20.8%;
-  animation-name: navbg5;
-  animation-duration: 0.5s;
+  animation: navbg5 0.5s;
 }
 main .mbox .mcont .mcl.lbo {
   background: url(../images/SE_l_player6.png) no-repeat top center;
-  animation-name: navbg6;
-  animation-duration: 0.5s;
+  animation: navbg6 0.5s;
 }
 main .mbox .mcont .mcm {
   z-index: 4;
@@ -1041,27 +1036,27 @@ main .mbox .mcont .mcm .cpb.se_bg, main .mbox .mcont .mcm .cpb.oc_bg, main .mbox
 }
 main .mbox .mcont .mcm .cpb.se_bg {
   background-position: 0 0;
-  animation: navbg1;
+  animation: navbg1 0.5s;
 }
 main .mbox .mcont .mcm .cpb.oc_bg {
   background-position: -517px 0;
-  animation: navbg2;
+  animation: navbg2 0.5s;
 }
 main .mbox .mcont .mcm .cpb.sg_bg {
   background-position: -1034px 0;
-  animation: navbg3;
+  animation: navbg3 0.5s;
 }
 main .mbox .mcont .mcm .cpb.lt_bg {
   background-position: -1551px 0;
-  animation: navbg4;
+  animation: navbg4 0.5s;
 }
 main .mbox .mcont .mcm .cpb.dg_bg {
   background-position: -2068px 0;
-  animation: navbg5;
+  animation: navbg5 0.5s;
 }
 main .mbox .mcont .mcm .cpb.bo_bg {
   background-position: -2585px 0;
-  animation: navbg6;
+  animation: navbg6 0.5s;
 }
 main .mbox .mcont .mcr {
   z-index: 2;
