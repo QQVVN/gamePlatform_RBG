@@ -29,13 +29,13 @@ body {
     @include none;
     .new {
         position: absolute;
+        top: 22.5%;
+        left: 50%;
+        transform: translate(-50%, -22.5%);
         width: 479px;
         border: 1px solid $white;
         border-radius: 10px;
         background: $new_bg;
-        left: 50%;
-        top: 22.5%;
-        transform: translate(-50%, -22.5%);
         .con {
             position: relative;
             width: 100%;
@@ -44,16 +44,14 @@ body {
                 position: relative;
                 width: 479px;
                 height: 45px;
-                background: url(../images/newTbg.png) no-repeat top center;
-                background-size: 479px;
+                @include bu-bz(url(../images/newTbg.png), 479px);
                 .i {
                     position: absolute;
-                    left: 2px;
                     top: -10px;
+                    left: 2px;
                     width: 86px;
                     height: 68px;
-                    background: url(../images/speaker.png) no-repeat top center;
-                    background-size: 86px 68px;
+                    @include bu-bz(url(../images/speaker.png), 86px 68px);
                 }
                 p {
                     text-align: center;
@@ -64,12 +62,11 @@ body {
                 .X {
                     cursor: pointer;
                     position: absolute;
-                    left: 453px;
                     top: 16px;
+                    left: 453px;
                     width: 16px;
                     height: 16px;
-                    background: url(../images/X.png) no-repeat top center;
-                    background-size: 16px;
+                    @include bu-bz(url(../images/X.png), 16px);
                     &:hover {
                         animation: shakeUD 1s;
                     }
@@ -81,12 +78,12 @@ body {
                 border-bottom: 1px solid $new_con_m_border_bottom;
                 div {
                     display: inline-block;
+                    position: relative;
                     width: 72px;
                     height: 56px;
                     line-height: 52px;
                     text-align: center;
                     color: $new_con_m_div;
-                    position: relative;
                     &:first-of-type {
                         margin: 0 0 0 32px;
                     }
@@ -172,13 +169,13 @@ body {
                                 content: " ";
                                 display: inline-block;
                                 position: absolute;
+                                top: -13px;
+                                left: -10px;
                                 width: 0;
                                 height: 0;
                                 border-style: solid;
                                 border-width: 10px 10px 0 10px;
                                 border-color: $new_con_b_news_ti_arrow_after_border_color;
-                                left: -10px;
-                                top: -13px;
                             }
                         }
                         .pbox {
@@ -216,8 +213,8 @@ body {
 aside {
     &:first-of-type {
         position: absolute;
-        left: 0px;
         top: 200px;
+        left: 0px;
         z-index: 5;
         &:hover {
             .al {
@@ -230,23 +227,21 @@ aside {
             position: relative;
             width: 58px;
             height: 197px;
-            background: url(../images/asideLbg.png) no-repeat top center;
-            background-size: 58px 197px;
+            @include bu-bz(url(../images/asideLbg.png), 58px 197px);
             .ali {
                 position: absolute;
                 width: 37px;
                 height: 45px;
                 top: 13px;
                 left: 6px;
-                background: url(../images/asideLbgIcon.png) no-repeat top center;
-                background-size: 37px 45px;
+                @include bu-bz(url(../images/asideLbgIcon.png), 37px 45px);
             }
         }
     }
     &:last-of-type {
         position: absolute;
-        right: 0px;
         top: 200px;
+        right: 0px;
         z-index: 5;
         &:hover {
             .ar {
@@ -259,16 +254,14 @@ aside {
             position: relative;
             width: 58px;
             height: 197px;
-            background: url(../images/asideRbg.png) no-repeat top center;
-            background-size: 58px 197px;
+            @include bu-bz(url(../images/asideRbg.png), 58px 197px);
             .ari {
                 position: absolute;
                 width: 43px;
                 height: 43px;
                 top: 13px;
                 left: 12px;
-                background: url(../images/asideRbgIcon.png) no-repeat top center;
-                background-size: 43px;
+                @include bu-bz(url(../images/asideRbgIcon.png), 43px);
             }
         }
     }
@@ -277,8 +270,7 @@ aside {
 header {
     position: relative;
     height: 183px;
-    background: url(../images/headerbg.png) no-repeat top center;
-    background-size: 1920px;
+    @include bu-bz(url(../images/headerbg.png), 1920px);
     margin: 0 auto;
     z-index: 5;
     article {
@@ -289,21 +281,20 @@ header {
         margin: 0 auto;
         .hlogo {
             position: absolute;
-            width: 160px;
-            height: 71px;
-            background: url(../images/headerlogo.png) no-repeat top center;
-            background-size: 100%;
             top: 38px;
             left: 97px;
+            width: 160px;
+            height: 71px;
+            @include bu-bz(url(../images/headerlogo.png), 100%);
         }
         .hif {
             @include clearfix;
             @include none;
             position: absolute;
+            top: 15px;
+            left: 422px - 30px;
             width: 779px - 122px;
             height: 32px;
-            left: 422px - 30px;
-            top: 15px;
             .rpw {
                 position: relative;
                 float: left;
@@ -336,9 +327,7 @@ header {
                     width: 32px;
                     height: 32px;
                     margin: 0 8px 0 0;
-                    background: url(../images/acicon.png) no-repeat top center;
-                    background-position: 0 0;
-                    background-size: 200%;
+                    @include bu-bz-bp(url(../images/acicon.png), 200%, 0 0);
                 }
                 p {
                     float: left;
@@ -413,8 +402,8 @@ header {
             position: absolute;
             width: 379px;
             height: 37px;
-            left: 422px + 779px - 122px - 379px - 8px - 30px;
             top: 15px - 5px + 2px;
+            left: 422px + 779px - 122px - 379px - 8px - 30px;
             .dt,
             .tr,
             .wl,
@@ -466,16 +455,16 @@ header {
                     float: left;
                     width: 37px;
                     height: 37px;
-                    background: url("../images/userImage.png") no-repeat right transparent;
+                    background: url("../images/userImage.png") no-repeat right center;
                     background-size: 37px 37px;
                 }
                 .t {
                     position: relative;
                     float: left;
-                    width: 93px;
-                    height: 30px;
                     top: 5px;
                     left: 7px;
+                    width: 93px;
+                    height: 30px;
                     p {
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -496,8 +485,8 @@ header {
                     position: relative;
                     width: 15px;
                     height: 15px;
-                    left: 135px;
                     top: 20px;
+                    left: 135px;
                     background: $header_article_hifi_uif_t_abg_bg;
                     border-radius: 50%;
                     .aw {
@@ -519,13 +508,13 @@ header {
                 }
             }
             .so {
+                cursor: pointer;
+                top: 5px - 2px;
+                left: 20px + 20px + 20px + 16px;
                 width: 58px;
                 height: 30px;
                 font-size: 16px;
                 line-height: 30px;
-                top: 5px - 2px;
-                left: 20px + 20px + 20px + 16px;
-                cursor: pointer;
                 text-align: center;
                 border-radius: 3px;
                 border: 1px solid $header_article_hifi_so_border;
@@ -541,10 +530,10 @@ header {
         .lang {
             position: relative;
             float: left;
+            top: 15px;
+            left: 422px + 779px - 122px - 30px;
             width: 122px;
             height: 32px;
-            left: 422px + 779px - 122px - 30px;
-            top: 15px;
             border-radius: 3px;
             background: $header_article_lang_bg;
             z-index: 20;
@@ -555,6 +544,7 @@ header {
                 border-radius: 3px;
                 font-size: 14px;
                 p {
+                    cursor: pointer;
                     width: 112px;
                     height: 32px;
                     line-height: 32px;
@@ -563,13 +553,12 @@ header {
                     color: $header_article_lang_select_p;
                     background: url("../images/langArrow.png") no-repeat right transparent;
                     background-size: 32px;
-                    cursor: pointer;
                 }
                 ul {
                     position: absolute;
+                    top: 32px;
                     width: 122px;
                     height: 32px * 2;
-                    top: 32px;
                     border-radius: 0 0 3px 3px;
                     overflow-y: scroll;
                     overflow-x: hidden;
@@ -601,9 +590,9 @@ header {
                         border-radius: 0 0 3px 3px;
                         background: $header_article_lang_select_ul_li_bg;
                         a {
+                            display: block;
                             position: static;
                             text-decoration: none;
-                            display: block;
                             height: 32px;
                             color: $header_article_lang_select_ul_li_a;
                             &:hover {
@@ -617,16 +606,17 @@ header {
         }
         nav {
             position: absolute;
-            width: 1300px;
-            height: 61px;
             top: 57px;
             left: 0px;
+            width: 1300px;
+            height: 61px;
             ul {
                 float: left;
                 width: 107px * 8;
                 height: 61px;
                 margin: 0 0 0 366px;
                 li {
+                    cursor: pointer;
                     position: relative;
                     float: left;
                     width: 107px;
@@ -634,9 +624,7 @@ header {
                     text-align: center;
                     font-size: 16px;
                     padding: 14px 0 0 0;
-                    background: url(../images/navLight.png) no-repeat top center;
-                    background-size: 107px 61px;
-                    cursor: pointer;
+                    @include bu-bz(url(../images/navLight.png), 107px 61px);
                     p {
                         color: $header_article_nav_li_p;
                         &:nth-of-type(2) {
@@ -645,8 +633,7 @@ header {
                         }
                     }
                     @include haa {
-                        background: url(../images/navHover.png) no-repeat top center;
-                        background-size: 107px 61px;
+                        @include bu-bz(url(../images/navHover.png), 107px 61px);
                         animation-name: navbg1;
                         animation-duration: 0.5s;
                     }
@@ -659,9 +646,9 @@ header {
 main {
     font-family: $font-MJ;
     position: relative;
+    top: -137px;
     height: 1200px;
     margin: 0 auto;
-    top: -137px;
     .mbgbox {
         z-index: -1;
         position: relative;
@@ -675,90 +662,79 @@ main {
         .mbg {
             width: 100%;
             height: 1200px;
-            background: url(../images/mbg.jpg) no-repeat top center;
-            background-size: 1920px 1200px;
-            animation: shakeY;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
+            @include bu-bz(url(../images/mbg.jpg), 1920px 1200px);
+            animation: shakeY 10s infinite;
         }
     }
     .mbox {
         position: relative;
+        top: -1200px;
         width: 1300px;
         height: 1200px;
         margin: 0 auto;
-        top: -1200px;
         @include px1024 {
             overflow-x: hidden;
         }
         .mcont {
             @include clearfix;
             position: absolute;
-            width: 100%;
-            height: 1050px;
             top: 137px;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
+            height: 1050px;
             .mcl {
                 z-index: 2;
                 position: absolute;
+                left: -23.8%;
                 width: 502px;
                 height: 1050px;
-                left: -23.8%;
-                background: url(../images/SE_l_player.png) no-repeat top center;
-                background-size: 363px;
-                animation-name: navbg1;
-                animation-duration: 0.5s;
+                @include bu-bz(url(../images/SE_l_player.png), 363px);
+                animation: navbg1 0.5s;
                 @include mcl-player;
             }
             .mcm {
                 z-index: 4;
                 position: absolute;
+                left: 14.5%;
                 width: 905px;
                 height: 1050px;
-                left: 14.5%;
                 .cp {
                     position: relative;
+                    top: -11.8%;
                     width: 517px;
                     height: 517px;
                     margin: 0 auto;
-                    top: -11.8%;
-                    background: url(../images/compass.png) no-repeat top center;
-                    background-size: 517px;
+                    @include bu-bz(url(../images/compass.png), 517px);
                 }
                 .po {
                     position: relative;
+                    top: -11.8% - 49.15%;
                     width: 517px;
                     height: 517px;
-                    top: -11.8% - 49.15%;
                     margin: 0 auto;
-                    background: url(../images/pointer.png) no-repeat top center;
-                    background-size: 517px;
+                    @include bu-bz(url(../images/pointer.png), 517px);
                     transform: rotate(90deg);
                     @include po-deg;
                 }
                 .cpb {
                     position: relative;
+                    top: -11.8% - 49.15% - 49.21%;
                     width: 517px;
                     height: 517px;
                     margin: 0 auto;
-                    top: -11.8% - 49.15% - 49.21%;
-                    background: url(../images/compassBlack.png) no-repeat top center;
-                    background-size: 517px;
-                    background-position: 0 0;
+                    @include bu-bz-bp(url(../images/compassBlack.png), 517px, 0 0);
                     @include cpb-deg;
                 }
             }
             .mcr {
                 z-index: 2;
                 position: absolute;
+                top: -13px;
+                left: 84%;
                 width: 518px;
                 height: 1050px;
-                left: 84%;
-                top: -13px;
-                background-color: darkmagenta;
-                background: url(../images/SE_r_player.png) no-repeat top center;
-                background-size: 518px;
+                @include bu-bz(url(../images/SE_r_player.png), 518px);
                 animation: navbg1 0.5s;
                 @include mcr-player;
             }
@@ -767,11 +743,11 @@ main {
     .cmnbox {
         z-index: 5;
         position: absolute;
-        width: 1300px;
-        height: 575px;
         top: 73px;
         left: 50%;
         transform: translate(-50%);
+        width: 1300px;
+        height: 575px;
         @include px1024 {
             overflow-x: hidden;
         }
@@ -785,8 +761,7 @@ main {
             position: absolute;
             width: 288px;
             height: 99px;
-            background: url(../images/spNav.png) no-repeat top center;
-            background-size: 600%;
+            @include bu-bz(url(../images/spNav.png), 600%);
             @include haa {
                 background-position-y: -99px;
                 animation: navbg1 0.5s;
@@ -796,60 +771,59 @@ main {
             }
         }
         .se {
-            left: -82px + 189px;
             top: 160px - 2px;
+            left: -82px + 189px;
             background-position: 0 0;
         }
         .oc {
-            left: -10px + 189px;
             top: 348px - 2px;
+            left: -10px + 189px;
             background-position: -288px 0;
         }
         .sg {
-            left: 498px;
             top: 448px;
+            left: 498px;
             background-position: -288px * 2 0;
         }
         .lt {
-            left: 635px + 189px;
             top: 348px - 2px;
+            left: 635px + 189px;
             background-position: -288px * 3 0;
         }
         .dg {
-            left: 702px + 189px;
             top: 160px - 2px;
+            left: 702px + 189px;
             background-position: -288px * 4 0;
         }
         .bo {
-            left: 862px;
             top: 10px;
+            left: 862px;
             background-position: -288px * 5 0;
         }
     }
     .wbgbox {
         z-index: 3;
         position: relative;
-        width: 100%;
-        height: 784px;
         top: -744px - 1200px;
         left: 50%;
         transform: translateX(-50%);
+        width: 100%;
+        height: 784px;
         @include px1024 {
             overflow-x: hidden;
         }
         .wbg {
             width: 100%;
             height: 784px;
-            background: url(../images/wave.png) no-repeat top center;
-            background-size: 1920px;
+            @include bu-bz(url(../images/wave.png), 1920px);
         }
     }
     .wcon {
         z-index: 4;
         position: relative;
+        top: -2540px;
         width: 1300px;
         height: 596px;
-        top: -2540px;
         margin: 0 auto;
         @include clearfix;
         .hg {
@@ -857,8 +831,7 @@ main {
             width: 390px;
             height: 544px;
             margin: -13px 10px 0 0;
-            background: url(../images/hotgamebg.png) no-repeat top center;
-            background-size: 390px 544px;
+            @include bu-bz(url(../images/hotgamebg.png), 390px 544px);
             ul {
                 width: 312px;
                 height: 400px;
@@ -880,9 +853,7 @@ main {
                         position: relative;
                         width: 70px;
                         margin: 14px 13px 14px 0;
-                        background: url(../images/hgLionIcon.png) no-repeat top center;
-                        background-size: 280px 70px;
-                        background-position: 0 0;
+                        @include bu-bz-bp(url(../images/hgLionIcon.png), 280px 70px, 0 0);
                         @include wcon-icon-position;
                         @include haa {
                             animation: navbg1 0.5s;
@@ -908,9 +879,7 @@ main {
                         width: 27px;
                         height: 24px;
                         margin: 38px 0;
-                        background: url(../images/likeIcon.png) no-repeat top center;
-                        background-size: 27px 48px;
-                        background-position: 0 0;
+                        @include bu-bz-bp(url(../images/likeIcon.png), 27px 48px, 0 0);
                         animation-duration: 0.5s;
                         @include haa {
                             background-position: 0 -24px;
@@ -932,14 +901,13 @@ main {
                 background-color: $main_wcon_wcr_news_bg;
                 @include clearfix;
                 .spr {
-                    float: left;
                     position: relative;
+                    float: left;
                     top: -4px;
                     left: -7px;
                     width: 86px;
                     height: 68px;
-                    background: url(../images/speaker.png);
-                    background-size: 86px 68px;
+                    @include bu-bz(url(../images/speaker.png), 86px 68px);
                 }
                 .nt {
                     width: 749px;
@@ -965,27 +933,23 @@ main {
                 overflow-x: hidden;
                 ul {
                     position: relative;
+                    left: 0px;
                     width: 830px;
                     height: 422px;
-                    left: 0px;
                     transition: 0.3s;
                     li {
                         position: absolute;
                         width: 830px;
                         height: 422px;
-                        background: url(../images/bannerImg.png) no-repeat top center;
-                        background-size: 5810px 422px;
-                        background-position: 0 0;
+                        @include bu-bz-bp(url(../images/bannerImg.png), 5810px 422px, 0 0);
                         @include bnr-position;
                         .imgB {
                             position: absolute;
-                            width: 224px;
-                            height: 50px;
                             top: 325px;
                             left: 176px;
-                            background: url(../images/bannerB.png) no-repeat top center;
-                            background-size: 224px 100px;
-                            background-position: 0 0;
+                            width: 224px;
+                            height: 50px;
+                            @include bu-bz-bp(url(../images/bannerB.png), 224px 100px, 0 0);
                             @include haa {
                                 cursor: pointer;
                                 background-position: 0 -50px;
@@ -1001,8 +965,7 @@ main {
                 width: 47px;
                 height: 47px;
                 top: 277px;
-                background: url(../images/arrow.png);
-                background-size: 47px;
+                @include bu-bz (url(../images/arrow.png),47px);
             }
             .lar {
                 left: 408px;
@@ -1068,8 +1031,8 @@ footer {
                 width: 110px;
                 height: 46px;
                 font-size: 18px;
-                color: $footer_nav_li;
                 text-align: center;
+                color: $footer_nav_li;
                 border-left: 1px solid $footer_nav_li_border_l;
                 a {
                     color: $footer_nav_li_a;

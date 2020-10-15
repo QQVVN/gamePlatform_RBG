@@ -61,8 +61,13 @@
     }
 }
 
+@mixin bu-bz($bu, $bz) {
+    background: $bu no-repeat top center;
+    background-size: $bz;
+}
+
 @mixin bu-bz-bp($bu, $bz, $bp) {
-    background: $bu  no-repeat top center;
+    background: $bu no-repeat top center;
     background-size: $bz;
     background-position: $bp;
 }
@@ -103,8 +108,7 @@
     &.lt_bg,
     &.dg_bg,
     &.bo_bg {
-        background: url(../images/cB_bg.png) no-repeat top center;
-        background-size: 600%;
+        @include bu-bz(url(../images/cB_bg.png),600%);
         animation: 0.5s;
     }
     &.se_bg {
@@ -139,8 +143,8 @@
         animation: navbg2 0.5s;
     }
     &.lsg {
-        background: url(../images/SE_l_player3.png) no-repeat top center;
         left: -22.8%;
+        background: url(../images/SE_l_player3.png) no-repeat top center;
         animation: navbg3 0.5s;
     }
     &.llt {
@@ -148,8 +152,8 @@
         animation: navbg4 0.5s;
     }
     &.ldg {
-        background: url(../images/SE_l_player5.png) no-repeat top center;
         left: -20.8%;
+        background: url(../images/SE_l_player5.png) no-repeat top center;
         animation: navbg5 0.5s;
     }
     &.lbo {
@@ -164,26 +168,25 @@
         animation: navbg2 0.5s;
     }
     &.rsg {
-        background: url(../images/SE_r_player3.png) no-repeat top center;
-        width: 861px;
-        left: 58.5%;
-        background-size: 861px;
-        animation: navbg3 0.5s;
         z-index: -1;
+        left: 58.5%;
+        width: 861px;
+        @include bu-bz(url(../images/SE_r_player3.png), 861px);
+        animation: navbg3 0.5s;
     }
     &.rlt {
         background: url(../images/SE_r_player4.png) no-repeat top center;
         animation: navbg4 0.5s;
     }
     &.rdg {
-        background: url(../images/SE_r_player5.png) no-repeat top center;
-        left: 83%;
         top: -23px;
+        left: 83%;
+        background: url(../images/SE_r_player5.png) no-repeat top center;
         animation: navbg5 0.5s;
     }
     &.rbo {
-        background: url(../images/SE_r_player6.png) no-repeat top center;
         left: 89%;
+        background: url(../images/SE_r_player6.png) no-repeat top center;
         animation: navbg6 0.5s;
     }
 }

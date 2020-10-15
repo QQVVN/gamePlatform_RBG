@@ -231,13 +231,13 @@ body {
 }
 .newbox .new {
   position: absolute;
+  top: 22.5%;
+  left: 50%;
+  transform: translate(-50%, -22.5%);
   width: 479px;
   border: 1px solid #ffffff;
   border-radius: 10px;
   background: #ffffff;
-  left: 50%;
-  top: 22.5%;
-  transform: translate(-50%, -22.5%);
 }
 .newbox .new .con {
   position: relative;
@@ -253,8 +253,8 @@ body {
 }
 .newbox .new .con .t .i {
   position: absolute;
-  left: 2px;
   top: -10px;
+  left: 2px;
   width: 86px;
   height: 68px;
   background: url(../images/speaker.png) no-repeat top center;
@@ -269,8 +269,8 @@ body {
 .newbox .new .con .t .X {
   cursor: pointer;
   position: absolute;
-  left: 453px;
   top: 16px;
+  left: 453px;
   width: 16px;
   height: 16px;
   background: url(../images/X.png) no-repeat top center;
@@ -286,12 +286,12 @@ body {
 }
 .newbox .new .con .m div {
   display: inline-block;
+  position: relative;
   width: 72px;
   height: 56px;
   line-height: 52px;
   text-align: center;
   color: #727272;
-  position: relative;
 }
 .newbox .new .con .m div:first-of-type {
   margin: 0 0 0 32px;
@@ -376,13 +376,13 @@ body {
   content: " ";
   display: inline-block;
   position: absolute;
+  top: -13px;
+  left: -10px;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 10px 10px 0 10px;
   border-color: #ffffff transparent transparent transparent;
-  left: -10px;
-  top: -13px;
 }
 .newbox .new .con .b .news .ti .pbox {
   width: 400px;
@@ -410,8 +410,8 @@ body {
 
 aside:first-of-type {
   position: absolute;
-  left: 0px;
   top: 200px;
+  left: 0px;
   z-index: 5;
 }
 aside:first-of-type:hover .al .ali {
@@ -435,8 +435,8 @@ aside:first-of-type .al .ali {
 }
 aside:last-of-type {
   position: absolute;
-  right: 0px;
   top: 200px;
+  right: 0px;
   z-index: 5;
 }
 aside:last-of-type:hover .ar .ari {
@@ -476,20 +476,20 @@ header article {
 }
 header article .hlogo {
   position: absolute;
+  top: 38px;
+  left: 97px;
   width: 160px;
   height: 71px;
   background: url(../images/headerlogo.png) no-repeat top center;
   background-size: 100%;
-  top: 38px;
-  left: 97px;
 }
 header article .hif {
   *zoom: 1;
   position: absolute;
+  top: 15px;
+  left: 392px;
   width: 657px;
   height: 32px;
-  left: 392px;
-  top: 15px;
 }
 header article .hif:after, header article .hif:before {
   content: "";
@@ -548,8 +548,8 @@ header article .hif .pw .acicon {
   height: 32px;
   margin: 0 8px 0 0;
   background: url(../images/acicon.png) no-repeat top center;
-  background-position: 0 0;
   background-size: 200%;
+  background-position: 0 0;
 }
 header article .hif .ac p,
 header article .hif .pw p {
@@ -625,8 +625,8 @@ header article .hifi {
   position: absolute;
   width: 379px;
   height: 37px;
-  left: 662px;
   top: 12px;
+  left: 662px;
 }
 header article .hifi:after, header article .hifi:before {
   content: "";
@@ -696,16 +696,16 @@ header article .hifi .uif .i {
   float: left;
   width: 37px;
   height: 37px;
-  background: url("../images/userImage.png") no-repeat right transparent;
+  background: url("../images/userImage.png") no-repeat right center;
   background-size: 37px 37px;
 }
 header article .hifi .uif .t {
   position: relative;
   float: left;
-  width: 93px;
-  height: 30px;
   top: 5px;
   left: 7px;
+  width: 93px;
+  height: 30px;
 }
 header article .hifi .uif .t p {
   overflow: hidden;
@@ -726,8 +726,8 @@ header article .hifi .uif .abg {
   position: relative;
   width: 15px;
   height: 15px;
-  left: 135px;
   top: 20px;
+  left: 135px;
   background: #000000;
   border-radius: 50%;
 }
@@ -748,13 +748,13 @@ header article .hifi .uif .abg .ab {
   border-right: 4px solid transparent;
 }
 header article .hifi .so {
+  cursor: pointer;
+  top: 3px;
+  left: 76px;
   width: 58px;
   height: 30px;
   font-size: 16px;
   line-height: 30px;
-  top: 3px;
-  left: 76px;
-  cursor: pointer;
   text-align: center;
   border-radius: 3px;
   border: 1px solid #935800;
@@ -769,10 +769,10 @@ header article .hifi .so:hover, header article .hifi .so:active, header article 
 header article .lang {
   position: relative;
   float: left;
+  top: 15px;
+  left: 1049px;
   width: 122px;
   height: 32px;
-  left: 1049px;
-  top: 15px;
   border-radius: 3px;
   background: #131313;
   z-index: 20;
@@ -785,6 +785,7 @@ header article .lang .select {
   font-size: 14px;
 }
 header article .lang .select p {
+  cursor: pointer;
   width: 112px;
   height: 32px;
   line-height: 32px;
@@ -793,13 +794,12 @@ header article .lang .select p {
   color: #d0d0d0;
   background: url("../images/langArrow.png") no-repeat right transparent;
   background-size: 32px;
-  cursor: pointer;
 }
 header article .lang .select ul {
   position: absolute;
+  top: 32px;
   width: 122px;
   height: 64px;
-  top: 32px;
   border-radius: 0 0 3px 3px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -833,9 +833,9 @@ header article .lang .select ul li {
   background: #131313;
 }
 header article .lang .select ul li a {
+  display: block;
   position: static;
   text-decoration: none;
-  display: block;
   height: 32px;
   color: #ffffff;
 }
@@ -845,10 +845,10 @@ header article .lang .select ul li a:hover {
 }
 header article nav {
   position: absolute;
-  width: 1300px;
-  height: 61px;
   top: 57px;
   left: 0px;
+  width: 1300px;
+  height: 61px;
 }
 header article nav ul {
   float: left;
@@ -857,6 +857,7 @@ header article nav ul {
   margin: 0 0 0 366px;
 }
 header article nav ul li {
+  cursor: pointer;
   position: relative;
   float: left;
   width: 107px;
@@ -866,7 +867,6 @@ header article nav ul li {
   padding: 14px 0 0 0;
   background: url(../images/navLight.png) no-repeat top center;
   background-size: 107px 61px;
-  cursor: pointer;
 }
 header article nav ul li p {
   color: #ffeaab;
@@ -885,9 +885,9 @@ header article nav ul li:hover, header article nav ul li:active, header article 
 main {
   font-family: Microsoft JhengHei;
   position: relative;
+  top: -137px;
   height: 1200px;
   margin: 0 auto;
-  top: -137px;
 }
 main .mbgbox {
   z-index: -1;
@@ -907,16 +907,14 @@ main .mbgbox .mbg {
   height: 1200px;
   background: url(../images/mbg.jpg) no-repeat top center;
   background-size: 1920px 1200px;
-  animation: shakeY;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation: shakeY 10s infinite;
 }
 main .mbox {
   position: relative;
+  top: -1200px;
   width: 1300px;
   height: 1200px;
   margin: 0 auto;
-  top: -1200px;
 }
 @media screen and (max-width: 1024px) {
   main .mbox {
@@ -926,11 +924,11 @@ main .mbox {
 main .mbox .mcont {
   *zoom: 1;
   position: absolute;
-  width: 100%;
-  height: 1050px;
   top: 137px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+  height: 1050px;
 }
 main .mbox .mcont:after, main .mbox .mcont:before {
   content: "";
@@ -942,21 +940,20 @@ main .mbox .mcont:after {
 main .mbox .mcont .mcl {
   z-index: 2;
   position: absolute;
+  left: -23.8%;
   width: 502px;
   height: 1050px;
-  left: -23.8%;
   background: url(../images/SE_l_player.png) no-repeat top center;
   background-size: 363px;
-  animation-name: navbg1;
-  animation-duration: 0.5s;
+  animation: navbg1 0.5s;
 }
 main .mbox .mcont .mcl.loc {
   background: url(../images/SE_l_player2.png) no-repeat top center;
   animation: navbg2 0.5s;
 }
 main .mbox .mcont .mcl.lsg {
-  background: url(../images/SE_l_player3.png) no-repeat top center;
   left: -22.8%;
+  background: url(../images/SE_l_player3.png) no-repeat top center;
   animation: navbg3 0.5s;
 }
 main .mbox .mcont .mcl.llt {
@@ -964,8 +961,8 @@ main .mbox .mcont .mcl.llt {
   animation: navbg4 0.5s;
 }
 main .mbox .mcont .mcl.ldg {
-  background: url(../images/SE_l_player5.png) no-repeat top center;
   left: -20.8%;
+  background: url(../images/SE_l_player5.png) no-repeat top center;
   animation: navbg5 0.5s;
 }
 main .mbox .mcont .mcl.lbo {
@@ -975,24 +972,24 @@ main .mbox .mcont .mcl.lbo {
 main .mbox .mcont .mcm {
   z-index: 4;
   position: absolute;
+  left: 14.5%;
   width: 905px;
   height: 1050px;
-  left: 14.5%;
 }
 main .mbox .mcont .mcm .cp {
   position: relative;
+  top: -11.8%;
   width: 517px;
   height: 517px;
   margin: 0 auto;
-  top: -11.8%;
   background: url(../images/compass.png) no-repeat top center;
   background-size: 517px;
 }
 main .mbox .mcont .mcm .po {
   position: relative;
+  top: -60.95%;
   width: 517px;
   height: 517px;
-  top: -60.95%;
   margin: 0 auto;
   background: url(../images/pointer.png) no-repeat top center;
   background-size: 517px;
@@ -1021,10 +1018,10 @@ main .mbox .mcont .mcm .po.bo_deg {
 }
 main .mbox .mcont .mcm .cpb {
   position: relative;
+  top: -110.16%;
   width: 517px;
   height: 517px;
   margin: 0 auto;
-  top: -110.16%;
   background: url(../images/compassBlack.png) no-repeat top center;
   background-size: 517px;
   background-position: 0 0;
@@ -1061,11 +1058,10 @@ main .mbox .mcont .mcm .cpb.bo_bg {
 main .mbox .mcont .mcr {
   z-index: 2;
   position: absolute;
+  top: -13px;
+  left: 84%;
   width: 518px;
   height: 1050px;
-  left: 84%;
-  top: -13px;
-  background-color: darkmagenta;
   background: url(../images/SE_r_player.png) no-repeat top center;
   background-size: 518px;
   animation: navbg1 0.5s;
@@ -1075,36 +1071,36 @@ main .mbox .mcont .mcr.roc {
   animation: navbg2 0.5s;
 }
 main .mbox .mcont .mcr.rsg {
-  background: url(../images/SE_r_player3.png) no-repeat top center;
-  width: 861px;
+  z-index: -1;
   left: 58.5%;
+  width: 861px;
+  background: url(../images/SE_r_player3.png) no-repeat top center;
   background-size: 861px;
   animation: navbg3 0.5s;
-  z-index: -1;
 }
 main .mbox .mcont .mcr.rlt {
   background: url(../images/SE_r_player4.png) no-repeat top center;
   animation: navbg4 0.5s;
 }
 main .mbox .mcont .mcr.rdg {
-  background: url(../images/SE_r_player5.png) no-repeat top center;
-  left: 83%;
   top: -23px;
+  left: 83%;
+  background: url(../images/SE_r_player5.png) no-repeat top center;
   animation: navbg5 0.5s;
 }
 main .mbox .mcont .mcr.rbo {
-  background: url(../images/SE_r_player6.png) no-repeat top center;
   left: 89%;
+  background: url(../images/SE_r_player6.png) no-repeat top center;
   animation: navbg6 0.5s;
 }
 main .cmnbox {
   z-index: 5;
   position: absolute;
-  width: 1300px;
-  height: 575px;
   top: 73px;
   left: 50%;
   transform: translate(-50%);
+  width: 1300px;
+  height: 575px;
 }
 @media screen and (max-width: 1024px) {
   main .cmnbox {
@@ -1154,43 +1150,43 @@ main .cmnbox .bo {
   }
 }
 main .cmnbox .se {
-  left: 107px;
   top: 158px;
+  left: 107px;
   background-position: 0 0;
 }
 main .cmnbox .oc {
-  left: 179px;
   top: 346px;
+  left: 179px;
   background-position: -288px 0;
 }
 main .cmnbox .sg {
-  left: 498px;
   top: 448px;
+  left: 498px;
   background-position: -576px 0;
 }
 main .cmnbox .lt {
-  left: 824px;
   top: 346px;
+  left: 824px;
   background-position: -864px 0;
 }
 main .cmnbox .dg {
-  left: 891px;
   top: 158px;
+  left: 891px;
   background-position: -1152px 0;
 }
 main .cmnbox .bo {
-  left: 862px;
   top: 10px;
+  left: 862px;
   background-position: -1440px 0;
 }
 main .wbgbox {
   z-index: 3;
   position: relative;
-  width: 100%;
-  height: 784px;
   top: -1944px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+  height: 784px;
 }
 @media screen and (max-width: 1024px) {
   main .wbgbox {
@@ -1206,9 +1202,9 @@ main .wbgbox .wbg {
 main .wcon {
   z-index: 4;
   position: relative;
+  top: -2540px;
   width: 1300px;
   height: 596px;
-  top: -2540px;
   margin: 0 auto;
   *zoom: 1;
 }
@@ -1323,13 +1319,13 @@ main .wcon .wcr .news:after {
   clear: both;
 }
 main .wcon .wcr .news .spr {
-  float: left;
   position: relative;
+  float: left;
   top: -4px;
   left: -7px;
   width: 86px;
   height: 68px;
-  background: url(../images/speaker.png);
+  background: url(../images/speaker.png) no-repeat top center;
   background-size: 86px 68px;
 }
 main .wcon .wcr .news .nt {
@@ -1356,9 +1352,9 @@ main .wcon .wcr .bnr {
 }
 main .wcon .wcr .bnr ul {
   position: relative;
+  left: 0px;
   width: 830px;
   height: 422px;
-  left: 0px;
   transition: 0.3s;
 }
 main .wcon .wcr .bnr ul li {
@@ -1395,10 +1391,10 @@ main .wcon .wcr .bnr ul li:nth-of-type(7) {
 }
 main .wcon .wcr .bnr ul li .imgB {
   position: absolute;
-  width: 224px;
-  height: 50px;
   top: 325px;
   left: 176px;
+  width: 224px;
+  height: 50px;
   background: url(../images/bannerB.png) no-repeat top center;
   background-size: 224px 100px;
   background-position: 0 0;
@@ -1414,7 +1410,7 @@ main .wcon .wcr .rar {
   width: 47px;
   height: 47px;
   top: 277px;
-  background: url(../images/arrow.png);
+  background: url(../images/arrow.png) no-repeat top center;
   background-size: 47px;
 }
 main .wcon .wcr .lar {
@@ -1488,8 +1484,8 @@ footer nav ul li {
   width: 110px;
   height: 46px;
   font-size: 18px;
-  color: #454545;
   text-align: center;
+  color: #454545;
   border-left: 1px solid #7d7d7d;
 }
 footer nav ul li a {
