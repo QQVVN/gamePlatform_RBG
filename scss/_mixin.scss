@@ -11,7 +11,7 @@
 }
 
 @mixin none {
-    &.none {
+    .none {
         display: none;
     }
 }

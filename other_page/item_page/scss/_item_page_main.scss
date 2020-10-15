@@ -4,8 +4,8 @@ body {
 
 .banbox {
     position: relative;
-    height: 267px;
     top: -188px;
+    height: 267px;
     margin: 0 auto;
     .banner {
         position: absolute;
@@ -13,9 +13,7 @@ body {
         height: 267px;
         left: 50%;
         transform: translateX(-50%);
-        background: url(../images/item_banner.jpg) no-repeat top center;
-        background-size: 1920px * 6 267px;
-        background-position: 0 0;
+        @include bu-bz-bp(url(../images/item_banner.jpg), 1920px * 6 267px, 0 0);
         @include item-banner-position;
     }
 }
@@ -24,8 +22,8 @@ main {
     top: -198px;
     .btnbox {
         position: absolute;
-        left: 50%;
         top: 10px;
+        left: 50%;
         transform: translateX(-50%);
         width: 1200px;
         height: 550px;
@@ -45,8 +43,8 @@ main {
                 transition: 0.2s;
                 .p {
                     position: absolute;
-                    left: 1px;
                     top: 23px;
+                    left: 1px;
                     width: 92%;
                     height: 100%;
                     @include bu-bz-bp(url(../images/se/ab_players.png), 100%, 0 0);

@@ -197,6 +197,10 @@ a {
   text-decoration: none;
 }
 
+.none {
+  display: none;
+}
+
 html {
   font-family: Microsoft JhengHei;
   background: #060606;
@@ -225,9 +229,6 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-}
-.newbox.none {
-  display: none;
 }
 .newbox .new {
   position: absolute;
@@ -498,9 +499,6 @@ header article .hif:after, header article .hif:before {
 header article .hif:after {
   clear: both;
 }
-header article .hif.none {
-  display: none;
-}
 header article .hif .rpw {
   position: relative;
   float: left;
@@ -634,9 +632,6 @@ header article .hifi:after, header article .hifi:before {
 }
 header article .hifi:after {
   clear: both;
-}
-header article .hifi.none {
-  display: none;
 }
 header article .hifi .dt,
 header article .hifi .tr,
