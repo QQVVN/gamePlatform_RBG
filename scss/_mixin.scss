@@ -61,6 +61,12 @@
     }
 }
 
+@mixin bu-bz-bp($bu, $bz, $bp) {
+    background: $bu  no-repeat top center;
+    background-size: $bz;
+    background-position: $bp;
+}
+
 @mixin po-deg {
     &.se_deg,
     &.oc_deg,

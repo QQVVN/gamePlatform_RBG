@@ -281,6 +281,7 @@ main .btnbox .sebtn .r.active .p {
 main .btnbox .sebtn .r {
   background: url(../images/se/cd_sport.png) no-repeat top center;
   background-size: 100%;
+  background-position: 0 0;
 }
 main .btnbox .sebtn .r .p {
   left: 1px;
@@ -288,6 +289,7 @@ main .btnbox .sebtn .r .p {
   width: 88%;
   background: url(../images/se/cd_players.png) no-repeat top center;
   background-size: 100%;
+  background-position: 0 0;
 }
 main .ibbox .ibbg {
   position: absolute;
