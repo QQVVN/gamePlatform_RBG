@@ -291,6 +291,49 @@ main .btnbox .sebtn .r .p {
   background-size: 100%;
   background-position: 0 0;
 }
+main .btnbox .ocbtn {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #000;
+}
+main .btnbox .ocbtn .fir {
+  *zoom: 1;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background: lightblue;
+}
+main .btnbox .ocbtn .fir:after, main .btnbox .ocbtn .fir:before {
+  content: "";
+  display: table;
+}
+main .btnbox .ocbtn .fir:after {
+  clear: both;
+}
+main .btnbox .ocbtn .fir .btn {
+  float: left;
+  position: relative;
+  width: 22.65%;
+  height: 33%;
+  margin: 0 0 0 2.35%;
+  background: url(../images/oc/oc_person.png) no-repeat top center;
+  background-size: 600%;
+  background-position: 0 0;
+}
+main .btnbox .ocbtn .fir .btn.p2 {
+  background-position: -281px 0;
+}
+main .btnbox .ocbtn .fir .btn .card {
+  position: absolute;
+  top: 86px;
+  left: -14px;
+  width: 91px;
+  height: 82px;
+  background: url(../images/oc/oc_logo.png) no-repeat top center;
+  background-size: 600%;
+  background-position: 0 0;
+}
 main .ibbox .ibbg {
   position: absolute;
   top: 432px;

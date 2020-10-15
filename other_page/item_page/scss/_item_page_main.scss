@@ -70,6 +70,38 @@ main {
                 }
             }
         }
+        .ocbtn {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background: #000;
+            .fir {
+                @include clearfix;
+                width: 80%;
+                height: 100%;
+                margin: 0 auto;
+                background: lightblue;
+                .btn {
+                    float: left;
+                    position: relative;
+                    width: 22.65%;
+                    height: 33%;
+                    margin: 0 0 0 2.35%;
+                    @include bu-bz-bp(url(../images/oc/oc_person.png), 600%, 0 0);
+                    &.p2 {
+                        background-position: -281px 0;
+                    }
+                    .card {
+                        position: absolute;
+                        top: 86px;
+                        left: -14px;
+                        width: 91px;
+                        height: 82px;
+                        @include bu-bz-bp(url(../images/oc/oc_logo.png), 600%, 0 0);
+                    }
+                }
+            }
+        }
     }
     .ibbox {
         .ibbg {
