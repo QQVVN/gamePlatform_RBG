@@ -119,6 +119,58 @@ main {
                 }
             }
         }
+        .sgbtn {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 15px 0 0 0;
+            .box {
+                @include clearfix;
+                width: 88.3%;
+                height: 100%;
+                margin: 0 auto;
+                .btn {
+                    float: left;
+                    position: relative;
+                    width: 240px;
+                    height: 33%;
+                    margin: 0 0 0 2.35%;
+                    opacity: 0.5;
+                    @include bu-bz-bp(url(../images/sg/sg_img.png), 500%, 0 0);
+                    @include sgbtn-position;
+                    @include haa {
+                        opacity: 1;
+                        animation: navbg1 0.5s;
+                        .coin {
+                            transform: rotate3d(0,1,0,1080deg);
+                            transition: 0.5s;
+                        }
+                    }
+                    &:nth-of-type(n+5) {
+                        margin: 1% 0 0 2.35%;
+                    }
+                    .coin {
+                        position: absolute;
+                        top: 120px;
+                        left: 14px;
+                        width: 65px;
+                        height: 65px;
+                        @include bu-bz-bp(url(../images/sg/sg_coin.png), 500%, 0 0);
+                        @include sgbtn-coin-position;
+                        transform: rotate3d(0,1,0,0deg);
+                    }
+                    p {
+                        position: absolute;
+                        width: 38%;
+                        top: 140px;
+                        left: 80px;
+                        font-size: 16px;
+                        text-align: center;
+                        color: $sgbtn_box_btn_p;
+                    }
+                }
+            }
+        }
         .dgbtn {
             width: 100%;
             height: 100%;
@@ -163,7 +215,7 @@ main {
                         left: 85px;
                         font-size: 16px;
                         text-align: center;
-                        color: $ocbtn_box_btn_p;
+                        color: $dgbtn_box_btn_p;
                     }
                 }
             }

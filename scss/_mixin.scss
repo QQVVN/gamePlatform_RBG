@@ -253,6 +253,26 @@
     }
 }
 
+@mixin sgbtn-position {
+    @for $var from 2 through 5 {
+        $num: -240px;
+        $var2: $var - 1;
+        &.img#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
+@mixin sgbtn-coin-position {
+    @for $var from 2 through 5 {
+        $num: -65px;
+        $var2: $var - 1;
+        &.co#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
 @mixin dgbtn-position {
     @for $var from 2 through 5 {
         $num: -250px;

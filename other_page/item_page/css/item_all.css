@@ -377,6 +377,91 @@ main .btnbox .ocbtn .box .btn p {
   left: 73px;
   font-size: 16px;
   text-align: center;
+  color: #ffeaab;
+}
+main .btnbox .sgbtn {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 15px 0 0 0;
+}
+main .btnbox .sgbtn .box {
+  *zoom: 1;
+  width: 88.3%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .btnbox .sgbtn .box:after, main .btnbox .sgbtn .box:before {
+  content: "";
+  display: table;
+}
+main .btnbox .sgbtn .box:after {
+  clear: both;
+}
+main .btnbox .sgbtn .box .btn {
+  float: left;
+  position: relative;
+  width: 240px;
+  height: 33%;
+  margin: 0 0 0 2.35%;
+  opacity: 0.5;
+  background: url(../images/sg/sg_img.png) no-repeat top center;
+  background-size: 500%;
+  background-position: 0 0;
+}
+main .btnbox .sgbtn .box .btn.img2 {
+  background-position: -240px 0;
+}
+main .btnbox .sgbtn .box .btn.img3 {
+  background-position: -480px 0;
+}
+main .btnbox .sgbtn .box .btn.img4 {
+  background-position: -720px 0;
+}
+main .btnbox .sgbtn .box .btn.img5 {
+  background-position: -960px 0;
+}
+main .btnbox .sgbtn .box .btn:hover, main .btnbox .sgbtn .box .btn:active, main .btnbox .sgbtn .box .btn.active {
+  opacity: 1;
+  animation: navbg1 0.5s;
+}
+main .btnbox .sgbtn .box .btn:hover .coin, main .btnbox .sgbtn .box .btn:active .coin, main .btnbox .sgbtn .box .btn.active .coin {
+  transform: rotate3d(0, 1, 0, 1080deg);
+  transition: 0.5s;
+}
+main .btnbox .sgbtn .box .btn:nth-of-type(n+5) {
+  margin: 1% 0 0 2.35%;
+}
+main .btnbox .sgbtn .box .btn .coin {
+  position: absolute;
+  top: 120px;
+  left: 14px;
+  width: 65px;
+  height: 65px;
+  background: url(../images/sg/sg_coin.png) no-repeat top center;
+  background-size: 500%;
+  background-position: 0 0;
+  transform: rotate3d(0, 1, 0, 0deg);
+}
+main .btnbox .sgbtn .box .btn .coin.co2 {
+  background-position: -65px 0;
+}
+main .btnbox .sgbtn .box .btn .coin.co3 {
+  background-position: -130px 0;
+}
+main .btnbox .sgbtn .box .btn .coin.co4 {
+  background-position: -195px 0;
+}
+main .btnbox .sgbtn .box .btn .coin.co5 {
+  background-position: -260px 0;
+}
+main .btnbox .sgbtn .box .btn p {
+  position: absolute;
+  width: 38%;
+  top: 140px;
+  left: 80px;
+  font-size: 16px;
+  text-align: center;
   color: #ffffff;
 }
 main .btnbox .dgbtn {
