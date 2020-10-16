@@ -301,7 +301,7 @@ main .btnbox .ocbtn .box {
   *zoom: 1;
   width: 80%;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 0 11%;
 }
 main .btnbox .ocbtn .box:after, main .btnbox .ocbtn .box:before {
   content: "";
