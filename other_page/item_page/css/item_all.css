@@ -597,6 +597,42 @@ main .btnbox .dgbtn .box .btn p {
   text-align: center;
   color: #ffffff;
 }
+main .btnbox .bobtn {
+  *zoom: 1;
+  width: 64.8%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3% 0 0 0;
+}
+main .btnbox .bobtn:after, main .btnbox .bobtn:before {
+  content: "";
+  display: table;
+}
+main .btnbox .bobtn:after {
+  clear: both;
+}
+main .btnbox .bobtn .box {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 305px;
+  margin: 0 auto 0 5%;
+  opacity: 0.5;
+  transition: 0.2s;
+  background: url(../images/bo/bo_img.png) no-repeat top center;
+  background-size: 300%;
+  background-position: 0 0;
+}
+main .btnbox .bobtn .box.img2 {
+  background-position: -220px 0;
+}
+main .btnbox .bobtn .box.img3 {
+  background-position: -440px 0;
+}
+main .btnbox .bobtn .box:hover, main .btnbox .bobtn .box:active, main .btnbox .bobtn .box.active {
+  animation: navbg1 0.8s;
+  opacity: 1;
+}
 main .ibbox .ibbg {
   position: absolute;
   top: 407px;

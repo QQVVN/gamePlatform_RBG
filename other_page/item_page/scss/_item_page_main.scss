@@ -267,6 +267,28 @@ main {
                 }
             }
         }
+        .bobtn {
+            @include clearfix;
+            width: 64.8%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 3% 0 0 0;
+            .box {
+                position: relative;
+                float: left;
+                width: 220px;
+                height: 305px;
+                margin: 0 auto 0 5%;
+                opacity: 0.5;
+                transition: 0.2s;
+                @include bu-bz-bp (url(../images/bo/bo_img.png),300%,0 0);
+                @include bobtn-position;
+                @include haa {
+                    animation: navbg1 0.8s;
+                    opacity: 1;
+                }
+            }
+        }
     }
     .ibbox {
         .ibbg {

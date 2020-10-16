@@ -303,6 +303,16 @@
     }
 }
 
+@mixin bobtn-position {
+    @for $var from 2 through 3 {
+        $num: -220px;
+        $var2: $var - 1;
+        &.img#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
 @mixin scrollbar-color($width, $face, $track, $arrow, $shadow) {
     scrollbar-width: $width;
     scrollbar-face-color: $face;
