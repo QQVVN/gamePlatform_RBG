@@ -295,21 +295,22 @@ main .btnbox .ocbtn {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  padding: 20px 0 0 0;
 }
-main .btnbox .ocbtn .fir {
+main .btnbox .ocbtn .box {
   *zoom: 1;
   width: 80%;
   height: 100%;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
-main .btnbox .ocbtn .fir:after, main .btnbox .ocbtn .fir:before {
+main .btnbox .ocbtn .box:after, main .btnbox .ocbtn .box:before {
   content: "";
   display: table;
 }
-main .btnbox .ocbtn .fir:after {
+main .btnbox .ocbtn .box:after {
   clear: both;
 }
-main .btnbox .ocbtn .fir .btn {
+main .btnbox .ocbtn .box .btn {
   float: left;
   position: relative;
   width: 217px;
@@ -320,30 +321,30 @@ main .btnbox .ocbtn .fir .btn {
   background-size: 600%;
   background-position: 0 0;
 }
-main .btnbox .ocbtn .fir .btn.p2 {
+main .btnbox .ocbtn .box .btn.p2 {
   background-position: -217px 0;
 }
-main .btnbox .ocbtn .fir .btn.p3 {
+main .btnbox .ocbtn .box .btn.p3 {
   background-position: -434px 0;
 }
-main .btnbox .ocbtn .fir .btn.p4 {
+main .btnbox .ocbtn .box .btn.p4 {
   background-position: -651px 0;
 }
-main .btnbox .ocbtn .fir .btn.p5 {
+main .btnbox .ocbtn .box .btn.p5 {
   background-position: -868px 0;
 }
-main .btnbox .ocbtn .fir .btn.p6 {
+main .btnbox .ocbtn .box .btn.p6 {
   background-position: -1085px 0;
 }
-main .btnbox .ocbtn .fir .btn:hover, main .btnbox .ocbtn .fir .btn:active, main .btnbox .ocbtn .fir .btn.active {
+main .btnbox .ocbtn .box .btn:hover, main .btnbox .ocbtn .box .btn:active, main .btnbox .ocbtn .box .btn.active {
   opacity: 1;
   animation: navbg1 0.5s;
 }
-main .btnbox .ocbtn .fir .btn:hover .card, main .btnbox .ocbtn .fir .btn:active .card, main .btnbox .ocbtn .fir .btn.active .card {
+main .btnbox .ocbtn .box .btn:hover .card, main .btnbox .ocbtn .box .btn:active .card, main .btnbox .ocbtn .box .btn.active .card {
   transform: rotate(-360deg);
   transition: 0.5s;
 }
-main .btnbox .ocbtn .fir .btn .card {
+main .btnbox .ocbtn .box .btn .card {
   position: absolute;
   top: 86px;
   left: -14px;
@@ -354,33 +355,115 @@ main .btnbox .ocbtn .fir .btn .card {
   background-position: 0 0;
   transform: rotate(0deg);
 }
-main .btnbox .ocbtn .fir .btn .card.c2 {
+main .btnbox .ocbtn .box .btn .card.c2 {
   background-position: -91px 0;
 }
-main .btnbox .ocbtn .fir .btn .card.c3 {
+main .btnbox .ocbtn .box .btn .card.c3 {
   background-position: -182px 0;
 }
-main .btnbox .ocbtn .fir .btn .card.c4 {
+main .btnbox .ocbtn .box .btn .card.c4 {
   background-position: -273px 0;
 }
-main .btnbox .ocbtn .fir .btn .card.c5 {
+main .btnbox .ocbtn .box .btn .card.c5 {
   background-position: -364px 0;
 }
-main .btnbox .ocbtn .fir .btn .card.c6 {
+main .btnbox .ocbtn .box .btn .card.c6 {
   background-position: -455px 0;
 }
-main .btnbox .ocbtn .fir .btn p {
+main .btnbox .ocbtn .box .btn p {
   position: absolute;
   width: 40%;
   top: 127px;
   left: 73px;
   font-size: 16px;
   text-align: center;
-  color: #ffeaab;
+  color: #ffffff;
+}
+main .btnbox .dgbtn {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+main .btnbox .dgbtn .box {
+  *zoom: 1;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .btnbox .dgbtn .box:after, main .btnbox .dgbtn .box:before {
+  content: "";
+  display: table;
+}
+main .btnbox .dgbtn .box:after {
+  clear: both;
+}
+main .btnbox .dgbtn .box .btn {
+  float: left;
+  position: relative;
+  width: 217px;
+  height: 33%;
+  margin: 0 0 0 2.35%;
+  opacity: 0.5;
+  background: url(../images/dg/dg_img.png) no-repeat top center;
+  background-size: 500%;
+  background-position: 0 0;
+}
+main .btnbox .dgbtn .box .btn.img2 {
+  background-position: -217px 0;
+}
+main .btnbox .dgbtn .box .btn.img3 {
+  background-position: -434px 0;
+}
+main .btnbox .dgbtn .box .btn.img4 {
+  background-position: -651px 0;
+}
+main .btnbox .dgbtn .box .btn.img5 {
+  background-position: -868px 0;
+}
+main .btnbox .dgbtn .box .btn:hover, main .btnbox .dgbtn .box .btn:active, main .btnbox .dgbtn .box .btn.active {
+  opacity: 1;
+  animation: navbg1 0.5s;
+}
+main .btnbox .dgbtn .box .btn:hover .coin, main .btnbox .dgbtn .box .btn:active .coin, main .btnbox .dgbtn .box .btn.active .coin {
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+main .btnbox .dgbtn .box .btn .coin {
+  position: absolute;
+  top: 86px;
+  left: 27px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/dg/dg_coin.png) no-repeat top center;
+  background-size: 500%;
+  background-position: 0 0;
+  transform: rotate(0deg);
+}
+main .btnbox .dgbtn .box .btn .coin.co2 {
+  background-position: -60px 0;
+}
+main .btnbox .dgbtn .box .btn .coin.co3 {
+  background-position: -120px 0;
+}
+main .btnbox .dgbtn .box .btn .coin.co4 {
+  background-position: -180px 0;
+}
+main .btnbox .dgbtn .box .btn .coin.co5 {
+  background-position: -240px 0;
+}
+main .btnbox .dgbtn .box .btn p {
+  position: absolute;
+  width: 38%;
+  top: 107px;
+  left: 82px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
 }
 main .ibbox .ibbg {
   position: absolute;
-  top: 432px;
+  top: 407px;
   left: 50%;
   transform: translateX(-50%);
   width: 847px;
@@ -406,7 +489,7 @@ main .ibbox .ibbg.bg6 {
 }
 
 footer {
-  top: -838px;
+  top: -863px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

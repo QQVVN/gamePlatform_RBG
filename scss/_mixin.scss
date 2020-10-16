@@ -253,6 +253,26 @@
     }
 }
 
+@mixin dgbtn-position {
+    @for $var from 2 through 5 {
+        $num: -217px;
+        $var2: $var - 1;
+        &.img#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
+@mixin dgbtn-coin-position {
+    @for $var from 2 through 5 {
+        $num: -60px;
+        $var2: $var - 1;
+        &.co#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
 @mixin scrollbar-color($width, $face, $track, $arrow, $shadow) {
     scrollbar-width: $width;
     scrollbar-face-color: $face;

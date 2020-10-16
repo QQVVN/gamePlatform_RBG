@@ -1,9 +1,7 @@
 $white: #ffffff;
 $black: #000000;
 
-
 $html_bg: #060606;
-
 
 //newbox color
 $newbox_bg: rgb(0, 0, 0, 0.5);
@@ -21,7 +19,6 @@ $new_con_b_news_ti_arrow_border_color: #2f333e transparent transparent transpare
 $new_con_b_news_ti_arrow_after_border_color: $white transparent transparent transparent;
 $new_con_b_news_ti_pbox_scrollbar: $white;
 $new_con_b_news_ti_pbox_p: $black;
-
 
 //header hif color
 $header_article_hif_rpw: $white;
@@ -60,7 +57,6 @@ $header_article_hif_su_border_haa: #935800;
 $header_article_hif_su_bg_haa: #c29540;
 $header_article_hif_su_bg_l_gra_haa: linear-gradient(to bottom, #8d5d1c 25%, #c29540 49%, #f9e19e 100%);
 
-
 //header hifi color
 $header_article_hifi_uif_t_p: $white;
 $header_article_hifi_uif_t_nth2: #fde6a2;
@@ -83,7 +79,6 @@ $header_article_hifi_so_haa: $white;
 $header_article_hifi_so_bg_haa: #c29540;
 $header_article_hifi_so_bg_l_gra_haa: linear-gradient(to bottom, #8d5d1c 0%, #c29540 49%, #f9e19e 100%);
 
-
 //header lang color
 $header_article_lang_bg: #131313;
 $header_article_lang_select_p: #d0d0d0;
@@ -94,10 +89,8 @@ $header_article_lang_select_ul_li_a: $white;
 $header_article_lang_select_ul_li_a_hover: $black;
 $header_article_lang_select_ul_li_a_hover_bg: #fde6a2;
 
-
 //header nav color
 $header_article_nav_li_p: #ffeaab;
-
 
 //main wcon color
 $main_wcon_hg_li: #0b0b0b;
@@ -108,7 +101,6 @@ $main_wcon_wcr_news_nt_p: $white;
 $main_wcon_wcr_index_li_bg: #131313;
 $main_wcon_wcr_index_li_hover_bg: #c09442;
 $main_wcon_wcr_index_li_hover_bg_l_gra: linear-gradient(to left, #f6e09d 0%, #c09442 100%);
-
 
 //footer color
 $footer_bg: #c09442;
@@ -125,3 +117,7 @@ $footer_section_bg: #2a2a2a;
 $footer_section_bg_l_gra: linear-gradient(to top, #060606 0%, #1a1a1a 50%, #2a2a2a 50%, #575757 91%, #6f6f6f 100%);
 $footer_section_p_nth1: #f4f4f4;
 $footer_section_p_nth2: #949494;
+
+//item_page color
+$ocbtn_box_btn_p: #ffeaab;
+$ocbtn_box_btn_p: #ffffff;
