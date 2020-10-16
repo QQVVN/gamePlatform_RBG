@@ -31,8 +31,7 @@ main {
             width: 56%;
             height: 100%;
             margin: 0 auto;
-            .l,
-            .r {
+            .box {
                 position: relative;
                 display: inline-block;
                 width: 330px;
@@ -47,9 +46,7 @@ main {
                     left: 1px;
                     width: 92%;
                     height: 100%;
-                    @include bu-bz-bp(url(../images/se/ab_players.png), 100%, 0 0);
-                    opacity: 0.5;
-                    transition: 0.2s;
+                    @include bu-bz(url(../images/se/ab_players.png), 100%);
                 }
                 @include haa {
                     animation: navbg1 0.8s;
@@ -59,14 +56,14 @@ main {
                         opacity: 1;
                     }
                 }
-            }
-            .r {
-                @include bu-bz-bp(url(../images/se/cd_sport.png), 100%, 0 0);
-                .p {
-                    left: 1px;
-                    top: -6px;
-                    width: 88%;
-                    @include bu-bz-bp(url(../images/se/cd_players.png), 100%, 0 0);
+                &:nth-of-type(2) {
+                    @include bu-bz(url(../images/se/cd_sport.png), 100%);
+                    .p {
+                        left: 1px;
+                        top: -6px;
+                        width: 88%;
+                        @include bu-bz-bp(url(../images/se/cd_players.png), 100%, 0 0);
+                    }
                 }
             }
         }
@@ -87,6 +84,7 @@ main {
                     height: 33%;
                     margin: 0 0 0 2.35%;
                     opacity: 0.5;
+                    transition: 0.2s;
                     @include bu-bz-bp(url(../images/oc/oc_person.png), 600%, 0 0);
                     @include ocbtn-position;
                     @include haa {
@@ -136,17 +134,18 @@ main {
                     height: 33%;
                     margin: 0 0 0 2.35%;
                     opacity: 0.5;
+                    transition: 0.2s;
                     @include bu-bz-bp(url(../images/sg/sg_img.png), 500%, 0 0);
                     @include sgbtn-position;
                     @include haa {
                         opacity: 1;
                         animation: navbg1 0.5s;
                         .coin {
-                            transform: rotate3d(0,1,0,1080deg);
+                            transform: rotate3d(0, 1, 0, 1080deg);
                             transition: 0.5s;
                         }
                     }
-                    &:nth-of-type(n+5) {
+                    &:nth-of-type(n + 5) {
                         margin: 1% 0 0 2.35%;
                     }
                     .coin {
@@ -157,7 +156,7 @@ main {
                         height: 65px;
                         @include bu-bz-bp(url(../images/sg/sg_coin.png), 500%, 0 0);
                         @include sgbtn-coin-position;
-                        transform: rotate3d(0,1,0,0deg);
+                        transform: rotate3d(0, 1, 0, 0deg);
                     }
                     p {
                         position: absolute;
@@ -167,6 +166,53 @@ main {
                         font-size: 16px;
                         text-align: center;
                         color: $sgbtn_box_btn_p;
+                    }
+                }
+            }
+        }
+        .ltbtn {
+            @include clearfix;
+            width: 64.8%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 5% 0 0 0;
+            .box {
+                position: relative;
+                float: left;
+                width: 220px;
+                height: 284px;
+                margin: 0 auto 0 5%;
+                opacity: 0.5;
+                transition: 0.2s;
+                @include bu-bz-bp(url(../images/lt/lt_bg.png), 300%, 0 0);
+                @include ltbtn-position;
+                @include haa {
+                    animation: navbg1 0.8s;
+                    opacity: 1;
+                    .p {
+                        animation: navbg1 0.5s;
+                    }
+                }
+                .p {
+                    position: absolute;
+                    top: -27px;
+                    left: -25px;
+                    width: 206px;
+                    height: 338px;
+                    @include bu-bz(url(../images/lt/ab_p.png), 100%);
+                }
+                &:nth-of-type(2) {
+                    .p {
+                        top: -23px;
+                        left: -1px;
+                        width: 203px;
+                        @include bu-bz(url(../images/lt/cd_p.png), 100%);
+                    }
+                }
+                &:nth-of-type(3) {
+                    .p {
+                        left: -30px;
+                        @include bu-bz(url(../images/lt/ef_p.png), 100%);
                     }
                 }
             }
@@ -188,6 +234,7 @@ main {
                     height: 33%;
                     margin: 0 0 0 2.35%;
                     opacity: 0.5;
+                    transition: 0.2s;
                     @include bu-bz-bp(url(../images/dg/dg_img.png), 500%, 0 0);
                     @include dgbtn-position;
                     @include haa {

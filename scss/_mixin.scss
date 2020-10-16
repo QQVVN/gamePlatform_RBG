@@ -273,6 +273,16 @@
     }
 }
 
+@mixin ltbtn-position {
+    @for $var from 2 through 3 {
+        $num: -220px;
+        $var2: $var - 1;
+        &.img#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
 @mixin dgbtn-position {
     @for $var from 2 through 5 {
         $num: -250px;

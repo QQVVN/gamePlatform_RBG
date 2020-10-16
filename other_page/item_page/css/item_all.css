@@ -238,8 +238,7 @@ main .btnbox .sebtn {
   height: 100%;
   margin: 0 auto;
 }
-main .btnbox .sebtn .l,
-main .btnbox .sebtn .r {
+main .btnbox .sebtn .box {
   position: relative;
   display: inline-block;
   width: 330px;
@@ -251,8 +250,7 @@ main .btnbox .sebtn .r {
   opacity: 0.5;
   transition: 0.2s;
 }
-main .btnbox .sebtn .l .p,
-main .btnbox .sebtn .r .p {
+main .btnbox .sebtn .box .p {
   position: absolute;
   top: 23px;
   left: 1px;
@@ -260,30 +258,20 @@ main .btnbox .sebtn .r .p {
   height: 100%;
   background: url(../images/se/ab_players.png) no-repeat top center;
   background-size: 100%;
-  background-position: 0 0;
-  opacity: 0.5;
-  transition: 0.2s;
 }
-main .btnbox .sebtn .l:hover, main .btnbox .sebtn .l:active, main .btnbox .sebtn .l.active,
-main .btnbox .sebtn .r:hover,
-main .btnbox .sebtn .r:active,
-main .btnbox .sebtn .r.active {
+main .btnbox .sebtn .box:hover, main .btnbox .sebtn .box:active, main .btnbox .sebtn .box.active {
   animation: navbg1 0.8s;
   opacity: 1;
 }
-main .btnbox .sebtn .l:hover .p, main .btnbox .sebtn .l:active .p, main .btnbox .sebtn .l.active .p,
-main .btnbox .sebtn .r:hover .p,
-main .btnbox .sebtn .r:active .p,
-main .btnbox .sebtn .r.active .p {
+main .btnbox .sebtn .box:hover .p, main .btnbox .sebtn .box:active .p, main .btnbox .sebtn .box.active .p {
   animation: navbg1 0.5s;
   opacity: 1;
 }
-main .btnbox .sebtn .r {
+main .btnbox .sebtn .box:nth-of-type(2) {
   background: url(../images/se/cd_sport.png) no-repeat top center;
   background-size: 100%;
-  background-position: 0 0;
 }
-main .btnbox .sebtn .r .p {
+main .btnbox .sebtn .box:nth-of-type(2) .p {
   left: 1px;
   top: -6px;
   width: 88%;
@@ -317,6 +305,7 @@ main .btnbox .ocbtn .box .btn {
   height: 33%;
   margin: 0 0 0 2.35%;
   opacity: 0.5;
+  transition: 0.2s;
   background: url(../images/oc/oc_person.png) no-repeat top center;
   background-size: 600%;
   background-position: 0 0;
@@ -405,6 +394,7 @@ main .btnbox .sgbtn .box .btn {
   height: 33%;
   margin: 0 0 0 2.35%;
   opacity: 0.5;
+  transition: 0.2s;
   background: url(../images/sg/sg_img.png) no-repeat top center;
   background-size: 500%;
   background-position: 0 0;
@@ -429,7 +419,7 @@ main .btnbox .sgbtn .box .btn:hover .coin, main .btnbox .sgbtn .box .btn:active 
   transform: rotate3d(0, 1, 0, 1080deg);
   transition: 0.5s;
 }
-main .btnbox .sgbtn .box .btn:nth-of-type(n+5) {
+main .btnbox .sgbtn .box .btn:nth-of-type(n + 5) {
   margin: 1% 0 0 2.35%;
 }
 main .btnbox .sgbtn .box .btn .coin {
@@ -464,6 +454,66 @@ main .btnbox .sgbtn .box .btn p {
   text-align: center;
   color: #ffffff;
 }
+main .btnbox .ltbtn {
+  *zoom: 1;
+  width: 64.8%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5% 0 0 0;
+}
+main .btnbox .ltbtn:after, main .btnbox .ltbtn:before {
+  content: "";
+  display: table;
+}
+main .btnbox .ltbtn:after {
+  clear: both;
+}
+main .btnbox .ltbtn .box {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 284px;
+  margin: 0 auto 0 5%;
+  opacity: 0.5;
+  transition: 0.2s;
+  background: url(../images/lt/lt_bg.png) no-repeat top center;
+  background-size: 300%;
+  background-position: 0 0;
+}
+main .btnbox .ltbtn .box.img2 {
+  background-position: -220px 0;
+}
+main .btnbox .ltbtn .box.img3 {
+  background-position: -440px 0;
+}
+main .btnbox .ltbtn .box:hover, main .btnbox .ltbtn .box:active, main .btnbox .ltbtn .box.active {
+  animation: navbg1 0.8s;
+  opacity: 1;
+}
+main .btnbox .ltbtn .box:hover .p, main .btnbox .ltbtn .box:active .p, main .btnbox .ltbtn .box.active .p {
+  animation: navbg1 0.5s;
+}
+main .btnbox .ltbtn .box .p {
+  position: absolute;
+  top: -27px;
+  left: -25px;
+  width: 206px;
+  height: 338px;
+  background: url(../images/lt/ab_p.png) no-repeat top center;
+  background-size: 100%;
+}
+main .btnbox .ltbtn .box:nth-of-type(2) .p {
+  top: -23px;
+  left: -1px;
+  width: 203px;
+  background: url(../images/lt/cd_p.png) no-repeat top center;
+  background-size: 100%;
+}
+main .btnbox .ltbtn .box:nth-of-type(3) .p {
+  left: -30px;
+  background: url(../images/lt/ef_p.png) no-repeat top center;
+  background-size: 100%;
+}
 main .btnbox .dgbtn {
   width: 100%;
   height: 100%;
@@ -490,6 +540,7 @@ main .btnbox .dgbtn .box .btn {
   height: 33%;
   margin: 0 0 0 2.35%;
   opacity: 0.5;
+  transition: 0.2s;
   background: url(../images/dg/dg_img.png) no-repeat top center;
   background-size: 500%;
   background-position: 0 0;
