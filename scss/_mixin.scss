@@ -255,7 +255,7 @@
 
 @mixin dgbtn-position {
     @for $var from 2 through 5 {
-        $num: -217px;
+        $num: -250px;
         $var2: $var - 1;
         &.img#{$var} {
             background-position: $num * $var2 0;

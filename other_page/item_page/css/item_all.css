@@ -387,7 +387,7 @@ main .btnbox .dgbtn {
 }
 main .btnbox .dgbtn .box {
   *zoom: 1;
-  width: 80%;
+  width: 92%;
   height: 100%;
   margin: 0 auto;
 }
@@ -401,7 +401,7 @@ main .btnbox .dgbtn .box:after {
 main .btnbox .dgbtn .box .btn {
   float: left;
   position: relative;
-  width: 217px;
+  width: 250px;
   height: 33%;
   margin: 0 0 0 2.35%;
   opacity: 0.5;
@@ -410,16 +410,16 @@ main .btnbox .dgbtn .box .btn {
   background-position: 0 0;
 }
 main .btnbox .dgbtn .box .btn.img2 {
-  background-position: -217px 0;
+  background-position: -250px 0;
 }
 main .btnbox .dgbtn .box .btn.img3 {
-  background-position: -434px 0;
+  background-position: -500px 0;
 }
 main .btnbox .dgbtn .box .btn.img4 {
-  background-position: -651px 0;
+  background-position: -750px 0;
 }
 main .btnbox .dgbtn .box .btn.img5 {
-  background-position: -868px 0;
+  background-position: -1000px 0;
 }
 main .btnbox .dgbtn .box .btn:hover, main .btnbox .dgbtn .box .btn:active, main .btnbox .dgbtn .box .btn.active {
   opacity: 1;
