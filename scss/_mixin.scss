@@ -108,7 +108,7 @@
     &.lt_bg,
     &.dg_bg,
     &.bo_bg {
-        @include bu-bz(url(../images/cB_bg.png),600%);
+        @include bu-bz(url(../images/cB_bg.png), 600%);
         animation: 0.5s;
     }
     &.se_bg {
@@ -216,9 +216,9 @@
 @mixin ibbg_position {
     @for $var from 2 through 6 {
         $num: -847px;
-        $var-1: $var - 1;
+        $var2: $var - 1;
         &.bg#{$var} {
-            background-position: $num * $var-1 0;
+            background-position: $num * $var2 0;
         }
     }
 }
@@ -228,6 +228,26 @@
         $num: -70px;
         $var2: $var - 1;
         &.no#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
+@mixin ocbtn-position {
+    @for $var from 2 through 6 {
+        $num: -217px;
+        $var2: $var - 1;
+        &.p#{$var} {
+            background-position: $num * $var2 0;
+        }
+    }
+}
+
+@mixin ocbtn-card-position {
+    @for $var from 2 through 6 {
+        $num: -91px;
+        $var2: $var - 1;
+        &.c#{$var} {
             background-position: $num * $var2 0;
         }
     }
