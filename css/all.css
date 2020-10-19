@@ -1108,7 +1108,6 @@ main .cmnbox .sg,
 main .cmnbox .lt,
 main .cmnbox .dg,
 main .cmnbox .bo {
-  cursor: pointer;
   position: absolute;
   width: 288px;
   height: 99px;

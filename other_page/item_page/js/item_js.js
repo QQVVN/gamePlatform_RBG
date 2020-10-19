@@ -1,8 +1,6 @@
 $(document).ready(function () {
-    console.log("item_js.js")
-    $("header article nav ul li").click(function (e) {
-        e.preventDefault();
-
+    console.log("item_js.js");
+    $("header article nav ul li").click(function () {
         var self = $(this);
         var thisC = self.attr("class");
         var banner = $(".banbox .banner");
@@ -21,31 +19,37 @@ $(document).ready(function () {
         if (thisC === "H") {
             return
         } else if (thisC === "SE" & btnSE.attr("class") === "sebtn none") {
+            $("head title").text("Sports Events");
             banner.attr("class", "banner");
             ibbg.attr("class", "ibbg");
             btnChildren.addClass("none");
             btnSE.attr("class", "sebtn");
         } else if (thisC === "OC" & btnOC.attr("class") === "ocbtn none") {
+            $("head title").text("Online Casino");
             banner.attr("class", "banner ban2");
             ibbg.attr("class", "ibbg bg2");
             btnChildren.addClass("none");
             btnOC.attr("class", "ocbtn");
         } else if (thisC === "SG" & btnSG.attr("class") === "sgbtn none") {
+            $("head title").text("Slot Game");
             banner.attr("class", "banner ban3");
             ibbg.attr("class", "ibbg bg3");
             btnChildren.addClass("none");
             btnSG.attr("class", "sgbtn");
         } else if (thisC === "LT" & btnLT.attr("class") === "ltbtn none") {
+            $("head title").text("Lottery");
             banner.attr("class", "banner ban4");
             ibbg.attr("class", "ibbg bg4");
             btnChildren.addClass("none");
             btnLT.attr("class", "ltbtn");
         } else if (thisC === "DG" & btnDG.attr("class") === "dgbtn none") {
+            $("head title").text("DDF Ganing");
             banner.attr("class", "banner ban5");
             ibbg.attr("class", "ibbg bg5");
             btnChildren.addClass("none");
             btnDG.attr("class", "dgbtn");
         } else if (thisC === "BO" & btnBO.attr("class") === "bobtn none") {
+            $("head title").text("Boardgame");
             banner.attr("class", "banner ban6");
             ibbg.attr("class", "ibbg bg6");
             btnChildren.addClass("none");
