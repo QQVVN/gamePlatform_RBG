@@ -1,5 +1,43 @@
 body {
     height: 937px;
+    // height: 100%;
+}
+
+header {
+    .btnbox {
+        position: relative;
+        width: 1110px;
+        height: 100%;
+        margin: 0 auto;
+        .btn {
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 96px;
+            top: -40px;
+            left: 0px;
+            margin: 0px 18px 0 0;
+            @include bu-bz-bp(url(../images/sg/banner_btn.png), 500% 192px, 0 0);
+            @include banner-btn-position;
+            @include haa {
+                animation: navbg1 0.5s;
+            }
+            p {
+                position: absolute;
+                top: 65px;
+                left: 40px;
+                width: 40px;
+                font-size: 12px;
+                text-align: center;
+                color: #ffffff;
+            }
+            &:first-of-type {
+                margin: -40px 6px 0 52px;
+                background: none;
+            }
+        }
+    }
 }
 
 .banbox {
@@ -15,6 +53,9 @@ body {
         transform: translateX(-50%);
         @include bu-bz-bp(url(../images/item_banner.jpg), 1920px * 6 267px, 0 0);
         @include item-banner-position;
+        &.sgin {
+            @include bu-bz(url(../images/sg/sgin_banner_bg.jpg), 1920px 267px);
+        }
     }
 }
 
@@ -281,7 +322,7 @@ main {
                 margin: 0 auto 0 5%;
                 opacity: 0.5;
                 transition: 0.2s;
-                @include bu-bz-bp (url(../images/bo/bo_img.png),300%,0 0);
+                @include bu-bz-bp(url(../images/bo/bo_img.png), 300%, 0 0);
                 @include bobtn-position;
                 @include haa {
                     animation: navbg1 0.8s;
@@ -289,6 +330,16 @@ main {
                 }
             }
         }
+    }
+    .sgIn {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1110px;
+
+        height: 100%;
+        background: #000;
     }
     .ibbox {
         .ibbg {

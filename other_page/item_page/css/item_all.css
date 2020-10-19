@@ -190,6 +190,54 @@ body {
   height: 937px;
 }
 
+header .btnbox {
+  position: relative;
+  width: 1110px;
+  height: 100%;
+  margin: 0 auto;
+}
+header .btnbox .btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 96px;
+  top: -40px;
+  left: 0px;
+  margin: 0px 18px 0 0;
+  background: url(../images/sg/banner_btn.png) no-repeat top center;
+  background-size: 500% 192px;
+  background-position: 0 0;
+}
+header .btnbox .btn.img2 {
+  background-position: -100px 0;
+}
+header .btnbox .btn.img3 {
+  background-position: -200px 0;
+}
+header .btnbox .btn.img4 {
+  background-position: -300px 0;
+}
+header .btnbox .btn.img5 {
+  background-position: -400px 0;
+}
+header .btnbox .btn:hover, header .btnbox .btn:active, header .btnbox .btn.active {
+  animation: navbg1 0.5s;
+}
+header .btnbox .btn p {
+  position: absolute;
+  top: 65px;
+  left: 40px;
+  width: 40px;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+header .btnbox .btn:first-of-type {
+  margin: -40px 6px 0 52px;
+  background: none;
+}
+
 .banbox {
   position: relative;
   top: -188px;
@@ -220,6 +268,10 @@ body {
 }
 .banbox .banner.ban6 {
   background-position: -9600px 0;
+}
+.banbox .banner.sgin {
+  background: url(../images/sg/sgin_banner_bg.jpg) no-repeat top center;
+  background-size: 1920px 267px;
 }
 
 main {
@@ -630,6 +682,15 @@ main .btnbox .bobtn .box.img3 {
 main .btnbox .bobtn .box:hover, main .btnbox .bobtn .box:active, main .btnbox .bobtn .box.active {
   animation: navbg1 0.8s;
   opacity: 1;
+}
+main .sgIn {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1110px;
+  height: 100%;
+  background: #000;
 }
 main .ibbox .ibbg {
   position: absolute;
