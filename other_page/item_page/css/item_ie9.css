@@ -12,9 +12,37 @@ main .btnbox {
   transform: translateX(0%);
   margin: 0 auto;
 }
+main .btnbox .sebtn .box,
+main .btnbox .ltbtn .box,
+main .btnbox .bobtn .box {
+  transform: scale(0.9);
+}
+main .btnbox .sebtn .box:hover, main .btnbox .sebtn .box:active, main .btnbox .sebtn .box.active,
+main .btnbox .ltbtn .box:hover,
+main .btnbox .ltbtn .box:active,
+main .btnbox .ltbtn .box.active,
+main .btnbox .bobtn .box:hover,
+main .btnbox .bobtn .box:active,
+main .btnbox .bobtn .box.active {
+  transform: scale(1);
+}
+main .btnbox .ocbtn .box .btn,
+main .btnbox .sgbtn .box .btn,
+main .btnbox .dgbtn .box .btn {
+  transform: scale(0.9);
+}
+main .btnbox .ocbtn .box .btn:hover, main .btnbox .ocbtn .box .btn:active, main .btnbox .ocbtn .box .btn.active,
+main .btnbox .sgbtn .box .btn:hover,
+main .btnbox .sgbtn .box .btn:active,
+main .btnbox .sgbtn .box .btn.active,
+main .btnbox .dgbtn .box .btn:hover,
+main .btnbox .dgbtn .box .btn:active,
+main .btnbox .dgbtn .box .btn.active {
+  transform: scale(1);
+}
 main .ibbox {
   position: relative;
-  top: -1760px;
+  top: -1735px;
   margin: 0 auto;
 }
 

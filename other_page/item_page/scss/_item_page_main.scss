@@ -37,10 +37,10 @@ main {
                 width: 330px;
                 height: 65%;
                 margin: 40px 0 0;
-                @include bu-bz-bp(url(../images/se/ab_sport.png), 100%, 0 0);
+                @include bu-bz(url(../images/se/ab_sport.png), 100%);
                 opacity: 0.5;
                 transition: 0.2s;
-                .p {
+                .img {
                     position: absolute;
                     top: 23px;
                     left: 1px;
@@ -51,18 +51,18 @@ main {
                 @include haa {
                     animation: navbg1 0.8s;
                     opacity: 1;
-                    .p {
+                    .img {
                         animation: navbg1 0.5s;
                         opacity: 1;
                     }
                 }
                 &:nth-of-type(2) {
                     @include bu-bz(url(../images/se/cd_sport.png), 100%);
-                    .p {
+                    .img {
                         left: 1px;
                         top: -6px;
                         width: 88%;
-                        @include bu-bz-bp(url(../images/se/cd_players.png), 100%, 0 0);
+                        @include bu-bz(url(../images/se/cd_players.png), 100%);
                     }
                 }
             }
@@ -189,11 +189,11 @@ main {
                 @include haa {
                     animation: navbg1 0.8s;
                     opacity: 1;
-                    .p {
+                    .img {
                         animation: navbg1 0.5s;
                     }
                 }
-                .p {
+                .img {
                     position: absolute;
                     top: -27px;
                     left: -25px;
@@ -202,7 +202,7 @@ main {
                     @include bu-bz(url(../images/lt/ab_p.png), 100%);
                 }
                 &:nth-of-type(2) {
-                    .p {
+                    .img {
                         top: -23px;
                         left: -1px;
                         width: 203px;
@@ -210,7 +210,7 @@ main {
                     }
                 }
                 &:nth-of-type(3) {
-                    .p {
+                    .img {
                         left: -30px;
                         @include bu-bz(url(../images/lt/ef_p.png), 100%);
                     }

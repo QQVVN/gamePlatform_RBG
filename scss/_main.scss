@@ -211,24 +211,17 @@ body {
 }
 
 aside {
-    &:first-of-type {
+    &:first-of-type,
+    &:last-of-type {
         position: absolute;
         top: 200px;
-        left: 0px;
         z-index: 5;
-        &:hover {
-            .al {
-                .ali {
-                    animation: shakeUD 1s;
-                }
-            }
-        }
-        .al {
+        .abox {
             position: relative;
             width: 58px;
             height: 197px;
             @include bu-bz(url(../images/asideLbg.png), 58px 197px);
-            .ali {
+            .abi {
                 position: absolute;
                 width: 37px;
                 height: 45px;
@@ -237,29 +230,24 @@ aside {
                 @include bu-bz(url(../images/asideLbgIcon.png), 37px 45px);
             }
         }
-    }
-    &:last-of-type {
-        position: absolute;
-        top: 200px;
-        right: 0px;
-        z-index: 5;
         &:hover {
-            .ar {
-                .ari {
+            .abox {
+                .abi {
                     animation: shakeUD 1s;
                 }
             }
         }
-        .ar {
-            position: relative;
-            width: 58px;
-            height: 197px;
+    }
+    &:first-of-type {
+        left: 0px;
+    }
+    &:last-of-type {
+        right: 0px;
+        .abox {
             @include bu-bz(url(../images/asideRbg.png), 58px 197px);
-            .ari {
-                position: absolute;
+            .abi {
                 width: 43px;
                 height: 43px;
-                top: 13px;
                 left: 12px;
                 @include bu-bz(url(../images/asideRbgIcon.png), 43px);
             }
@@ -618,7 +606,7 @@ header {
                     position: relative;
                     float: left;
                     width: 107px;
-                    height: 61px;
+                    height: 61px - 14px;
                     text-align: center;
                     font-size: 16px;
                     @include bu-bz(url(../images/navLight.png), 107px 61px);
@@ -964,7 +952,7 @@ main {
                 width: 47px;
                 height: 47px;
                 top: 277px;
-                @include bu-bz (url(../images/arrow.png),47px);
+                @include bu-bz(url(../images/arrow.png), 47px);
             }
             .lar {
                 left: 408px;

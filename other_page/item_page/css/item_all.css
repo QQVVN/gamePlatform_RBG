@@ -246,11 +246,10 @@ main .btnbox .sebtn .box {
   margin: 40px 0 0;
   background: url(../images/se/ab_sport.png) no-repeat top center;
   background-size: 100%;
-  background-position: 0 0;
   opacity: 0.5;
   transition: 0.2s;
 }
-main .btnbox .sebtn .box .p {
+main .btnbox .sebtn .box .img {
   position: absolute;
   top: 23px;
   left: 1px;
@@ -263,7 +262,7 @@ main .btnbox .sebtn .box:hover, main .btnbox .sebtn .box:active, main .btnbox .s
   animation: navbg1 0.8s;
   opacity: 1;
 }
-main .btnbox .sebtn .box:hover .p, main .btnbox .sebtn .box:active .p, main .btnbox .sebtn .box.active .p {
+main .btnbox .sebtn .box:hover .img, main .btnbox .sebtn .box:active .img, main .btnbox .sebtn .box.active .img {
   animation: navbg1 0.5s;
   opacity: 1;
 }
@@ -271,13 +270,12 @@ main .btnbox .sebtn .box:nth-of-type(2) {
   background: url(../images/se/cd_sport.png) no-repeat top center;
   background-size: 100%;
 }
-main .btnbox .sebtn .box:nth-of-type(2) .p {
+main .btnbox .sebtn .box:nth-of-type(2) .img {
   left: 1px;
   top: -6px;
   width: 88%;
   background: url(../images/se/cd_players.png) no-repeat top center;
   background-size: 100%;
-  background-position: 0 0;
 }
 main .btnbox .ocbtn {
   width: 100%;
@@ -490,10 +488,10 @@ main .btnbox .ltbtn .box:hover, main .btnbox .ltbtn .box:active, main .btnbox .l
   animation: navbg1 0.8s;
   opacity: 1;
 }
-main .btnbox .ltbtn .box:hover .p, main .btnbox .ltbtn .box:active .p, main .btnbox .ltbtn .box.active .p {
+main .btnbox .ltbtn .box:hover .img, main .btnbox .ltbtn .box:active .img, main .btnbox .ltbtn .box.active .img {
   animation: navbg1 0.5s;
 }
-main .btnbox .ltbtn .box .p {
+main .btnbox .ltbtn .box .img {
   position: absolute;
   top: -27px;
   left: -25px;
@@ -502,14 +500,14 @@ main .btnbox .ltbtn .box .p {
   background: url(../images/lt/ab_p.png) no-repeat top center;
   background-size: 100%;
 }
-main .btnbox .ltbtn .box:nth-of-type(2) .p {
+main .btnbox .ltbtn .box:nth-of-type(2) .img {
   top: -23px;
   left: -1px;
   width: 203px;
   background: url(../images/lt/cd_p.png) no-repeat top center;
   background-size: 100%;
 }
-main .btnbox .ltbtn .box:nth-of-type(3) .p {
+main .btnbox .ltbtn .box:nth-of-type(3) .img {
   left: -30px;
   background: url(../images/lt/ef_p.png) no-repeat top center;
   background-size: 100%;

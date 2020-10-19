@@ -1,3 +1,5 @@
+@import "../../../scss/mixin";
+
 body {
     height: 962px;
 }
@@ -10,10 +12,32 @@ main {
         top: -1200px;
         transform: translateX(0%);
         margin: 0 auto;
+        .sebtn,
+        .ltbtn,
+        .bobtn {
+            .box {
+                transform: scale(0.9);
+                @include haa {
+                    transform: scale(1);
+                }
+            }
+        }
+        .ocbtn,
+        .sgbtn,
+        .dgbtn {
+            .box {
+                .btn {
+                    transform: scale(0.9);
+                    @include haa {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
     }
     .ibbox {
         position: relative;
-        top: -1200px - 550px - 10px;
+        top: -1200px - 550px + 15px;
         margin: 0 auto;
     }
 }

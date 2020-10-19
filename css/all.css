@@ -409,23 +409,19 @@ body {
   margin: 20px 0px 20px 0px;
 }
 
-aside:first-of-type {
+aside:first-of-type, aside:last-of-type {
   position: absolute;
   top: 200px;
-  left: 0px;
   z-index: 5;
 }
-aside:first-of-type:hover .al .ali {
-  animation: shakeUD 1s;
-}
-aside:first-of-type .al {
+aside:first-of-type .abox, aside:last-of-type .abox {
   position: relative;
   width: 58px;
   height: 197px;
   background: url(../images/asideLbg.png) no-repeat top center;
   background-size: 58px 197px;
 }
-aside:first-of-type .al .ali {
+aside:first-of-type .abox .abi, aside:last-of-type .abox .abi {
   position: absolute;
   width: 37px;
   height: 45px;
@@ -434,27 +430,22 @@ aside:first-of-type .al .ali {
   background: url(../images/asideLbgIcon.png) no-repeat top center;
   background-size: 37px 45px;
 }
-aside:last-of-type {
-  position: absolute;
-  top: 200px;
-  right: 0px;
-  z-index: 5;
-}
-aside:last-of-type:hover .ar .ari {
+aside:first-of-type:hover .abox .abi, aside:last-of-type:hover .abox .abi {
   animation: shakeUD 1s;
 }
-aside:last-of-type .ar {
-  position: relative;
-  width: 58px;
-  height: 197px;
+aside:first-of-type {
+  left: 0px;
+}
+aside:last-of-type {
+  right: 0px;
+}
+aside:last-of-type .abox {
   background: url(../images/asideRbg.png) no-repeat top center;
   background-size: 58px 197px;
 }
-aside:last-of-type .ar .ari {
-  position: absolute;
+aside:last-of-type .abox .abi {
   width: 43px;
   height: 43px;
-  top: 13px;
   left: 12px;
   background: url(../images/asideRbgIcon.png) no-repeat top center;
   background-size: 43px;
@@ -856,7 +847,7 @@ header article nav ul li {
   position: relative;
   float: left;
   width: 107px;
-  height: 61px;
+  height: 47px;
   text-align: center;
   font-size: 16px;
   background: url(../images/navLight.png) no-repeat top center;

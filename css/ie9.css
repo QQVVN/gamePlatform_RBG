@@ -2,6 +2,13 @@ header {
   z-index: 2;
 }
 
+aside:first-of-type .abox .abi, aside:last-of-type .abox .abi {
+  transform: scale(0.9);
+}
+aside:first-of-type:hover .abox .abi, aside:last-of-type:hover .abox .abi {
+  transform: scale(1.1);
+}
+
 main {
   *zoom: 1;
   top: -137px;
