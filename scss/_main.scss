@@ -618,14 +618,16 @@ header {
                     position: relative;
                     float: left;
                     width: 107px;
-                    height: 61px - 14px;
+                    height: 61px;
                     text-align: center;
                     font-size: 16px;
-                    padding: 14px 0 0 0;
                     @include bu-bz(url(../images/navLight.png), 107px 61px);
                     p {
                         color: $header_article_nav_li_p;
-                        &:nth-of-type(2) {
+                        &:first-of-type {
+                            padding: 14px 0 0 0;
+                        }
+                        &:last-of-type {
                             font-size: 12px;
                             margin: 3px 0 0 0;
                         }
