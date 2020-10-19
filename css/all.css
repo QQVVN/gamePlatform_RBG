@@ -1397,8 +1397,15 @@ main .wcon .wcr .rar {
   width: 47px;
   height: 47px;
   top: 277px;
+  transition: 0.2s;
   background: url(../images/arrow.png) no-repeat top center;
   background-size: 47px;
+}
+main .wcon .wcr .lar:hover, main .wcon .wcr .lar:active, main .wcon .wcr .lar.active,
+main .wcon .wcr .rar:hover,
+main .wcon .wcr .rar:active,
+main .wcon .wcr .rar.active {
+  transform: scale(1.2);
 }
 main .wcon .wcr .lar {
   left: 408px;
@@ -1406,6 +1413,9 @@ main .wcon .wcr .lar {
 main .wcon .wcr .rar {
   left: 1235px;
   transform: rotate(180deg);
+}
+main .wcon .wcr .rar:hover, main .wcon .wcr .rar:active, main .wcon .wcr .rar.active {
+  transform: rotate(180deg) scale(1.2);
 }
 main .wcon .wcr .index {
   position: relative;

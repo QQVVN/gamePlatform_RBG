@@ -952,7 +952,11 @@ main {
                 width: 47px;
                 height: 47px;
                 top: 277px;
+                transition: 0.2s;
                 @include bu-bz(url(../images/arrow.png), 47px);
+                @include haa {
+                    transform: scale(1.2);
+                }
             }
             .lar {
                 left: 408px;
@@ -960,6 +964,9 @@ main {
             .rar {
                 left: 1235px;
                 transform: rotate(180deg);
+                @include haa {
+                    transform: rotate(180deg) scale(1.2);
+                }
             }
             .index {
                 position: relative;
