@@ -5,18 +5,29 @@
     main {
         .btnbox {
             position: relative;
-            left: 0px;
             top: -1190px;
+            left: 0px;
+            transform: translateX(0%);
+            margin: 0 auto;
+        }
+        .sgIn {
+            position: relative;
+            top: -1190px;
+            left: 0px;
+            height: 550px + 424px;
             transform: translateX(0%);
             margin: 0 auto;
         }
         .ibbox {
             position: relative;
-            top: -1200px - 550px;
+            top: -1200px - 550px + 25px;
             margin: 0 auto;
+            &.ietop {
+                top: -1200px - 550px + 25px - 449px;
+            }
         }
     }
     footer {
-        top: -838px - 550px;
+        top: -838px - 550px !important;
     }
 }

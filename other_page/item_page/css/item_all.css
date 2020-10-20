@@ -190,13 +190,14 @@ body {
   height: 937px;
 }
 
-header .btnbox {
+header .nbbox {
   position: relative;
   width: 1110px;
   height: 100%;
   margin: 0 auto;
 }
-header .btnbox .btn {
+header .nbbox .btn {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   top: -40px;
@@ -204,26 +205,58 @@ header .btnbox .btn {
   width: 100px;
   height: 96px;
   margin: 0px 18px 0 0;
+  opacity: 0.7;
   background: url(../images/sg/banner_btn.png) no-repeat top center;
   background-size: 500% 192px;
   background-position: 0 0;
 }
-header .btnbox .btn.img2 {
+header .nbbox .btn.img2 {
   background-position: -100px 0;
 }
-header .btnbox .btn.img3 {
+header .nbbox .btn.img3 {
   background-position: -200px 0;
 }
-header .btnbox .btn.img4 {
+header .nbbox .btn.img4 {
   background-position: -300px 0;
 }
-header .btnbox .btn.img5 {
+header .nbbox .btn.img5 {
   background-position: -400px 0;
 }
-header .btnbox .btn:hover, header .btnbox .btn:active, header .btnbox .btn.active {
+header .nbbox .btn:hover, header .nbbox .btn:active, header .nbbox .btn.active {
   animation: navbg1 0.5s;
+  opacity: 1;
 }
-header .btnbox .btn p {
+header .nbbox .btn .back {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 89px;
+  height: 34px;
+  border-radius: 6px;
+  border: 1px solid #b1b1b1;
+  box-shadow: 0 5px 10px -2px #000254;
+  background: #ebebeb;
+  background: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
+}
+header .nbbox .btn .back .ar {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  width: 18px;
+  height: 17px;
+  background: url(../images/sg/arrow.png) no-repeat top center;
+  background-size: 100%;
+}
+header .nbbox .btn .back p {
+  position: relative;
+  top: 10px;
+  left: 13px;
+  width: 42px;
+  font-size: 14px;
+  margin: 0 auto;
+  color: #000;
+}
+header .nbbox .btn p {
   position: absolute;
   top: 65px;
   left: 40px;
@@ -232,8 +265,8 @@ header .btnbox .btn p {
   text-align: center;
   color: #ffffff;
 }
-header .btnbox .btn:first-of-type {
-  margin: -40px 6px 0 52px;
+header .nbbox .btn:first-of-type {
+  margin: -40px 58px 0 0px;
   background: none;
 }
 
@@ -717,9 +750,15 @@ main .ibbox .ibbg.bg5 {
 main .ibbox .ibbg.bg6 {
   background-position: -4235px 0;
 }
+main .ibbox .ibbg.inside {
+  top: 856px;
+}
 
 footer {
   top: -863px;
+}
+footer.inside {
+  top: -414px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -729,18 +768,29 @@ footer {
 
   main .btnbox {
     position: relative;
-    left: 0px;
     top: -1190px;
+    left: 0px;
+    transform: translateX(0%);
+    margin: 0 auto;
+  }
+  main .sgIn {
+    position: relative;
+    top: -1190px;
+    left: 0px;
+    height: 974px;
     transform: translateX(0%);
     margin: 0 auto;
   }
   main .ibbox {
     position: relative;
-    top: -1750px;
+    top: -1725px;
     margin: 0 auto;
+  }
+  main .ibbox.ietop {
+    top: -2174px;
   }
 
   footer {
-    top: -1388px;
+    top: -1388px !important;
   }
 }

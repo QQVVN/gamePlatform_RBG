@@ -1,5 +1,7 @@
 $(document).ready(function () {
     console.log("item_js.js");
+
+    // item nav
     $("header article nav ul li").click(function () {
         var self = $(this);
         var thisC = self.attr("class");
@@ -57,5 +59,31 @@ $(document).ready(function () {
         } else {
             return;
         }
+    });
+
+    // slot game inside
+    $("main .btnbox .sgbtn .btn").click(function (e) { 
+        e.preventDefault();
+        $("body").css("height","1386px");
+        $("main .ibbox .ibbg").addClass("inside");
+        $("footer").addClass("inside");
+        $(".banbox .banner").attr("class", "banner sgin");
+        $("header .nbbox").removeClass("none");
+        $("main .btnbox").addClass("none");
+        $("main .sgIn").removeClass("none");
+        $("main .ibbox").addClass("ietop");
+    });
+
+    // slot game inside back
+    $("header .nbbox .btn .back").click(function (e) { 
+        e.preventDefault();
+        $("body").css("height","937px");
+        $("main .ibbox .ibbg").removeClass("inside");
+        $("footer").removeClass("inside");
+        $(".banbox .banner").attr("class", "banner ban3");
+        $("header .nbbox").addClass("none");
+        $("main .btnbox").removeClass("none");
+        $("main .sgIn").addClass("none");
+        $("main .ibbox").removeClass("ietop");
     });
 });

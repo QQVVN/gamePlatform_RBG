@@ -1,15 +1,15 @@
 body {
     height: 937px;
-    // height: 100%;
 }
 
 header {
-    .btnbox {
+    .nbbox {
         position: relative;
         width: 1110px;
         height: 100%;
         margin: 0 auto;
         .btn {
+            cursor: pointer;
             position: relative;
             display: inline-block;
             top: -40px;
@@ -17,10 +17,41 @@ header {
             width: 100px;
             height: 96px;
             margin: 0px 18px 0 0;
+            opacity: 0.7;
             @include bu-bz-bp(url(../images/sg/banner_btn.png), 500% 192px, 0 0);
             @include banner-btn-position;
             @include haa {
                 animation: navbg1 0.5s;
+                opacity: 1;
+            }
+            .back {
+                position: absolute;
+                bottom: 10px;
+                left: 0px;
+                width: 89px;
+                height: 34px;
+                border-radius: 6px;
+                border: 1px solid #b1b1b1;
+                box-shadow: 0 5px 10px -2px #000254;
+                background: #ebebeb;
+                background: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
+                .ar {
+                    position: absolute;
+                    top: 8px;
+                    left: 13px;
+                    width: 18px;
+                    height: 17px;
+                    @include bu-bz(url(../images/sg/arrow.png), 100%);
+                }
+                p {
+                    position: relative;
+                    top: 10px;
+                    left: 13px;
+                    width: 14px * 3;
+                    font-size: 14px;
+                    margin: 0 auto;
+                    color: #000;
+                }
             }
             p {
                 position: absolute;
@@ -32,7 +63,7 @@ header {
                 color: #ffffff;
             }
             &:first-of-type {
-                margin: -40px 6px 0 52px;
+                margin: -40px 58px 0 0px;
                 background: none;
             }
         }
@@ -336,7 +367,6 @@ main {
         left: 50%;
         transform: translateX(-50%);
         width: 1110px;
-
         height: 100%;
         background: #000;
     }
@@ -350,10 +380,16 @@ main {
             height: 128px;
             @include bu-bz-bp(url(../images/item_bottom_bg.png), 847px * 6, 0 0);
             @include ibbg_position;
+            &.inside {
+                top: 432px - 25px + 449px;
+            }
         }
     }
 }
 
 footer {
     top: -838px - 25px;
+    &.inside {
+        top: -838px - 25px + 449px;
+    }
 }
